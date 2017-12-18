@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32ACDEAC-E282-4F51-BEF8-E6E54FC9B0B8}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MikePure</RootNamespace>
+    <AssemblyName>MikePure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MikePure\Cheats\Lib\Aim.cs" />
+    <Compile Include="MikePure\Cheats\Lib\Visuals.cs" />
+    <Compile Include="MikePure\Cheats\Menu\MenuHandler.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\Aim.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\ItemSelection.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\Keybind.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\Visuals.cs" />
+    <Compile Include="MikePure\Framework\Handler\AutoPilot.cs" />
+    <Compile Include="MikePure\Framework\Handler\HackDirector.cs" />
+    <Compile Include="MikePure\Framework\Handler\Hook.cs" />
+    <Compile Include="MikePure\Framework\Loader\LocalFileEditor.cs" />
+    <Compile Include="MikePure\Framework\Loader\LocalFileHelper.cs" />
+    <Compile Include="MikePure\Framework\Types\Enum\ColorOption.cs" />
+    <Compile Include="MikePure\Framework\Types\Enum\NvOption.cs" />
+    <Compile Include="MikePure\Framework\Types\GunAsset.cs" />
+    <Compile Include="MikePure\Framework\Types\Keybind.cs" />
+    <Compile Include="MikePure\Framework\Types\List\Friends.cs" />
+    <Compile Include="MikePure\Framework\Util\IO\FileEditor.cs" />
+    <Compile Include="MikePure\Framework\Util\Logging.cs" />
+    <Compile Include="MikePure\Framework\Util\PlayerManipulation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
