@@ -45,6 +45,7 @@
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Aim.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\ItemSelection.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Keybind.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\Player.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Visuals.cs" />
     <Compile Include="MikePure\Framework\Handler\AutoPilot.cs" />
     <Compile Include="MikePure\Framework\Handler\HackDirector.cs" />
