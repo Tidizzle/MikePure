@@ -1,6 +1,6 @@
 ﻿namespace MikePure.MikePure.Cheats.Menu.SubMenu
 {
-    public partial class Visuals
+    public  partial class Visuals
     {
         
     }

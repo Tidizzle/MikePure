@@ -1,6 +1,8 @@
-﻿namespace MikePure.MikePure.Cheats.Menu
+﻿using UnityEngine;
+
+namespace MikePure.MikePure.Cheats.Menu
 {
-    public class MenuHandler
+    public class MenuHandler : MonoBehaviour
     {
         
     }

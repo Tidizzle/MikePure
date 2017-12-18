@@ -1,7 +1,17 @@
-﻿namespace MikePure.MikePure.Framework.Handler
+﻿using UnityEngine;
+
+namespace MikePure.MikePure.Framework.Handler
 {
-    public class AP
+    internal class AutoPilot : MonoBehaviour
     {
-        
+        public void Start()
+        {
+            
+        }
+
+        public void Update()
+        {
+            
+        }
     }
 }

@@ -47,7 +47,7 @@
               <e p="IO" t="Include">
                 <e p="FileEditor.cs" t="Include" />
               </e>
-              <e p="Logging.cs" t="Include" />
+              <e p="Log.cs" t="Include" />
               <e p="PlayerManipulation.cs" t="Include" />
             </e>
           </e>

@@ -11,27 +11,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Keybind.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Keybind.cs">
+      <file leaf-file-name="Hook.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="756">
+              <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding>
-                <marker date="1513565430343" expanded="true" signature="47:97" ph="{...}" />
-                <marker date="1513565430343" expanded="true" signature="74:95" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="6:176" ph="..." />
+                <marker date="1513568991137" expanded="true" signature="223:973" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="254:971" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="349:684" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="408:588" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="620:674" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="726:956" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="752:860" ph="{...}" />
+                <marker date="1513568991137" expanded="true" signature="892:946" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemSelection.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/ItemSelection.cs">
+      <file leaf-file-name="Log.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
               <folding>
-                <marker date="1513565450958" expanded="true" signature="47:103" ph="{...}" />
-                <marker date="1513565450958" expanded="true" signature="80:101" ph="{...}" />
+                <marker date="1513568945606" expanded="true" signature="6:91" ph="..." />
+                <marker date="1513568945606" expanded="true" signature="175:537" ph="{...}" />
+                <marker date="1513568945606" expanded="true" signature="207:535" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoPilot.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <marker date="1513568945318" expanded="true" signature="65:250" ph="{...}" />
+                <marker date="1513568945318" expanded="true" signature="112:248" ph="{...}" />
+                <marker date="1513568945318" expanded="true" signature="146:179" ph="{...}" />
+                <marker date="1513568945318" expanded="true" signature="209:242" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -40,23 +63,67 @@
       <file leaf-file-name="HackDirector.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/HackDirector.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+            <state relative-caret-position="786">
+              <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
               <folding>
-                <marker date="1513568016365" expanded="true" signature="45:3325" ph="{...}" />
-                <marker date="1513568016365" expanded="true" signature="77:3323" ph="{...}" />
-                <marker date="1513568016365" expanded="true" signature="92:3307" ph="TODO" />
-                <marker date="1513568016365" expanded="true" signature="114:943" ph="/* TODO: Implement Hook ... */" />
-                <marker date="1513568016365" expanded="true" signature="957:1283" ph="Aim" />
-                <marker date="1513568016365" expanded="true" signature="985:1243" ph="/* TODO: Flesh menu ... */" />
-                <marker date="1513568016365" expanded="true" signature="1305:2395" ph="Visuals" />
-                <marker date="1513568016365" expanded="true" signature="1337:2354" ph="/* TODO: Flesh Menu ... */" />
-                <marker date="1513568016365" expanded="true" signature="2417:2624" ph="ItemSelection" />
-                <marker date="1513568016365" expanded="true" signature="2455:2600" ph="/* TODO: Find way to get actual item id list for item selection ... */" />
-                <marker date="1513568016365" expanded="true" signature="2646:2893" ph="Keybinds" />
-                <marker date="1513568016365" expanded="true" signature="2679:2861" ph="/* TODO: Flesh Menu ... */" />
-                <marker date="1513568016365" expanded="true" signature="2907:3279" ph="Player" />
-                <marker date="1513568016365" expanded="true" signature="2938:3255" ph="/* TODO: Flesh menu ... */" />
+                <marker date="1513570188694" expanded="true" signature="6:227" ph="..." />
+                <marker date="1513570188694" expanded="true" signature="302:4654" ph="{...}" />
+                <marker date="1513570188694" expanded="true" signature="343:4652" ph="{...}" />
+                <marker date="1513570188694" expanded="false" signature="358:3554" ph="TODO" />
+                <marker date="1513570188694" expanded="true" signature="380:1254" ph="/* TODO: Implement Hook ... */" />
+                <marker date="1513570188694" expanded="true" signature="1276:1586" ph="Aim" />
+                <marker date="1513570188694" expanded="true" signature="1304:1563" ph="/* TODO: Flesh menu ... */" />
+                <marker date="1513570188694" expanded="true" signature="1599:2671" ph="Visuals" />
+                <marker date="1513570188694" expanded="true" signature="1631:2648" ph="/* TODO: Flesh Menu ... */" />
+                <marker date="1513570188694" expanded="true" signature="2684:2890" ph="ItemSelection" />
+                <marker date="1513570188694" expanded="true" signature="2722:2867" ph="/* TODO: Find way to get actual item id list for item selection ... */" />
+                <marker date="1513570188694" expanded="true" signature="2903:3141" ph="Keybinds" />
+                <marker date="1513570188694" expanded="true" signature="2936:3118" ph="/* TODO: Flesh Menu ... */" />
+                <marker date="1513570188694" expanded="true" signature="3154:3526" ph="Player" />
+                <marker date="1513570188694" expanded="true" signature="3185:3502" ph="/* TODO: Flesh menu ... */" />
+                <marker date="1513570188694" expanded="true" signature="4038:4071" ph="{...}" />
+                <marker date="1513570188694" expanded="true" signature="4108:4637" ph="{...}" />
+                <marker date="1513570188694" expanded="true" signature="4264:4463" ph="{...}" />
+                <marker date="1513570188694" expanded="true" signature="4520:4627" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Aim.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Aim.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <folding>
+                <marker date="1513565348623" expanded="true" signature="47:101" ph="{...}" />
+                <marker date="1513565348623" expanded="true" signature="78:99" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemSelection.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/ItemSelection.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <folding>
+                <marker date="1513565450958" expanded="true" signature="47:103" ph="{...}" />
+                <marker date="1513565450958" expanded="true" signature="80:101" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Keybind.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Keybind.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <folding>
+                <marker date="1513570188611" expanded="true" signature="47:98" ph="{...}" />
+                <marker date="1513570188611" expanded="true" signature="75:96" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,11 +132,37 @@
       <file leaf-file-name="Player.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="36">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding>
-                <marker date="1513567740031" expanded="true" signature="47:96" ph="{...}" />
-                <marker date="1513567740031" expanded="true" signature="73:94" ph="{...}" />
+                <marker date="1513570188502" expanded="true" signature="47:97" ph="{...}" />
+                <marker date="1513570188502" expanded="true" signature="74:95" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Visuals.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <folding>
+                <marker date="1513570188119" expanded="true" signature="47:106" ph="{...}" />
+                <marker date="1513570188119" expanded="true" signature="83:104" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuHandler.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+              <folding>
+                <marker date="1513570188418" expanded="true" signature="59:129" ph="{...}" />
+                <marker date="1513570188418" expanded="true" signature="106:127" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -81,7 +174,7 @@
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/Keybind.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/GunAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/PlayerManipulation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Logging.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs" root0="FORCE_HIGHLIGHTING" />
@@ -105,7 +198,6 @@
       <list>
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/Aim.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/Visuals.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AP.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileHelper.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileEditor.cs" />
@@ -120,14 +212,17 @@
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/List.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/List/Friends.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/IO/FileEditor.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Aim.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Visuals.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Aim.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Aim.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Visuals.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Keybind.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/ItemSelection.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Keybind.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Player.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/HackDirector.cs" />
       </list>
     </option>
@@ -169,6 +264,19 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assemblies" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
@@ -285,6 +393,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Steam/steamapps/common/Unturned/Unturned_Data/Managed/Newtonsoft.Json.dll" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,20 +407,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
-    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <envs />
-      <option name="USE_MONO" value="0" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="PROJECT_PATH" value="" />
-      <option name="PROJECT_OUTPUT_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
-    </configuration>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -324,12 +421,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513563370703</updated>
       <workItem from="1513563373585" duration="1285000" />
-      <workItem from="1513564663783" duration="3350000" />
+      <workItem from="1513564663783" duration="5550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4635000" />
+    <option name="totallyTimeSpent" value="6835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,7 +441,7 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26405868" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26405868" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -365,6 +462,28 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26405868" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -378,28 +497,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MikePure/Class1.cs" />
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1513564825399" expanded="true" signature="45:92" ph="{...}" />
-            <marker date="1513564825399" expanded="true" signature="69:90" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1513564854372" expanded="true" signature="45:90" ph="{...}" />
-            <marker date="1513564854372" expanded="true" signature="67:88" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -418,17 +515,6 @@
           <folding>
             <marker date="1513564914497" expanded="true" signature="44:102" ph="{...}" />
             <marker date="1513564914497" expanded="true" signature="79:100" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Logging.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1513564939849" expanded="true" signature="42:92" ph="{...}" />
-            <marker date="1513564939849" expanded="true" signature="69:90" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -531,17 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-          <folding>
-            <marker date="1513565300718" expanded="true" signature="39:93" ph="{...}" />
-            <marker date="1513565300718" expanded="true" signature="70:91" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Aim.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -549,17 +624,6 @@
           <folding>
             <marker date="1513565347796" expanded="true" signature="89:143" ph="{...}" />
             <marker date="1513565347796" expanded="true" signature="120:141" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Aim.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <marker date="1513565348623" expanded="true" signature="47:101" ph="{...}" />
-            <marker date="1513565348623" expanded="true" signature="78:99" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -575,32 +639,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs">
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
+        <state relative-caret-position="756">
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
-            <marker date="1513565359810" expanded="true" signature="47:105" ph="{...}" />
-            <marker date="1513565359810" expanded="true" signature="82:103" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="6:176" ph="..." />
+            <marker date="1513568991137" expanded="true" signature="223:973" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="254:971" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="349:684" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="408:588" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="620:674" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="726:956" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="752:860" ph="{...}" />
+            <marker date="1513568991137" expanded="true" signature="892:946" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Keybind.cs">
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="180">
+          <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
           <folding>
-            <marker date="1513565430343" expanded="true" signature="47:97" ph="{...}" />
-            <marker date="1513565430343" expanded="true" signature="74:95" ph="{...}" />
+            <marker date="1513568945606" expanded="true" signature="6:91" ph="..." />
+            <marker date="1513568945606" expanded="true" signature="175:537" ph="{...}" />
+            <marker date="1513568945606" expanded="true" signature="207:535" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/ItemSelection.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="36">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding>
             <marker date="1513565450958" expanded="true" signature="47:103" ph="{...}" />
             <marker date="1513565450958" expanded="true" signature="80:101" ph="{...}" />
@@ -608,36 +680,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Keybind.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <marker date="1513570188611" expanded="true" signature="47:98" ph="{...}" />
+            <marker date="1513570188611" expanded="true" signature="75:96" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="36">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding>
-            <marker date="1513567740031" expanded="true" signature="47:96" ph="{...}" />
-            <marker date="1513567740031" expanded="true" signature="73:94" ph="{...}" />
+            <marker date="1513570188502" expanded="true" signature="47:97" ph="{...}" />
+            <marker date="1513570188502" expanded="true" signature="74:95" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <marker date="1513570188119" expanded="true" signature="47:106" ph="{...}" />
+            <marker date="1513570188119" expanded="true" signature="83:104" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding>
+            <marker date="1513570188418" expanded="true" signature="59:129" ph="{...}" />
+            <marker date="1513570188418" expanded="true" signature="106:127" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Aim.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding>
+            <marker date="1513565348623" expanded="true" signature="47:101" ph="{...}" />
+            <marker date="1513565348623" expanded="true" signature="78:99" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <marker date="1513568945318" expanded="true" signature="65:250" ph="{...}" />
+            <marker date="1513568945318" expanded="true" signature="112:248" ph="{...}" />
+            <marker date="1513568945318" expanded="true" signature="146:179" ph="{...}" />
+            <marker date="1513568945318" expanded="true" signature="209:242" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/HackDirector.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="786">
+          <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
           <folding>
-            <marker date="1513568016365" expanded="true" signature="45:3325" ph="{...}" />
-            <marker date="1513568016365" expanded="true" signature="77:3323" ph="{...}" />
-            <marker date="1513568016365" expanded="true" signature="92:3307" ph="TODO" />
-            <marker date="1513568016365" expanded="true" signature="114:943" ph="/* TODO: Implement Hook ... */" />
-            <marker date="1513568016365" expanded="true" signature="957:1283" ph="Aim" />
-            <marker date="1513568016365" expanded="true" signature="985:1243" ph="/* TODO: Flesh menu ... */" />
-            <marker date="1513568016365" expanded="true" signature="1305:2395" ph="Visuals" />
-            <marker date="1513568016365" expanded="true" signature="1337:2354" ph="/* TODO: Flesh Menu ... */" />
-            <marker date="1513568016365" expanded="true" signature="2417:2624" ph="ItemSelection" />
-            <marker date="1513568016365" expanded="true" signature="2455:2600" ph="/* TODO: Find way to get actual item id list for item selection ... */" />
-            <marker date="1513568016365" expanded="true" signature="2646:2893" ph="Keybinds" />
-            <marker date="1513568016365" expanded="true" signature="2679:2861" ph="/* TODO: Flesh Menu ... */" />
-            <marker date="1513568016365" expanded="true" signature="2907:3279" ph="Player" />
-            <marker date="1513568016365" expanded="true" signature="2938:3255" ph="/* TODO: Flesh menu ... */" />
+            <marker date="1513570188694" expanded="true" signature="6:227" ph="..." />
+            <marker date="1513570188694" expanded="true" signature="302:4654" ph="{...}" />
+            <marker date="1513570188694" expanded="true" signature="343:4652" ph="{...}" />
+            <marker date="1513570188694" expanded="false" signature="358:3554" ph="TODO" />
+            <marker date="1513570188694" expanded="true" signature="380:1254" ph="/* TODO: Implement Hook ... */" />
+            <marker date="1513570188694" expanded="true" signature="1276:1586" ph="Aim" />
+            <marker date="1513570188694" expanded="true" signature="1304:1563" ph="/* TODO: Flesh menu ... */" />
+            <marker date="1513570188694" expanded="true" signature="1599:2671" ph="Visuals" />
+            <marker date="1513570188694" expanded="true" signature="1631:2648" ph="/* TODO: Flesh Menu ... */" />
+            <marker date="1513570188694" expanded="true" signature="2684:2890" ph="ItemSelection" />
+            <marker date="1513570188694" expanded="true" signature="2722:2867" ph="/* TODO: Find way to get actual item id list for item selection ... */" />
+            <marker date="1513570188694" expanded="true" signature="2903:3141" ph="Keybinds" />
+            <marker date="1513570188694" expanded="true" signature="2936:3118" ph="/* TODO: Flesh Menu ... */" />
+            <marker date="1513570188694" expanded="true" signature="3154:3526" ph="Player" />
+            <marker date="1513570188694" expanded="true" signature="3185:3502" ph="/* TODO: Flesh menu ... */" />
+            <marker date="1513570188694" expanded="true" signature="4038:4071" ph="{...}" />
+            <marker date="1513570188694" expanded="true" signature="4108:4637" ph="{...}" />
+            <marker date="1513570188694" expanded="true" signature="4264:4463" ph="{...}" />
+            <marker date="1513570188694" expanded="true" signature="4520:4627" ph="{...}" />
           </folding>
         </state>
       </provider>

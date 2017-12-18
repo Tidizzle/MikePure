@@ -1,6 +1,14 @@
-﻿namespace MikePure.MikePure.Framework.Handler
+﻿using MikePure.MikePure.Cheats.Menu;
+using MikePure.MikePure.Cheats.Menu.SubMenu;
+using MikePure.MikePure.Framework.Types.List;
+using SDG.Unturned;
+using UnityEngine;
+using Player = MikePure.MikePure.Cheats.Menu.SubMenu.Player;
+#pragma warning disable 169
+
+namespace MikePure.MikePure.Framework.Handler
 {
-    public class HackDirector
+    internal static class HackDirector
     {
         #region TODO
 
@@ -21,17 +29,16 @@
         //TODO: Add menucontroller to menuhandler
         //TODO: Populate logging based on tsunami
         //TODO: Populate PlayerManipulation with related methods 
-
+        //TODO: Add SubObject to Menuhandler
+        
             #region Aim
                 //TODO: Flesh menu
                 //TODO: Add Aimbot
                     //TODO: Add FOV Circle
                     //TODO: Add distance to player, distance to xhair, danger settings
                 //TODO: Add Aimlock
-                //TODO: Add Triggerbot
-                
+                //TODO: Add Triggerbot 
             #endregion
-        
             #region Visuals
                 //TODO: Flesh Menu
                 //TODO: Add 2d box
@@ -55,25 +62,18 @@
                 //TODO: Add Set time
                 //TODO: Add Set zoom / zoom without scope
                 //TODO: Add Color Interfacing
-                
-
             #endregion
-        
             #region ItemSelection
                 //TODO: Find way to get actual item id list for item selection
                 //TODO: Flesh Menu
                 //TODO: Interace with item menu
-
             #endregion
-        
             #region Keybinds
                 //TODO: Flesh Menu
                 //TODO: Add Dynamic list
                 //TODO: Add Changing
                 //TODO: Add MenuToggle, Aimbottoggle, panic toggle, esptoggle, others
-        
             #endregion
-
             #region Player
                 //TODO: Flesh menu
                     //TODO: Add Friends system (This is a royal pain in the ass btw)
@@ -86,6 +86,42 @@
         
         #endregion
 
+        private static GameObject goMasterObj;
+
+        public static bool bHackEnabled;
+        
+        public static MenuHandler     mhHandler;
+        public static Aim             mAim;
+        public static Visuals         mVisuals;
+        public static Keybind         mKeybind;
+        public static Player          mPlayer;
+        public static ItemSelection   mISelection;
+
+        public static Friends fFriendsList;
+        
+        
+        public static void Start()
+        {
+            
+        }
+
+        public static void Update()
+        {
+            //Add Object if its not in the game and its not disabled
+            if (Provider.isConnected && goMasterObj == null && bHackEnabled)
+            {
+                goMasterObj = new GameObject();
+
+                mhHandler = goMasterObj.AddComponent<MenuHandler>();
+                Object.DontDestroyOnLoad(mhHandler);
+            }
+
+            if (!Provider.isConnected || !bHackEnabled)
+            {
+                Object.Destroy(goMasterObj);
+                mhHandler = null;
+            }
+        }
         
     }
 }
