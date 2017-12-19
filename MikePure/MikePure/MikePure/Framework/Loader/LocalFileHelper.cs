@@ -1,7 +1,10 @@
 ﻿namespace MikePure.MikePure.Framework.Loader
 {
-    public class LocalFileHelper
+    internal static class LocalFileHelper
     {
-        
+        public static void LoadAll()
+        {
+            
+        }
     }
 }

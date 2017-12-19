@@ -21,6 +21,10 @@
                 <e p="Visuals.cs" t="Include" />
               </e>
             </e>
+            <e p="Overrides" t="Include">
+              <e p="OV_askScreenshot.cs" t="Include" />
+              <e p="OV_refreshMap.cs" t="Include" />
+            </e>
           </e>
           <e p="Framework" t="Include">
             <e p="Handler" t="Include">
@@ -48,7 +52,9 @@
                 <e p="FileEditor.cs" t="Include" />
               </e>
               <e p="Log.cs" t="Include" />
-              <e p="PlayerManipulation.cs" t="Include" />
+              <e p="ObjManipulation.cs" t="Include" />
+              <e p="RedirectionHelper.cs" t="Include" />
+              <e p="Tools.cs" t="Include" />
             </e>
           </e>
         </e>

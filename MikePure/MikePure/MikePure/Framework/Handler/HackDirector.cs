@@ -12,8 +12,8 @@ namespace MikePure.MikePure.Framework.Handler
     {
         #region TODO
 
-        //TODO: Implement Hook
-        //TODO: Generate AP call loop
+        //TODO: Implement Hook                                                V
+        //TODO: Generate AP call loop                                         V
         //TODO: Generate HD methods
         //TODO: Add GO Manipulation to HD
         //TODO: Implement local loading in LFH

@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -62,6 +63,8 @@
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Keybind.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Player.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Visuals.cs" />
+    <Compile Include="MikePure\Cheats\Overrides\OV_askScreenshot.cs" />
+    <Compile Include="MikePure\Cheats\Overrides\OV_refreshMap.cs" />
     <Compile Include="MikePure\Framework\Handler\AutoPilot.cs" />
     <Compile Include="MikePure\Framework\Handler\HackDirector.cs" />
     <Compile Include="MikePure\Framework\Handler\Hook.cs" />
@@ -74,7 +77,9 @@
     <Compile Include="MikePure\Framework\Types\List\Friends.cs" />
     <Compile Include="MikePure\Framework\Util\IO\FileEditor.cs" />
     <Compile Include="MikePure\Framework\Util\Log.cs" />
-    <Compile Include="MikePure\Framework\Util\PlayerManipulation.cs" />
+    <Compile Include="MikePure\Framework\Util\ObjManipulation.cs" />
+    <Compile Include="MikePure\Framework\Util\RedirectionHelper.cs" />
+    <Compile Include="MikePure\Framework\Util\Tools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
