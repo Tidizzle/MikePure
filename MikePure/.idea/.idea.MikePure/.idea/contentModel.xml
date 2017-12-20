@@ -19,6 +19,7 @@
                 <e p="ItemSelection.cs" t="Include" />
                 <e p="Keybinds.cs" t="Include" />
                 <e p="Player.cs" t="Include" />
+                <e p="Server.cs" t="Include" />
                 <e p="Visuals.cs" t="Include" />
               </e>
             </e>

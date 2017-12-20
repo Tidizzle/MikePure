@@ -63,13 +63,22 @@ namespace MikePure.MikePure.Cheats.Menu
                     {
                         ProcessStartInfo rq = new System.Diagnostics.ProcessStartInfo();
                         rq.FileName = "cmd.exe";
-                        rq.Arguments = "/c Taskkill /IM Unturned.exe /r";
+                        rq.Arguments = "/c Taskkill /im Unturned.exe /r";
                         Process.Start(rq);
                     }
                     else if (pressed == EspToggle)
                     {
                         
                     }
+                    else if (pressed == KeyCode.Escape)
+                    {
+                        HackDirector.mhHandler.MenuVis = false;
+
+                        PlayerPauseUI.active = false;
+                        PlayerUI.window.showCursor = false;
+                    }
+                        
+                    
                 }
             }
 

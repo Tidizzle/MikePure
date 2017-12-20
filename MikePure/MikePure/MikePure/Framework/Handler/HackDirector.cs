@@ -9,6 +9,7 @@ using MikePure.MikePure.Framework.Types.List;
 using MikePure.MikePure.Framework.Util;
 using SDG.Unturned;
 using UnityEngine;
+using Friends = MikePure.MikePure.Framework.Types.List.Friends;
 using Object = UnityEngine.Object;
 using Player = SDG.Unturned.Player;
 #pragma warning disable 169

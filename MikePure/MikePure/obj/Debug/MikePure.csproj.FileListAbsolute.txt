@@ -16,3 +16,4 @@ U:\MikePure\MikePure\MikePure\MikePure\bin\Debug\UnityScript.Lang.dll
 U:\MikePure\MikePure\MikePure\MikePure\obj\Debug\MikePure.csprojResolveAssemblyReference.cache
 U:\MikePure\MikePure\MikePure\MikePure\obj\Debug\MikePure.dll
 U:\MikePure\MikePure\MikePure\MikePure\obj\Debug\MikePure.pdb
+U:\MikePure\MikePure\MikePure\MikePure\bin\Debug\TsunamiHack.dll

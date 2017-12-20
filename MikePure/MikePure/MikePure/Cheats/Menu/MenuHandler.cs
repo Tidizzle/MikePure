@@ -7,7 +7,7 @@ namespace MikePure.MikePure.Cheats.Menu
 {
     internal class MenuHandler : MonoBehaviour
     {
-        private Aim               mAim;
+        private Aim               _mAim;
         private ItemSelection     mItems;
         private Keybinds          mKeybinds;
         private Player            mPlayer;
@@ -17,8 +17,8 @@ namespace MikePure.MikePure.Cheats.Menu
         public bool MenuVis;
 
         public Rect MenuRect;
-        public int width = 840;
-        public int height = 504;
+        public int width = 740;
+        public int height = 404;
         public Rect CursorRect = new Rect(10, 10, 20, 20);
         
         
@@ -43,46 +43,35 @@ namespace MikePure.MikePure.Cheats.Menu
             GUI.skin = HackDirector.sSkin;
 
             if (MenuVis)
-                MenuRect = GUI.Window(0, MenuRect, MenuFunct, "MikePure");
+                MenuRect = GUILayout.Window(0, MenuRect, MenuFunct, "MikePure");
 
         }
 
         public void MenuFunct(int id)
         {
-            if (GUI.Button(new Rect(5, 5, 150, 35), "Player"))
-                ContentId = 1;
-            if (GUI.Button(new Rect(5, 45, 150, 35), "Aim"))
-                ContentId = 2;
-            if (GUI.Button(new Rect(5, 85, 150, 35), "Visuals"))
-                ContentId = 3;
-            if (GUI.Button(new Rect(5, 125, 150, 35), "Item Filter"))
-                ContentId = 4;
-            if (GUI.Button(new Rect(5, 165, 150, 35), "Keybinds"))
-                ContentId = 5;
+            GUILayout.BeginHorizontal();
+            
+            //Menu Bar vertical section
+            GUILayout.BeginVertical(GUILayout.Width(240));
 
-            switch (ContentId)
+            if (GUILayout.Button("Aim"))
             {
-                    case 1:
-                        mPlayer.GUI();
-                        break;
-                    case 2:
-                        mAim.GUI();
-                        break;
-                    case 3:
-                        mVisuals.GUI();
-                        break;
-                    case 4:
-                        mItems.GUI();
-                        break;
-                    case 5:
-                        mKeybinds.GUI();
-                        break;
+                
             }
+            
+            GUILayout.EndVertical();
+            
+            //Menu Content section
+            GUILayout.BeginVertical();
+            
+            GUILayout.EndVertical();
+            
+           GUILayout.EndHorizontal();
         }
         
         public void DestroySubMenus()
         {
-            Destroy(mAim);
+            Destroy(_mAim);
             Destroy(mItems);
             Destroy(mKeybinds);
             Destroy(mPlayer);
@@ -91,7 +80,7 @@ namespace MikePure.MikePure.Cheats.Menu
 
         public void AddSubMenus()
         {
-            mAim = HackDirector.goMasterObj.AddComponent<Aim>();
+            _mAim = HackDirector.goMasterObj.AddComponent<Aim>();
             mItems = HackDirector.goMasterObj.AddComponent<ItemSelection>();
             mKeybinds = HackDirector.goMasterObj.AddComponent<Keybinds>();
             mPlayer = HackDirector.goMasterObj.AddComponent<Player>();

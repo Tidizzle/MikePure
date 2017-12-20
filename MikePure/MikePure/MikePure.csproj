@@ -60,6 +60,7 @@
     <Compile Include="MikePure\Cheats\Menu\KeybindHandler.cs" />
     <Compile Include="MikePure\Cheats\Menu\MenuHandler.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Aim.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\Server.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\ItemSelection.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Keybinds.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Player.cs" />
