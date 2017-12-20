@@ -1,4 +1,5 @@
-﻿using MikePure.MikePure.Framework.Loader;
+﻿using System.Collections;
+using MikePure.MikePure.Framework.Loader;
 using UnityEngine;
 
 namespace MikePure.MikePure.Framework.Handler
@@ -17,5 +18,6 @@ namespace MikePure.MikePure.Framework.Handler
         {
             HackDirector.Update();
         }
+
     }
 }

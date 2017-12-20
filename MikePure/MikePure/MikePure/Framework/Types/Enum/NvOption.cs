@@ -1,7 +1,9 @@
-﻿namespace MikePure.MikePure.Framework.Types
+﻿namespace MikePure.MikePure.Framework.Types.Enum
 {
-    public class NvType
+    public enum NvType
     {
-        
+        Military,
+        Civilian,
+        None
     }
 }

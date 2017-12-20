@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MikePure.MikePure.Cheats.Menu.SubMenu
 {
-    public partial class Aim : MonoBehaviour
+    public class Keybinds : MonoBehaviour
     {
 
         public void Start()

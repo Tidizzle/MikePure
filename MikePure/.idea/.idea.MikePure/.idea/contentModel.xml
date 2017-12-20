@@ -12,17 +12,18 @@
               <e p="Visuals.cs" t="Include" />
             </e>
             <e p="Menu" t="Include">
+              <e p="KeybindHandler.cs" t="Include" />
               <e p="MenuHandler.cs" t="Include" />
               <e p="SubMenu" t="Include">
                 <e p="Aim.cs" t="Include" />
                 <e p="ItemSelection.cs" t="Include" />
-                <e p="Keybind.cs" t="Include" />
+                <e p="Keybinds.cs" t="Include" />
                 <e p="Player.cs" t="Include" />
                 <e p="Visuals.cs" t="Include" />
               </e>
             </e>
             <e p="Overrides" t="Include">
-              <e p="OV_askScreenshot.cs" t="Include" />
+              <e p="OV_Player.cs" t="Include" />
               <e p="OV_refreshMap.cs" t="Include" />
             </e>
           </e>

@@ -57,13 +57,14 @@
   <ItemGroup>
     <Compile Include="MikePure\Cheats\Lib\Aim.cs" />
     <Compile Include="MikePure\Cheats\Lib\Visuals.cs" />
+    <Compile Include="MikePure\Cheats\Menu\KeybindHandler.cs" />
     <Compile Include="MikePure\Cheats\Menu\MenuHandler.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Aim.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\ItemSelection.cs" />
-    <Compile Include="MikePure\Cheats\Menu\SubMenu\Keybind.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\Keybinds.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Player.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Visuals.cs" />
-    <Compile Include="MikePure\Cheats\Overrides\OV_askScreenshot.cs" />
+    <Compile Include="MikePure\Cheats\Overrides\OV_Player.cs" />
     <Compile Include="MikePure\Cheats\Overrides\OV_refreshMap.cs" />
     <Compile Include="MikePure\Framework\Handler\AutoPilot.cs" />
     <Compile Include="MikePure\Framework\Handler\HackDirector.cs" />

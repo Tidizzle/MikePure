@@ -2,6 +2,7 @@
 {
     public class Friends
     {
-        
+        public string sName;
+        public ulong ulSteamId;
     }
 }
