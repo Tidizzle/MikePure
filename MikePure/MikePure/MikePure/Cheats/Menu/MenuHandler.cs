@@ -7,18 +7,19 @@ namespace MikePure.MikePure.Cheats.Menu
 {
     internal class MenuHandler : MonoBehaviour
     {
-        private Aim               _mAim;
+        private Aim               mAim;
         private ItemSelection     mItems;
         private Keybinds          mKeybinds;
         private Player            mPlayer;
+        private Server            mServer;
         private Visuals           mVisuals;
 
         public int ContentId;
         public bool MenuVis;
 
         public Rect MenuRect;
-        public int width = 740;
-        public int height = 404;
+        public int width = 650;
+        public int height = 364;
         public Rect CursorRect = new Rect(10, 10, 20, 20);
         
         
@@ -51,40 +52,98 @@ namespace MikePure.MikePure.Cheats.Menu
         {
             GUILayout.BeginHorizontal();
             
+            
+            #region menu bar
             //Menu Bar vertical section
-            GUILayout.BeginVertical(GUILayout.Width(240));
+            GUILayout.BeginVertical();
 
-            if (GUILayout.Button("Aim"))
-            {
-                
-            }
+            if (GUILayout.Button("Aim" ,GUILayout.Width(220),  GUILayout.Height(40)))
+                ContentId = 1;
+            
+            GUILayout.Space(7f);
+            
+            if (GUILayout.Button("Visuals" ,GUILayout.Width(220),  GUILayout.Height(40)))
+                ContentId = 2;
+            
+            GUILayout.Space(7f);
+            
+            if (GUILayout.Button("Player" ,GUILayout.Width(220),  GUILayout.Height(40)))
+                ContentId = 3;
+            
+            GUILayout.Space(7f);
+            
+            if (GUILayout.Button("Server" ,GUILayout.Width(220),  GUILayout.Height(40)))
+                ContentId = 4;
+            
+            GUILayout.Space(7f);
+            
+            if (GUILayout.Button("Item Filter" ,GUILayout.Width(220),  GUILayout.Height(40)))
+                ContentId = 5;
+            
+            GUILayout.Space(7f);
+            
+            if (GUILayout.Button("Keybinds" ,GUILayout.Width(220),  GUILayout.Height(40)))
+                ContentId = 6;
             
             GUILayout.EndVertical();
+            
+            GUILayout.Space(10f);
+            
+            #endregion
+            
+            
+            
             
             //Menu Content section
             GUILayout.BeginVertical();
-            
+            switch (ContentId)
+            {
+                    case 1:
+                        mAim.ContentGUI();
+                        break;
+                    case 2:
+                        mVisuals.GUI();
+                        break;
+                    case 3:
+                        mPlayer.GUI();
+                        break;
+                    case 4:
+                        mServer.GUI();
+                        break;
+                    case 5:
+                        mItems.GUI();
+                        break;
+                    case 6:
+                        mKeybinds.GUI();
+                        break;
+            }
             GUILayout.EndVertical();
+            
+            
+            
+            
             
            GUILayout.EndHorizontal();
         }
         
         public void DestroySubMenus()
         {
-            Destroy(_mAim);
+            Destroy(mAim);
             Destroy(mItems);
             Destroy(mKeybinds);
             Destroy(mPlayer);
             Destroy(mVisuals);
+            Destroy(mServer);
         }
 
         public void AddSubMenus()
         {
-            _mAim = HackDirector.goMasterObj.AddComponent<Aim>();
+            mAim = HackDirector.goMasterObj.AddComponent<Aim>();
             mItems = HackDirector.goMasterObj.AddComponent<ItemSelection>();
             mKeybinds = HackDirector.goMasterObj.AddComponent<Keybinds>();
             mPlayer = HackDirector.goMasterObj.AddComponent<Player>();
             mVisuals = HackDirector.goMasterObj.AddComponent<Visuals>();
+            mServer = HackDirector.goMasterObj.AddComponent<Server>();
         }
         
     }

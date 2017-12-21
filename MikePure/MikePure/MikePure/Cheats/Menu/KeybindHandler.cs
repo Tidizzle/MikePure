@@ -61,16 +61,13 @@ namespace MikePure.MikePure.Cheats.Menu
                     }
                     else if (pressed == InstaDisconnect)
                     {
-                        ProcessStartInfo rq = new System.Diagnostics.ProcessStartInfo();
-                        rq.FileName = "cmd.exe";
-                        rq.Arguments = "/c Taskkill /im Unturned.exe /r";
-                        Process.Start(rq);
+
                     }
                     else if (pressed == EspToggle)
                     {
                         
                     }
-                    else if (pressed == KeyCode.Escape)
+                    else if (pressed == KeyCode.Escape && HackDirector.mhHandler.MenuVis)
                     {
                         HackDirector.mhHandler.MenuVis = false;
 

@@ -42,6 +42,7 @@
               <e p="Enum" t="Include">
                 <e p="ColorOption.cs" t="Include" />
                 <e p="NvOption.cs" t="Include" />
+                <e p="TargetLimb.cs" t="Include" />
               </e>
               <e p="GunAsset.cs" t="Include" />
               <e p="Keybind.cs" t="Include" />

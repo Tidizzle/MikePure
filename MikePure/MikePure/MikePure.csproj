@@ -74,6 +74,7 @@
     <Compile Include="MikePure\Framework\Loader\LocalFileHelper.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\ColorOption.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\NvOption.cs" />
+    <Compile Include="MikePure\Framework\Types\Enum\TargetLimb.cs" />
     <Compile Include="MikePure\Framework\Types\GunAsset.cs" />
     <Compile Include="MikePure\Framework\Types\Keybind.cs" />
     <Compile Include="MikePure\Framework\Types\List\Friends.cs" />

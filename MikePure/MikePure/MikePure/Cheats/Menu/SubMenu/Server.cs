@@ -1,7 +1,12 @@
-﻿namespace MikePure.MikePure.Cheats.Menu.SubMenu
+﻿using UnityEngine;
+
+namespace MikePure.MikePure.Cheats.Menu.SubMenu
 {
-    public class Friends
+    internal class Server : MonoBehaviour
     {
-        
+        public void GUI()
+        {
+            
+        }
     }
 }
