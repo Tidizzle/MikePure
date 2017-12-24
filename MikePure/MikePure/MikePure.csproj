@@ -66,7 +66,6 @@
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Player.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Visuals.cs" />
     <Compile Include="MikePure\Cheats\Overrides\OV_Player.cs" />
-    <Compile Include="MikePure\Cheats\Overrides\OV_refreshMap.cs" />
     <Compile Include="MikePure\Framework\Handler\AutoPilot.cs" />
     <Compile Include="MikePure\Framework\Handler\HackDirector.cs" />
     <Compile Include="MikePure\Framework\Handler\Hook.cs" />

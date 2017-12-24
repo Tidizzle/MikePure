@@ -74,42 +74,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
         public void UpdateLock()
         {
-            if (EnableAimLock && Provider.isConnected)
-            {
-                var range = LockDistance;
-                if (LockGunRange && SDG.Unturned.Player.player.equipment.asset is ItemGunAsset)
-                {
-                    range = (int)((ItemGunAsset) SDG.Unturned.Player.player.equipment.asset).range;
-                }
 
-                RaycastHit hit;
-                Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, range,
-                    RayMasks.DAMAGE_CLIENT);
-
-                if (hit.transform != null)
-                {
-                    if (LockPlayers && hit.transform.CompareTag("Enemy")) //if player
-                    {
-                        if (!AimWhitelistFriends && !IsPlayerFriend(hit, 1))
-                            ChangeSense(true);
-                        else
-                            ChangeSense(false);
-                    }
-                    else if (LockZombies && hit.transform.CompareTag("Zombie")) //if zombie
-                        ChangeSense(true);
-                    else if (LockAnimals && hit.transform.CompareTag("Animal")) //if animal
-                        ChangeSense(true);
-                    else if (LockVehicles && hit.transform.CompareTag("Vehicle")) //if vehicle
-                        ChangeSense(true);
-                    else //if none
-                        ChangeSense(false);
-
-                }
-                else
-                    ChangeSense(false); //if transform is null
-
-            }
-            
         }
         
         public void ChangeSense(bool enable)
