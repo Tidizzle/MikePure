@@ -10,33 +10,33 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
     {
         private int page;
 
-        public bool EnableAimbot;
-        public bool EnableTriggerbot;
-        public bool EnableAimLock;
-         
-        public bool AimPlayers;
-        public bool AimZombies;
-       
-        public bool AimClosest;
-       
-        public int AimSpeed;
-        public bool AimIgnoreWalls;
-       
-        public int AimDistance;
-        public bool AimInfDistance;
-        public bool AimUseGunDistance;
-       
-        public bool AimSilent;
-       
-        public bool AimWhitelistFriends; 
-        public bool AimWhitelistAdmins; 
-       
-        public int AimFov;
-        public bool Aim360;
+        public static bool EnableAimbot;
+        public static bool EnableTriggerbot;
+        public static bool EnableAimLock;
+        
+        public static bool AimPlayers;
+        public static bool AimZombies;
 
-        public bool AimFovCircle;
-        public TargetLimb AimTargetLimb;
-        public int Limb;
+        public static bool AimClosest;
+
+        public static int AimSpeed;
+        public static bool AimIgnoreWalls;
+        
+        public static int AimDistance;
+        public static bool AimInfDistance;
+        public static bool AimUseGunDistance;
+        
+        public static bool AimSilent;
+        
+        public static bool AimWhitelistFriends; 
+        public static bool AimWhitelistAdmins; 
+        
+        public static int AimFov;
+        public static bool Aim360;
+ 
+        public static bool AimFovCircle;
+        public static TargetLimb AimTargetLimb;
+        public static int Limb;
         
         
         

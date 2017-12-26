@@ -1,4 +1,6 @@
-﻿namespace MikePure.MikePure.Framework.Loader
+﻿using UnityEngine;
+
+namespace MikePure.MikePure.Framework.Loader
 {
     internal static class LocalFileHelper
     {

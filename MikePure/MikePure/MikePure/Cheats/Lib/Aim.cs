@@ -12,31 +12,31 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 {
     internal partial class Aim
     {
-        public static DateTime LastLock;
-        public static Camera mainCamera;
+        public DateTime LastLock;
+        public Camera mainCamera;
         
         //aimlock
-        public static float Defsense;    
+        public float Defsense;    
         //-------
 	    
         //triggerbot
         public static int Id;
 	    
-        public static FieldInfo Prim;
-        public static FieldInfo Yaw;
-        public static FieldInfo Pitch;
+        public FieldInfo Prim;
+        public FieldInfo Yaw;
+        public FieldInfo Pitch;
         //----------
 	    
         //Aimbot
-        public static List<Zombie> Zombies;
-        public static int ZombieUpdate;
-        public static List<SteamPlayer> Players;
-        public static int PlayerUpdate;
+        public List<Zombie> Zombies;
+        public int ZombieUpdate;
+        public List<SteamPlayer> Players;
+        public int PlayerUpdate;
 
-        public static bool ZombieFlag;
-        public static bool PlayerFlag;
+        public bool ZombieFlag;
+        public bool PlayerFlag;
 
-        public static Transform target;
+        public Transform target;
 	    
         //------
         

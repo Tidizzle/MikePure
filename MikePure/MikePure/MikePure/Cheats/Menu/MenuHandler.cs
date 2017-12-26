@@ -7,12 +7,12 @@ namespace MikePure.MikePure.Cheats.Menu
 {
     internal class MenuHandler : MonoBehaviour
     {
-        private Aim               mAim;
-        private ItemSelection     mItems;
-        private Keybinds          mKeybinds;
-        private Player            mPlayer;
-        private Server            mServer;
-        private Visuals           mVisuals;
+        public Aim               mAim;
+        internal ItemSelection     mItems;
+        internal Keybinds          mKeybinds;
+        internal Player            mPlayer;
+        internal Server            mServer;
+        internal Visuals           mVisuals;
 
         public int ContentId;
         public bool MenuVis;

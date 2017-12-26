@@ -14,9 +14,9 @@ using Object = UnityEngine.Object;
 using Player = SDG.Unturned.Player;
 #pragma warning disable 169
 
-namespace MikePure.MikePure.Framework.Handler
+namespace MikePure.MikePure.Framework.Handler 
 {
-    internal class HackDirector
+    internal class HackDirector : MonoBehaviour
     {
         #region TODO
 
@@ -112,7 +112,7 @@ namespace MikePure.MikePure.Framework.Handler
         public static void Start()
         {
             try {
-                abAssets = AssetBundle.LoadFromFile($@"{Application.dataPath}\\resoucemanager.assetbundle", 0U);
+                abAssets = AssetBundle.LoadFromFile($@"{Application.dataPath}\resoucemanager.assetbundle", 0U);
                 if(abAssets != null)
                     sSkin = abAssets.LoadAllAssets<GUISkin>().First();
             } catch(Exception e) { Log.e(e); }

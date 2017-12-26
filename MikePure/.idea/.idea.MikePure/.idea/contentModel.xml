@@ -25,6 +25,7 @@
             </e>
             <e p="Overrides" t="Include">
               <e p="OV_Player.cs" t="Include" />
+              <e p="OV_PlayerInput.cs" t="Include" />
             </e>
           </e>
           <e p="Framework" t="Include">
