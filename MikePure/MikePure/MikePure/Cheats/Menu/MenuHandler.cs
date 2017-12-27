@@ -46,7 +46,7 @@ namespace MikePure.MikePure.Cheats.Menu
 
             if (MenuVis)
             {
-                MenuRect = GUILayout.Window(0, MenuRect, MenuFunct, "<size=15><b><color=#009E06>Mike</color></b><i><color=#8F23C6>Pure</color></i></size>");
+                MenuRect = GUILayout.Window(0, MenuRect, MenuFunct, "<size=15><b><color=#009E06>MIKE</color></b><i><color=#8F23C6>PURE</color></i></size>");
                 
                 if (HackDirector.tCursor != null)
                 {
@@ -72,32 +72,32 @@ namespace MikePure.MikePure.Cheats.Menu
             //Menu Bar vertical section
             GUILayout.BeginVertical();
 
-            if (GUILayout.Button("<size=20><b>Aim</b></size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
+            if (GUILayout.Button("<size=20>Aim</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 1;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Visuals" ,GUILayout.Width(200),  GUILayout.Height(40)))
+            if (GUILayout.Button("<size=20>Visuals</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 2;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Player" ,GUILayout.Width(200),  GUILayout.Height(40)))
+            if (GUILayout.Button("<size=20>Player</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 3;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Server" ,GUILayout.Width(200),  GUILayout.Height(40)))
+            if (GUILayout.Button("<size=20>Server</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 4;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Item Filter" ,GUILayout.Width(200),  GUILayout.Height(40)))
+            if (GUILayout.Button("<size=20>Item Filter</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 5;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Keybinds" ,GUILayout.Width(200),  GUILayout.Height(40)))
+            if (GUILayout.Button("<size=20>Keybinds</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 6;
             
             GUILayout.EndVertical();

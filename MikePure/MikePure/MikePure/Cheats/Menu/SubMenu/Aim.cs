@@ -89,11 +89,11 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             //Top menu bar
             GUILayout.BeginHorizontal();
 
-            if (GUILayout.Button("Aimbot", GUILayout.Width(100), GUILayout.Height(40)))
+            if (GUILayout.Button("<size=15>Aimbot</size>", GUILayout.Width(100), GUILayout.Height(40)))
                 page = 1;
-            if (GUILayout.Button("Triggerbot", GUILayout.Width(100), GUILayout.Height(40)))
+            if (GUILayout.Button("<size=15>Triggerbot</size>", GUILayout.Width(100), GUILayout.Height(40)))
                 page = 2;
-            if (GUILayout.Button("Aimlock", GUILayout.Width(100), GUILayout.Height(40)))
+            if (GUILayout.Button("<size=15>Aimlock</size>", GUILayout.Width(100), GUILayout.Height(40)))
                 page = 3;
             GUILayout.EndHorizontal();
            
