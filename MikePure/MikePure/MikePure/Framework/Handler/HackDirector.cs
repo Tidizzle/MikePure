@@ -113,7 +113,7 @@ namespace MikePure.MikePure.Framework.Handler
         public static void Start()
         {
             try {
-                abAssets = AssetBundle.LoadFromFile($@"{Application.dataPath}\resoucemanager.assetbundle", 0U);
+                abAssets = AssetBundle.LoadFromFile($@"{Application.dataPath}\resourcemanager.assetbundle", 0U);
                 if(abAssets != null)
                     sSkin = abAssets.LoadAllAssets<GUISkin>().First();
             } catch(Exception e) { Log.e(e); }

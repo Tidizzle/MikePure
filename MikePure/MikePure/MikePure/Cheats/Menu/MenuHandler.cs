@@ -20,9 +20,9 @@ namespace MikePure.MikePure.Cheats.Menu
         public Rect MenuRect;
         public int width = 650;
         public int height = 364;
-        public Rect CursorRect = new Rect(10, 10, 20, 20);
-        
-        
+        public Rect CursorRect = new Rect(0, 0, 20, 20);
+
+
         public void Start()
         {
             AddSubMenus();
@@ -32,6 +32,7 @@ namespace MikePure.MikePure.Cheats.Menu
         public void Update()
         {
             if (HackDirector.bSpying) return;
+
         }
 
         public void OnGUI()
@@ -44,12 +45,26 @@ namespace MikePure.MikePure.Cheats.Menu
             GUI.skin = HackDirector.sSkin;
 
             if (MenuVis)
-                MenuRect = GUILayout.Window(0, MenuRect, MenuFunct, "MikePure");
+            {
+                MenuRect = GUILayout.Window(0, MenuRect, MenuFunct, "<size=15><b><color=#009E06>Mike</color></b><i><color=#8F23C6>Pure</color></i></size>");
+                
+                if (HackDirector.tCursor != null)
+                {
+                    GUI.depth = 0;
+                    GUI.color = new Color(1f, 1f, 1f, 0.8f);
+                    CursorRect.x = Input.mousePosition.x;
+                    CursorRect.y = Input.mousePosition.y;
+                    CursorRect.y = Screen.height - CursorRect.y;
+                    GUI.DrawTexture(CursorRect, HackDirector.tCursor);
+
+                }
+            }
 
         }
 
         public void MenuFunct(int id)
         {
+            
             GUILayout.BeginHorizontal();
             
             
@@ -57,43 +72,44 @@ namespace MikePure.MikePure.Cheats.Menu
             //Menu Bar vertical section
             GUILayout.BeginVertical();
 
-            if (GUILayout.Button("Aim" ,GUILayout.Width(220),  GUILayout.Height(40)))
+            if (GUILayout.Button("<size=20><b>Aim</b></size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 1;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Visuals" ,GUILayout.Width(220),  GUILayout.Height(40)))
+            if (GUILayout.Button("Visuals" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 2;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Player" ,GUILayout.Width(220),  GUILayout.Height(40)))
+            if (GUILayout.Button("Player" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 3;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Server" ,GUILayout.Width(220),  GUILayout.Height(40)))
+            if (GUILayout.Button("Server" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 4;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Item Filter" ,GUILayout.Width(220),  GUILayout.Height(40)))
+            if (GUILayout.Button("Item Filter" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 5;
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("Keybinds" ,GUILayout.Width(220),  GUILayout.Height(40)))
+            if (GUILayout.Button("Keybinds" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 6;
             
             GUILayout.EndVertical();
             
             GUILayout.Space(10f);
-            
+
             #endregion
-            
-            
-            
-            
+
+
+
+            GUI.depth = 1; //Cursor Fix
+
             //Menu Content section
             GUILayout.BeginVertical();
             switch (ContentId)
@@ -102,28 +118,29 @@ namespace MikePure.MikePure.Cheats.Menu
                         mAim.ContentGUI();
                         break;
                     case 2:
-                        mVisuals.GUI();
+                        mVisuals.ContentGUI();
                         break;
                     case 3:
-                        mPlayer.GUI();
+                        mPlayer.ContentGUI();
                         break;
                     case 4:
-                        mServer.GUI();
+                        mServer.ContentGUI();
                         break;
                     case 5:
-                        mItems.GUI();
+                        mItems.ContentGUI();
                         break;
                     case 6:
-                        mKeybinds.GUI();
+                        mKeybinds.ContentGUI();
                         break;
             }
             GUILayout.EndVertical();
+
+           
+
+
+            GUILayout.EndHorizontal();
             
-            
-            
-            
-            
-           GUILayout.EndHorizontal();
+
         }
         
         public void DestroySubMenus()

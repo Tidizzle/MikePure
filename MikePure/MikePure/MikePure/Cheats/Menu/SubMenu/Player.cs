@@ -25,7 +25,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             if (HackDirector.bSpying) return;
         }
     
-        public void GUI()
+        public void ContentGUI()
         {
             if (HackDirector.bSpying) return;
 
