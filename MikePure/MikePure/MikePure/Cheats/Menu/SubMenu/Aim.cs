@@ -129,11 +129,12 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             GUILayout.Space(5f);
             AimPlayers = GUILayout.Toggle(AimPlayers, "Aim Players", GUILayout.Width(200));
             AimZombies = GUILayout.Toggle(AimZombies, "Aim Zombies", GUILayout.Width(200));
-            GUILayout.Space(3f);
+            GUILayout.Space(5f);
             AimIgnoreWalls = GUILayout.Toggle(AimIgnoreWalls, "Ignore Walls", GUILayout.Width(200));
             GUILayout.Space(3f);
             AimInfDistance = GUILayout.Toggle(AimInfDistance, "Infinite Distance", GUILayout.Width(200));
             AimUseGunDistance = GUILayout.Toggle(AimUseGunDistance, "Use Gun Range", GUILayout.Width(200));
+            AimClosest = GUILayout.Toggle(AimClosest, "Aim Closest to Xhair", GUILayout.Width(200));
             GUILayout.Space(3f);
             AimSilent = GUILayout.Toggle(AimSilent, "Silent Aim", GUILayout.Width(200));
             GUILayout.Space(3f);
@@ -184,8 +185,6 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             GUILayout.Space(5f);
             TriggerPlayers = GUILayout.Toggle(TriggerPlayers, "Trigger Players", GUILayout.Width(200));
             TriggerZombies = GUILayout.Toggle(TriggerZombies, "Trigger Zombies", GUILayout.Width(200));
-            TriggerAnimals = GUILayout.Toggle(TriggerAnimals, "Trigger Zombies", GUILayout.Width(200));
-            TriggerVehicles = GUILayout.Toggle(TriggerVehicles, "Trigger Zombies", GUILayout.Width(200));
             GUILayout.Space(3f);
             TriggerGunRange = GUILayout.Toggle(TriggerGunRange, "Use Gun Range", GUILayout.Width(200));
             GUILayout.Space(3f);

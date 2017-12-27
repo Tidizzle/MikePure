@@ -44,6 +44,7 @@
                 <e p="NvOption.cs" t="Include" />
                 <e p="TargetLimb.cs" t="Include" />
               </e>
+              <e p="Friend.cs" t="Include" />
               <e p="GunAsset.cs" t="Include" />
               <e p="Keybind.cs" t="Include" />
               <e p="List" t="Include">

@@ -1,4 +1,5 @@
 ﻿using System;
+using SDG.Unturned;
 using UnityEngine;
 
 namespace MikePure.MikePure.Framework.Util
@@ -15,6 +16,17 @@ namespace MikePure.MikePure.Framework.Util
             };     
             
             return (float) Math.Sqrt(heading.x * heading.x + heading.y * heading.y + heading.z * heading.z);
+        }
+
+        public static Player GetPlayerFromTransform(Transform input)
+        {
+            foreach (var ply in Provider.clients)
+            {
+                if (ply.player.transform == input)
+                    return ply.player;
+            }
+
+            return Player.player;
         }
     }
 }

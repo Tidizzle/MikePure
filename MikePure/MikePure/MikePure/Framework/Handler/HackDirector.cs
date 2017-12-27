@@ -95,6 +95,7 @@ namespace MikePure.MikePure.Framework.Handler
         #endregion
 
         internal static GameObject    goMasterObj;
+        internal static bool          overridden;
 
         public static bool            bHackEnabled;
         public static bool            bSpying;
@@ -119,10 +120,6 @@ namespace MikePure.MikePure.Framework.Handler
 
             bHackEnabled = true;
             
-            MethodInfo Orig_AskScreenshot = typeof(Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
-            MethodInfo Over_AskScreenshot = typeof(OV_Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
-            RedirectionHelper.RedirectCalls(Orig_AskScreenshot, Over_AskScreenshot);
-            
         }    
 
         public static void Update()
@@ -136,13 +133,30 @@ namespace MikePure.MikePure.Framework.Handler
                 khHandler = goMasterObj.AddComponent<KeybindHandler>();
                 Object.DontDestroyOnLoad(mhHandler);
                 Object.DontDestroyOnLoad(khHandler);
+
+                if (overridden == false)
+                {
+                    MethodInfo Orig_AskScreenshot = typeof(Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
+                    MethodInfo Over_AskScreenshot = typeof(OV_Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
+                    RedirectionHelper.RedirectCalls(Orig_AskScreenshot, Over_AskScreenshot);
+
+                    MethodInfo Orig_sendRaycast = typeof(PlayerInput).GetMethod("sendRaycast", BindingFlags.Instance | BindingFlags.Public);
+                    MethodInfo Over_sendRaycast = typeof(OV_PlayerInput).GetMethod("sendRaycast", BindingFlags.Instance | BindingFlags.Public);
+                    RedirectionHelper.RedirectCalls(Orig_sendRaycast, Over_sendRaycast);
+
+                    overridden = true;
+                }
+                    
             }
 
             if (!Provider.isConnected || !bHackEnabled)
             {
-                mhHandler.DestroySubMenus();
-                Object.Destroy(goMasterObj);
-                mhHandler = null;
+                if (goMasterObj != null)
+                {
+                    mhHandler.DestroySubMenus();
+                    Object.Destroy(goMasterObj);
+                    mhHandler = null;
+                }
             }
         }
         

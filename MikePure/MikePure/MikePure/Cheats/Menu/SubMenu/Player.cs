@@ -13,8 +13,6 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         internal bool NoDrop; 
         internal float Fov; 
         internal bool RangeFinder; 
-        internal bool IncreaseInteractRange; 
-        internal bool QuickSalvage; 
         internal bool CameraFreeFlight = false; 
         
         public void Start()
