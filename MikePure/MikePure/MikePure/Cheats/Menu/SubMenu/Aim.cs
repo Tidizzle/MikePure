@@ -140,9 +140,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             GUILayout.Space(3f);
             AimWhitelistFriends = GUILayout.Toggle(AimWhitelistFriends, "Ignore Friends", GUILayout.Width(200));
             AimWhitelistAdmins = GUILayout.Toggle(AimWhitelistAdmins, "Ignore Admins", GUILayout.Width(200));
-            GUILayout.Space(3f);
-            Aim360 = GUILayout.Toggle(Aim360, "360 FOV", GUILayout.Width(200));
-            AimFovCircle = GUILayout.Toggle(AimFovCircle, "Show FOV Circle", GUILayout.Width(200));
+            
 
             
             GUILayout.EndVertical();
@@ -151,7 +149,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             //Column 2
             GUILayout.BeginVertical(GUILayout.MaxWidth(200));
 
-            if (GUILayout.Button($"Target Limb: {AimTargetLimb}"))
+            if (GUILayout.Button($"<size=15>Target Limb: {AimTargetLimb}</size>", GUILayout.Width(200)))
             {
                 Limb++;
 
@@ -169,6 +167,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             GUILayout.Label($"Aim FOV: {(int)AimFov}");
             AimFov = (int)GUILayout.HorizontalSlider(AimFov, 1, (int)Camera.main.fieldOfView);
                         
+            GUILayout.Space(3f);
+            Aim360 = GUILayout.Toggle(Aim360, "360 FOV", GUILayout.Width(200));
+            AimFovCircle = GUILayout.Toggle(AimFovCircle, "Show FOV Circle", GUILayout.Width(200));
             
             GUILayout.EndVertical();
             

@@ -1,93 +1,99 @@
 ﻿using MikePure.MikePure.Framework.Handler;
+using MikePure.MikePure.Framework.Types.Enum;
+using SDG.Unturned;
 using UnityEngine;
+// ReSharper disable MemberCanBePrivate.Global
 
 namespace MikePure.MikePure.Cheats.Menu.SubMenu
 {
-    public partial class Visuals : MonoBehaviour
+    internal partial class Visuals : MonoBehaviour
     {
-
-        private bool Player_Box2d;
-        private bool Player_Box3d;
-        private bool Player_Glow;
-        private bool Player_Skeleton;
-        //private bool Tracers;
-        private bool Player_Name;
-        private bool Player_ShowWeapon;
-        private bool Player_ShowDistance;
-
-
-        private bool Zombie_Box2d;
-        private bool Zombie_Box3d;
-        private bool Zombie_Skeleton;
-        //private bool Zombie_Tracers
-        private bool Zombie_ShowName;
-        private bool Zombie_ShowDistance;
+        public static bool EnableVisuals;
+        
+        public static bool Player_Box2d;
+        public static bool Player_Box3d;
+        public static bool Player_Glow;
+        public static bool Player_Skeleton;
+        //public static  bool Tracers;
+        public static bool Player_Name;
+        public static bool Player_ShowWeapon;
+        public static bool Player_ShowDistance;
 
 
-        private bool Item_Box3d;
-        private bool Item_ShowName;
-        private bool Item_ShowDistance;
+        public static bool Zombie_Box2d;
+        public static bool Zombie_Box3d;
+        public static bool Zombie_Skeleton;
+        //public static bool Zombie_Tracers;
+        public static bool Zombie_ShowName;
+        public static bool Zombie_ShowDistance;
 
 
-        private bool Vehicle_ShowName;
-        private bool Vehicle_ShowGas;
-        private bool Vehicle_ShowHealth;
-        private bool Vehicle_ShowDistance;
-        private bool Vehicle_FilterLocked;
+        public static bool Item_Box3d;
+        public static bool Item_ShowName;
+        public static bool Item_ShowDistance;
 
 
-        private bool Storages_ShowName;
-        private bool Storages_ShowDistance;
-        private bool Storages_FilterLocked;
+        public static bool Vehicle_ShowName;
+        public static bool Vehicle_ShowGas;
+        public static bool Vehicle_ShowHealth;
+        public static bool Vehicle_ShowDistance;
+        public static bool Vehicle_FilterLocked;
 
 
-        private bool Animal_Box3d;
-        private bool Animal_ShowName;
-        private bool Animal_ShowDistance;
+        public static bool Storages_ShowName;
+        public static bool Storages_ShowDistance;
+        public static bool Storages_FilterLocked;
+
+        public static bool Animal_ShowName;
+        public static bool Animal_ShowDistance;
 
 
-        private bool Misc_NoRain;
-        private bool Misc_NoFog;
-        private bool Misc_NoWater;
-        private bool Misc_mNV;
-        private bool Misc_cNV;
+        public static float Altitude;
+        public static NvType Nv;
 
 
-        private bool Setting_InfDistance;
-        private float Setting_Distance;
-        private float Setting_UpdateRate; //Member to set default value
+        public static bool Setting_InfDistance;
+        public static float Setting_Distance;
+        public static float Setting_UpdateRate; //Member to set default value
 
-        private int page;
+        public static int page;
 
         public void Start()
         {
-    
+            EnableVisuals = true;
+            
+            Setting_Distance = 200f;
+            Setting_UpdateRate = 20f;
+            
+            Nv = NvType.None;
+            
+            DerivedStart();
         }
     
         public void Update()
         {
-            if (HackDirector.bSpying) return;
+            
         }    
     
         public void ContentGUI()
         {
             if (HackDirector.bSpying) return;
-
-            if (UnityEngine.GUI.Button(new Rect(240, 25, 90, 30), "<size=20>Player</size>"))
+            
+            if (GUI.Button(new Rect(240, 25, 90, 30), "<size=13>Player</size>"))
                 page = 1;
-            if (UnityEngine.GUI.Button(new Rect(340, 25, 90, 30), "<size=20>Zombie</size>"))
+            if (GUI.Button(new Rect(340, 25, 90, 30), "<size=13>Zombie</size>"))
                 page = 2;
-            if (UnityEngine.GUI.Button(new Rect(440, 25, 90, 30), "<size=20>Item</size>"))
+            if (GUI.Button(new Rect(440, 25, 90, 30), "<size=13>Item</size>"))
                 page = 3;
-            if (UnityEngine.GUI.Button(new Rect(540, 25, 90, 30), "<size=20>Vehicles</size>"))
+            if (GUI.Button(new Rect(540, 25, 90, 30), "<size=13>Vehicles</size>"))
                 page = 4;
-            if (UnityEngine.GUI.Button(new Rect(240, 58, 90, 30), "<size=18>Storages</size>"))
+            if (GUI.Button(new Rect(240, 58, 90, 30), "<size=13>Storages</size>"))
                 page = 5;
-            if (UnityEngine.GUI.Button(new Rect(440, 58, 90, 30), "<size=20>Misc</size>"))
+            if (GUI.Button(new Rect(440, 58, 90, 30), "<size=13>Misc</size>"))
                 page = 6;
-            if (UnityEngine.GUI.Button(new Rect(540, 58, 90, 30), "<size=19>Settings</size>"))
+            if (GUI.Button(new Rect(540, 58, 90, 30), "<size=13>Settings</size>"))
                 page = 7;
-            if (UnityEngine.GUI.Button(new Rect(340, 58, 90, 30), "<size=20>Animals</size>"))
+            if (GUI.Button(new Rect(340, 58, 90, 30), "<size=13>Animals</size>"))
                 page = 8;
 
 
@@ -127,89 +133,137 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
         void PlayerPage()
         {
-            UnityEngine.GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Players:</size>");
+            GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Players:</size>");
 
-            Player_Box2d = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Player_Box2d, "2D Boxes");
-            Player_Box3d = UnityEngine.GUI.Toggle(new Rect(240, 143, 140, 20), Player_Box3d, "3D Boxes");
-            Player_Glow = UnityEngine.GUI.Toggle(new Rect(240, 166, 140, 20), Player_Glow, "Glow");
-            Player_Skeleton = UnityEngine.GUI.Toggle(new Rect(240, 189, 140, 20), Player_Skeleton, "Skeleton");
-            Player_Name = UnityEngine.GUI.Toggle(new Rect(240, 212, 140, 20), Player_Name, "Name");
-            Player_ShowWeapon = UnityEngine.GUI.Toggle(new Rect(240, 235, 140, 20), Player_ShowWeapon, "Weapon");
-            Player_ShowDistance = UnityEngine.GUI.Toggle(new Rect(240, 258, 140, 20), Player_ShowDistance, "Distance");
+            Player_Box2d = GUI.Toggle(new Rect(240, 120, 140, 20), Player_Box2d, "2D Boxes");
+            Player_Box3d = GUI.Toggle(new Rect(240, 143, 140, 20), Player_Box3d, "3D Boxes");
+            Player_Glow = GUI.Toggle(new Rect(240, 166, 140, 20), Player_Glow, "Glow");
+            Player_Skeleton = GUI.Toggle(new Rect(240, 189, 140, 20), Player_Skeleton, "Skeleton");
+            Player_Name = GUI.Toggle(new Rect(240, 212, 144, 20), Player_Name, "Name");
+            Player_ShowWeapon = GUI.Toggle(new Rect(240, 239, 140, 20), Player_ShowWeapon, "Weapon");
+            Player_ShowDistance = GUI.Toggle(new Rect(240, 262, 140, 20), Player_ShowDistance, "Distance");
+            if (GUI.Button(new Rect(240, 288, 140, 20), "Get High"))
+            {
+                SDG.Unturned.Player.player.life.askView(30);
+            }
+
         }
 
         void ZombiePage()
         {
-            UnityEngine.GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Zombies:</size>");
+            GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Zombies:</size>");
 
-            Zombie_Box2d = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Zombie_Box2d, "2D Boxes");
-            Zombie_Box3d = UnityEngine.GUI.Toggle(new Rect(240, 143, 140, 20), Zombie_Box3d, "3D Boxes");
-            Zombie_Skeleton = UnityEngine.GUI.Toggle(new Rect(240, 166, 140, 20), Zombie_Skeleton, "Skeleton");
-            Zombie_ShowName = UnityEngine.GUI.Toggle(new Rect(240, 189, 140, 20), Zombie_ShowName, "Name");
-            Zombie_ShowDistance = UnityEngine.GUI.Toggle(new Rect(240, 212, 140, 20), Zombie_ShowDistance, "Distance");
-
+            Zombie_Box2d = GUI.Toggle(new Rect(240, 120, 140, 20), Zombie_Box2d, "2D Boxes");
+            Zombie_Box3d = GUI.Toggle(new Rect(240, 143, 140, 20), Zombie_Box3d, "3D Boxes");
+            Zombie_Skeleton = GUI.Toggle(new Rect(240, 170, 140, 20), Zombie_Skeleton, "Skeleton");
+            Zombie_ShowName = GUI.Toggle(new Rect(240, 193, 140, 20), Zombie_ShowName, "Name");
+            Zombie_ShowDistance = GUI.Toggle(new Rect(240, 216, 140, 20), Zombie_ShowDistance, "Distance");
         }
 
         void ItemPage()
         {
-            UnityEngine.GUI.Label(new Rect(410, 91, 100, 30), "<size=20>Items:</size>");
+            GUI.Label(new Rect(410, 91, 100, 30), "<size=20>Items:</size>");
 
-            Item_Box3d = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Item_Box3d, "3D Boxes");
-            Item_ShowName = UnityEngine.GUI.Toggle(new Rect(240, 143, 140, 20), Item_ShowName, "Name");
-            Item_ShowDistance = UnityEngine.GUI.Toggle(new Rect(240, 166, 140, 20), Item_ShowDistance, "Distance");
+            Item_Box3d = GUI.Toggle(new Rect(240, 120, 140, 20), Item_Box3d, "3D Boxes");
+            Item_ShowName = GUI.Toggle(new Rect(240, 147, 140, 20), Item_ShowName, "Name");
+            Item_ShowDistance = GUI.Toggle(new Rect(240, 170, 140, 20), Item_ShowDistance, "Distance");
         }
 
         void VehiclePage()
         {
-            UnityEngine.GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Vehicles:</size>");
+            GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Vehicles:</size>");
 
-            Vehicle_ShowName = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Vehicle_ShowName, "Name");
-            Vehicle_ShowGas = UnityEngine.GUI.Toggle(new Rect(240, 143, 140, 20), Vehicle_ShowGas, "Gas");
-            Vehicle_ShowHealth = UnityEngine.GUI.Toggle(new Rect(240, 166, 140, 20), Vehicle_ShowHealth, "Health");
-            Vehicle_ShowDistance = UnityEngine.GUI.Toggle(new Rect(240, 189, 140, 20), Vehicle_ShowDistance, "Distance");
-            Vehicle_FilterLocked = UnityEngine.GUI.Toggle(new Rect(240, 212, 140, 20), Vehicle_FilterLocked, "Filter Locked");
+            Vehicle_ShowName = GUI.Toggle(new Rect(240, 120, 140, 20), Vehicle_ShowName, "Name");
+            Vehicle_ShowGas = GUI.Toggle(new Rect(240, 143, 140, 20), Vehicle_ShowGas, "Gas");
+            Vehicle_ShowHealth = GUI.Toggle(new Rect(240, 166, 140, 20), Vehicle_ShowHealth, "Health");
+            Vehicle_ShowDistance = GUI.Toggle(new Rect(240, 189, 140, 20), Vehicle_ShowDistance, "Distance");
+            Vehicle_FilterLocked = GUI.Toggle(new Rect(240, 212, 140, 20), Vehicle_FilterLocked, "Filter Locked");
         }
 
         void StoragePage()
         {
-            UnityEngine.GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Storages:</size>");
+            GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Storages:</size>");
 
-            Storages_ShowName = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Storages_ShowName, "Name");
-            Storages_ShowDistance = UnityEngine.GUI.Toggle(new Rect(240, 143, 140, 20), Storages_ShowDistance, "Distance");
-            Storages_FilterLocked = UnityEngine.GUI.Toggle(new Rect(240, 166, 140, 20), Storages_FilterLocked, "Filter Locked");
+            Storages_ShowName = GUI.Toggle(new Rect(240, 120, 140, 20), Storages_ShowName, "Name");
+            Storages_ShowDistance = GUI.Toggle(new Rect(240, 143, 140, 20), Storages_ShowDistance, "Distance");
+            Storages_FilterLocked = GUI.Toggle(new Rect(240, 166, 140, 20), Storages_FilterLocked, "Filter Locked");
         }
         void AnimalPage()
         {
-            UnityEngine.GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Animals:</size>");
+            GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Animals:</size>");
 
-            Animal_Box3d = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Animal_Box3d, "3D Box");
-            Animal_ShowName = UnityEngine.GUI.Toggle(new Rect(240, 143, 140, 20), Animal_ShowName, "Name");
-            Animal_ShowDistance = UnityEngine.GUI.Toggle(new Rect(240, 166, 140, 20), Animal_ShowDistance, "Distance");
+            Animal_ShowName = GUI.Toggle(new Rect(240, 120, 140, 20), Animal_ShowName, "Name");
+            Animal_ShowDistance = GUI.Toggle(new Rect(240, 143, 140, 20), Animal_ShowDistance, "Distance");
         }
 
         void MiscPage()
         {
-            UnityEngine.GUI.Label(new Rect(415, 91, 100, 30), "<size=20>Misc:</size>");
+            GUI.Label(new Rect(415, 91, 100, 30), "<size=20>Misc:</size>");
 
-            Misc_NoRain = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Misc_NoRain, "No Rain");
-            Misc_NoFog = UnityEngine.GUI.Toggle(new Rect(240, 143, 140, 20), Misc_NoFog, "No Fog");
-            Misc_NoWater = UnityEngine.GUI.Toggle(new Rect(240, 166, 140, 20), Misc_NoWater, "No Water");
-            Misc_mNV = UnityEngine.GUI.Toggle(new Rect(240, 189, 140, 20), Misc_mNV, "Military NightVision");
-            Misc_cNV = UnityEngine.GUI.Toggle(new Rect(240, 212, 140, 20), Misc_cNV, "Civilian NightVision");
+            if (GUI.Button(new Rect(240, 120, 140, 20), "No Rain"))
+            {
+                LevelLighting.rainyness = ELightingRain.NONE;
+            }
+            if (GUI.Button(new Rect(240, 143, 140, 20), "No Fog"))
+            {
+                RenderSettings.fog =(!RenderSettings.fog);
+            }
+            if (GUI.Button(new Rect(240, 166, 140, 20), "No Water"))
+            {
+                if (GUILayout.Button("No Water"))
+                {
+                    if (Altitude == 0f)
+                        Altitude = LevelLighting.seaLevel;
+                
+                    LevelLighting.seaLevel = LevelLighting.seaLevel == 0f ? Altitude : 0f;
+                }
+            }
+            
+            GUI.Label(new Rect(240, 189, 140, 20), $"Night Vision: {Nv}");
+            if(GUI.Button(new Rect(240, 212, 140, 20), "Military"))
+            {
+                Nv = NvType.Military;
+                
+                LevelLighting.vision = ELightingVision.MILITARY;
+                LevelLighting.updateLighting();
+                LevelLighting.updateLocal();
+                PlayerLifeUI.updateGrayscale();
+            }
+            if (GUI.Button(new Rect(240, 235, 140, 20), "Civilian"))
+            {
+                Nv = NvType.Civilian;
+                
+                LevelLighting.vision = ELightingVision.CIVILIAN;
+                LevelLighting.updateLighting();
+                LevelLighting.updateLocal();
+                PlayerLifeUI.updateGrayscale();
+            }
+            if (GUI.Button(new Rect(240, 258, 140, 20), "None"))
+            {
+                Nv = NvType.None;
+                
+                LevelLighting.vision = ELightingVision.NONE;
+                LevelLighting.updateLighting();
+                LevelLighting.updateLocal();
+                PlayerLifeUI.updateGrayscale();
+            }
+            
+            
+           
         }
 
         void SettingsPage()
         {
-            UnityEngine.GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Settings:</size>");
+            GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Settings:</size>");
 
-            Setting_InfDistance = UnityEngine.GUI.Toggle(new Rect(240, 120, 140, 20), Setting_InfDistance, "Infnite Distance");
+            Setting_InfDistance = GUI.Toggle(new Rect(240, 120, 140, 20), Setting_InfDistance, "Infnite Distance");
 
 
-            UnityEngine.GUI.Label(new Rect(240, 140, 140, 30), "Distance: Float");
-            Setting_Distance = UnityEngine.GUI.HorizontalSlider(new Rect(240, 160, 140, 20), Setting_Distance, 10, 100); //Tweak This
+            GUI.Label(new Rect(240, 140, 140, 30), $"Distance: {Setting_Distance}");
+            Setting_Distance = GUI.HorizontalSlider(new Rect(240, 160, 140, 20), Setting_Distance, 10, 1000); //Tweak This
 
-            UnityEngine.GUI.Label(new Rect(240, 170, 140, 30), "Refresh Rate: Float");
-            Setting_UpdateRate = UnityEngine.GUI.HorizontalSlider(new Rect(240, 190, 140, 20), Setting_UpdateRate, 10, 100); //Tweak This
+            GUI.Label(new Rect(240, 170, 140, 30), $"Refresh Rate: {Setting_UpdateRate}");
+            Setting_UpdateRate = GUI.HorizontalSlider(new Rect(240, 190, 140, 20), Setting_UpdateRate, 10, 100); //Tweak This
         }
 
     }

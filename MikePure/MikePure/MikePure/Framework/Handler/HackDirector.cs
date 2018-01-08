@@ -20,75 +20,45 @@ namespace MikePure.MikePure.Framework.Handler
     {
         #region TODO
 
-        //TODO: Implement Hook                                                V
-        //TODO: Generate AP call loop                                         V
-        //TODO: Generate HD methods                                           v                            
-        //TODO: Add GO Manipulation to HD                                     V
         //TODO: Implement local loading in LFH                                
         //TODO: Add methods for editing local files during runtime            
-        //TODO: populate coloroption enum                                     V
-        //TODO: populate nvoption enum                                        v
-        //TODO: add members to friend                                         v
-        //TODO: Add members to Gunasset based on tsunami                      v
-        //TODO: Add members to keybind                                        v
-        //TODO: Populate submenus with feature specific variables             
-        //TODO: Add sub methods for start, update, etc in partial classes
-        //TODO: flesh menuhandler with universal items
-        //TODO: Add menucontroller to menuhandler
-        //TODO: Populate logging based on tsunami                             v
-        //TODO: Populate PlayerManipulation with related methods              v
-        //TODO: Add SubObject to Menuhandler
         
-            #region Aim
-                //TODO: Flesh menu
-                //TODO: Add Aimbot
-                    //TODO: Add FOV Circle
+            #region Aim   
+                    //TODO: Add FOV Circle                                    
                     //TODO: Add distance to player, distance to xhair, danger settings
-                //TODO: Add Aimlock
-                //TODO: Add Triggerbot 
             #endregion
             #region Visuals
-                //TODO: Flesh Menu
-                //TODO: Add 2d box
-                //TODO: Add 3d Box
-                //TODO: Add Skeleton
-                //TODO: Add Snaplines (Tracers)
+                //TODO: Add 2d box                                                                  v
+                //TODO: Add 3d Box                                                                  v
+                //TODO: Add Skeleton                                                                v
                 //TODO: Add Glow (Just add this for main shit to save headache
-                //TODO: Add Labels
+                //TODO: Add Labels                                                                  v
                     //TODO: Add player Health, Name, Distance, Weapon, Etc
                     //TODO: Add zombie (ditto)
                     //TODO: Add Storages
                     //TODO: Add Vehicles
-                    //TODO: Add Items (Make sure to interface correctly with itemselection
+                    //TODO: Add Items (Make sure to interface correctly with itemselection)
                     //TODO: Add Animals
                     //TODO: Add Admin Overhead warning
                     //TODO: Add scaling
-                //TODO: Add admin chat warning
-                //TODO: Add Environment
-                //TODO: Add Getting high
-                //TODO: Add NV
-                //TODO: Add Set time
+                //TODO: Add admin chat warning                                                       
+                //TODO: Add Environment                                                             v
+                //TODO: Add Getting high                                                            v                       
+                //TODO: Add NV                                                                      v
+                //TODO: Add Set time        
                 //TODO: Add Set zoom / zoom without scope
-                //TODO: Add Color Interfacing
+                //TODO: Add Color Interfacing                                                       v
             #endregion
             #region ItemSelection
-                //TODO: Find way to get actual item id list for item selection
-                //TODO: Flesh Menu
-                //TODO: Interace with item menu
-            #endregion
-            #region Keybinds
-                //TODO: Flesh Menu
-                //TODO: Add Dynamic list
-                //TODO: Add Changing
-                //TODO: Add MenuToggle, Aimbottoggle, panic toggle, esptoggle, others
+                //TODO: Find way to get actual item id list for item selection            
             #endregion
             #region Player
-                //TODO: Flesh menu
-                    //TODO: Add Friends system (This is a royal pain in the ass btw)
-                //TODO: Add gun mods
-                //TODO: Add Camera freeflight
-                //TODO: Add Advanced Rangefinder / Player Info (Find better name for this)
-                //TODO: Add Vehicle fly
+                //TODO: Flesh menu                                                                  v
+                    //TODO: Add Friends system (This is a royal pain in the ass btw)                v
+                //TODO: Add gun mods                                                                v
+                //TODO: Add Camera freeflight                                                       v
+                //TODO: Add Advanced Rangefinder / Player Info (Find better name for this)          v
+                //TODO: Add Vehicle fly                                                             v
 
             #endregion
         
@@ -108,6 +78,8 @@ namespace MikePure.MikePure.Framework.Handler
         public static AssetBundle     abAssets;
         public static GUISkin         sSkin;
         public static Texture         tCursor;
+
+        
         
         
         public static void Start()
@@ -119,6 +91,7 @@ namespace MikePure.MikePure.Framework.Handler
             } catch(Exception e) { Log.e(e); }
 
             bHackEnabled = true;
+            
             
         }    
 
@@ -144,7 +117,11 @@ namespace MikePure.MikePure.Framework.Handler
                     MethodInfo Over_sendRaycast = typeof(OV_PlayerInput).GetMethod("sendRaycast", BindingFlags.Instance | BindingFlags.Public);
                     RedirectionHelper.RedirectCalls(Orig_sendRaycast, Over_sendRaycast);
 
-                    overridden = true;
+                    MethodInfo Orig_onClickExit = typeof(PlayerPauseUI).GetMethod("onClickedExitButton", BindingFlags.Static | BindingFlags.NonPublic);
+                    MethodInfo Over_onClickExit = typeof(OV_PlayerPauseUI).GetMethod("onClickedExitButton", BindingFlags.Static | BindingFlags.NonPublic);
+                    RedirectionHelper.RedirectCalls(Orig_onClickExit, Over_onClickExit);
+                    
+                overridden = true;
                 }
                     
             }

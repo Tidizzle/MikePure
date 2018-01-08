@@ -7,12 +7,12 @@ namespace MikePure.MikePure.Cheats.Menu
 {
     internal class MenuHandler : MonoBehaviour
     {
-        public Aim               mAim;
+        public Aim                 mAim;
         internal ItemSelection     mItems;
         internal Keybinds          mKeybinds;
         internal Player            mPlayer;
-        internal Server            mServer;
         internal Visuals           mVisuals;
+        internal Server            mServer;
 
         public int ContentId;
         public bool MenuVis;
@@ -44,6 +44,8 @@ namespace MikePure.MikePure.Cheats.Menu
 
             GUI.skin = HackDirector.sSkin;
 
+            mVisuals.DerivedOnGUI();
+            
             if (MenuVis)
             {
                 MenuRect = GUILayout.Window(0, MenuRect, MenuFunct, "<size=15><b><color=#009E06>MIKE</color></b><i><color=#8F23C6>PURE</color></i></size>");
@@ -72,6 +74,11 @@ namespace MikePure.MikePure.Cheats.Menu
             //Menu Bar vertical section
             GUILayout.BeginVertical();
 
+            if (GUILayout.Button("<size=20>Player</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
+                ContentId = 3;
+            
+            GUILayout.Space(7f);
+            
             if (GUILayout.Button("<size=20>Aim</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 1;
             
@@ -82,16 +89,11 @@ namespace MikePure.MikePure.Cheats.Menu
             
             GUILayout.Space(7f);
             
-            if (GUILayout.Button("<size=20>Player</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
-                ContentId = 3;
-            
-            GUILayout.Space(7f);
-            
             if (GUILayout.Button("<size=20>Server</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 4;
             
             GUILayout.Space(7f);
-            
+                        
             if (GUILayout.Button("<size=20>Item Filter</size>" ,GUILayout.Width(200),  GUILayout.Height(40)))
                 ContentId = 5;
             
@@ -123,14 +125,14 @@ namespace MikePure.MikePure.Cheats.Menu
                     case 3:
                         mPlayer.ContentGUI();
                         break;
-                    case 4:
-                        mServer.ContentGUI();
-                        break;
                     case 5:
                         mItems.ContentGUI();
                         break;
                     case 6:
                         mKeybinds.ContentGUI();
+                        break;
+                    case 4:
+                        mServer.ContentGUI();
                         break;
             }
             GUILayout.EndVertical();

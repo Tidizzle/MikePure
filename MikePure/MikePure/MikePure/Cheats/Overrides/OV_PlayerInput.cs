@@ -13,8 +13,7 @@ namespace MikePure.MikePure.Cheats.Overrides
     {
         private PlayerInputPacket GetLatestPacket()
         {
-            List<PlayerInputPacket> privateField = (List < PlayerInputPacket > )Player.player.input.GetType().GetField("clientsidePackets", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(Player.player.input);
-            //Player.player.input.GetPrivateField<List<PlayerInputPacket>>("clientsidePackets");
+            List<PlayerInputPacket> privateField = (List<PlayerInputPacket>)Player.player.input.GetType().GetField("clientsidePackets", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(Player.player.input);
             if (privateField == null)
                 return null;
             return privateField[privateField.Count - 1];
@@ -24,7 +23,7 @@ namespace MikePure.MikePure.Cheats.Overrides
         {
             if (Aim.EnableAimbot && Aim.AimSilent && Aim.target != null)
             {
-                Vector3 normal = (Aim.GetLimbPosition(Aim.target.transform, "Skull") - Player.player.look.aim.position).normalized;
+                Vector3 normal = (Aim.GetLimbPosition(Aim.target, "Skull") - Player.player.look.aim.position).normalized;
                 info = DamageTool.raycast(new Ray(Player.player.look.aim.position, normal), 512f, RayMasks.DAMAGE_CLIENT);
             }
             if (Provider.isServer) // doesnt mess up singleplayer
@@ -77,13 +76,13 @@ namespace MikePure.MikePure.Cheats.Overrides
                 PlayerInputPacket playerInputPacket = GetLatestPacket();
                 if (playerInputPacket.clientsideInputs == null)
                     playerInputPacket.clientsideInputs = new List<RaycastInfo>();
-                if (Aim.EnableAimbot && Aim.AimSilent && Aim.target != null)
+                if (Aim.EnableAimbot  && Aim.AimSilent && Aim.target != null)
                 {
                     var player = Tools.GetPlayerFromTransform(Aim.target);
                     if (player != null)
                     {
                         info.player = player;
-                        info.limb = ELimb.SKULL;    
+                        info.limb = ELimb.SKULL;
                     }
                 }
                 playerInputPacket.clientsideInputs.Add(info);

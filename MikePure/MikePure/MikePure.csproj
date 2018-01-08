@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MikePure</RootNamespace>
     <AssemblyName>MikePure</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -60,18 +60,20 @@
     <Compile Include="MikePure\Cheats\Menu\KeybindHandler.cs" />
     <Compile Include="MikePure\Cheats\Menu\MenuHandler.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Aim.cs" />
-    <Compile Include="MikePure\Cheats\Menu\SubMenu\Server.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\ItemSelection.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Keybinds.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Player.cs" />
+    <Compile Include="MikePure\Cheats\Menu\SubMenu\Server.cs" />
     <Compile Include="MikePure\Cheats\Menu\SubMenu\Visuals.cs" />
     <Compile Include="MikePure\Cheats\Overrides\OV_Player.cs" />
     <Compile Include="MikePure\Cheats\Overrides\OV_PlayerInput.cs" />
+    <Compile Include="MikePure\Cheats\Overrides\OV_PlayerPauseUI.cs" />
     <Compile Include="MikePure\Framework\Handler\AutoPilot.cs" />
     <Compile Include="MikePure\Framework\Handler\HackDirector.cs" />
     <Compile Include="MikePure\Framework\Handler\Hook.cs" />
     <Compile Include="MikePure\Framework\Loader\LocalFileEditor.cs" />
     <Compile Include="MikePure\Framework\Loader\LocalFileHelper.cs" />
+    <Compile Include="MikePure\Framework\Types\BonePair.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\ColorOption.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\NvOption.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\TargetLimb.cs" />

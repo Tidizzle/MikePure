@@ -10,6 +10,7 @@ using MikePure.MikePure.Framework.Types.List;
 using SDG.Unturned;
 using UnityEngine;
 using Player = SDG.Unturned.Player;
+using Tools = MikePure.MikePure.Framework.Util.Tools;
 
 namespace MikePure.MikePure.Cheats.Menu.SubMenu
 {
@@ -66,8 +67,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
 		public void UpdateAim()
 		{
-			target = null;	
-		    UpdateAimLists();
+		    target = null;
 		    
 		    if (EnableAimbot)
 		    {			    
@@ -88,7 +88,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
 			    if (AimZombies)
 			    {
-				    foreach (var zombie in Zombies)
+				    foreach (var zombie in Visuals.ZombieList)
 				    {
 					    if (zombie.isDead == false)
 					    {
@@ -193,17 +193,18 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 				    var xVal = quaternion2.eulerAngles.x;
 						
 				    if (xVal <= 90f)
+				    {
 					    xVal += 90f;
+				    }
 				    if (xVal > 180f)
+				    {
 					    xVal -= 270f;
+				    }	
 						
 				    Yaw.SetValue(SDG.Unturned.Player.player.look, quaternion2.eulerAngles.y);
-				    Pitch.SetValue(SDG.Unturned.Player.player.look, xVal);
-						
+				    Pitch.SetValue(SDG.Unturned.Player.player.look, xVal);		
 		        }
-		    
 		    }
-		    
 		}
 
 	
@@ -225,53 +226,6 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 		    }
 			
 		    return result;
-	    }
-
-	    public void UpdateAimLists()
-	    {
-		    if (AimZombies)
-		    {
-			    if (ZombieUpdate > 10f)
-			    {
-				    
-				    var newest = new List<Zombie>();
-				    foreach (var region in ZombieManager.regions)
-				    {
-					    foreach (var zombie in region.zombies)
-					    {
-						    newest.Add(zombie);
-					    }
-				    }
-
-				    foreach (var zombie in Zombies)
-				    {
-					    var index = newest.IndexOf(zombie);
-					    if (index == -1)
-						    Zombies.Remove(zombie);
-				    }
-
-				    foreach (var newzombie in newest)
-				    {
-					    var index = Zombies.IndexOf(newzombie);
-					    if(index == -1)
-						    Zombies.Add(newzombie);
-				    }
-				    
-				    ZombieUpdate = 0;
-			    }
-			    else
-				    ZombieUpdate++;
-		    }
-		    else if (!AimZombies && Zombies.Count > 0)
-		    {
-			    if (!ZombieFlag)
-				    ZombieFlag = true;
-			    else if (ZombieFlag)
-			    {
-				    Zombies = new List<Zombie>();
-				    ZombieFlag = false;
-			    }
-		    }
 	    }
 
 	    public bool CanSee(Transform transform)

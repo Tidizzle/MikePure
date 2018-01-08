@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using MikePure.MikePure.Cheats.Menu.SubMenu;
 using MikePure.MikePure.Framework.Handler;
 using MikePure.MikePure.Framework.Types;
 using SDG.Unturned;
+using Steamworks;
 using UnityEngine;
 
 namespace MikePure.MikePure.Cheats.Menu
@@ -16,13 +18,14 @@ namespace MikePure.MikePure.Cheats.Menu
         public KeyCode EspToggle;
         
         
-        public bool bChanging;
+        public bool Changing;
+        public int ChangeFocus;
         
         public void Start()
         {
             //Temporary while we set up changing
             WindowKey = KeyCode.F1;
-            AimbotToggle = KeyCode.RightControl;
+            AimbotToggle = KeyCode.LeftControl;
             InstaDisconnect = KeyCode.Pause;
             EspToggle = KeyCode.LeftAlt;
 
@@ -32,9 +35,29 @@ namespace MikePure.MikePure.Cheats.Menu
         {
             if (Event.current.type == EventType.KeyDown)
             {
-                if (bChanging)
+                if (Changing)
                 {
-                    //Implement when changing keys is enabled
+                    var key = Event.current.keyCode;
+
+                    if (key == WindowKey || key == AimbotToggle || key == InstaDisconnect || key == EspToggle) return;
+
+                    switch (ChangeFocus)
+                    {
+                        case 1:
+                            WindowKey = key;
+                            break;
+                        case 2:
+                            AimbotToggle = key;
+                            break;
+                        case 3:
+                            EspToggle = key;
+                            break;
+                        case 4:
+                            InstaDisconnect = key;
+                            break;
+                    }
+
+                    Changing = false;
                 }
                 else
                 {
@@ -56,17 +79,17 @@ namespace MikePure.MikePure.Cheats.Menu
                         }
                     }
                     else if (pressed == AimbotToggle)
-                    {
-                        
-                    }
+                        Aim.EnableAimbot = !Aim.EnableAimbot;
                     else if (pressed == InstaDisconnect)
                     {
-
+                        var psi = new ProcessStartInfo();
+                        psi.FileName = "cmd.exe";
+                        psi.CreateNoWindow = true;
+                        psi.Arguments = "/c taskkill /F /IM Unturned.exe /T";
+                        Process.Start(psi);
                     }
                     else if (pressed == EspToggle)
-                    {
-                        
-                    }
+                        Visuals.EnableVisuals = !Visuals.EnableVisuals;
                     else if (pressed == KeyCode.Escape && HackDirector.mhHandler.MenuVis)
                     {
                         HackDirector.mhHandler.MenuVis = false;

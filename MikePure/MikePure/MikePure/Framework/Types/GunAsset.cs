@@ -6,46 +6,47 @@ namespace MikePure.MikePure.Framework.Types
     internal class GunAsset
     {
         public System.Guid guid;
-        public float fRecoilMinX;
-        public float fRecoilMinY;
-        public float fRecoilMaxX;
-        public float fRecoilMaxY;
+        public float recoilminx;
+        public float recoilminy;
+        public float recoilmaxx;
+        public float recoilmaxy;
 
-        public float fSpreadAim;
-        public float fSpreadHip;
+        public float spreadaim;
+        public float spreadhip;
 
-        public float fShakeMaxX;
-        public float fShakeMaxY;
-        public float fShakeMaxZ;
-        public float fShakeMinX;
-        public float fShakeMinY;
-        public float fShakeMinZ;
+        public float shakemaxx;
+        public float shakemaxy;
+        public float shakemaxz;
+        public float shakeminx;
+        public float shakeminy;
+        public float shakeminz;
 
-        public float fBallisticForce;
-        public float fBallisticDrop;
-    
+        public float ballisticforce;
+        public float ballisticdrop;
+        
         public GunAsset(ItemGunAsset input)
         {
-            fRecoilMaxX = input.recoilMax_x;
-            fRecoilMaxY = input.recoilMax_y;
-            fRecoilMinX = input.recoilMin_x;
-            fRecoilMinY = input.recoilMin_y;
+            recoilmaxx = input.recoilMax_x;
+            recoilmaxy = input.recoilMax_y;
+            recoilminx = input.recoilMin_x;
+            recoilminy = input.recoilMin_y;
 
-            fSpreadAim = input.spreadAim;
-            fSpreadHip = input.spreadHip;
+            spreadaim = input.spreadAim;
+            spreadhip = input.spreadHip;
 
-            fShakeMaxX = input.shakeMax_x;
-            fShakeMaxY = input.shakeMax_y;
-            fShakeMaxZ = input.shakeMax_z;
-            fShakeMinX = input.shakeMin_x;
-            fShakeMinY = input.shakeMin_y;
-            fShakeMinZ = input.shakeMin_z;
+            shakemaxx = input.shakeMax_x;
+            shakemaxy = input.shakeMax_y;
+            shakemaxz = input.shakeMax_z;
+            shakeminx = input.shakeMin_x;
+            shakeminy = input.shakeMin_y;
+            shakeminz = input.shakeMin_z;
 
-            fBallisticForce = input.ballisticForce;
-            fBallisticDrop = input.ballisticDrop;
-        
+            ballisticforce = input.ballisticForce;
+            ballisticdrop = input.ballisticDrop;
+            
             guid = input.GUID;
         }
+
 
     }
 }

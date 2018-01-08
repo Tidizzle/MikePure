@@ -26,6 +26,7 @@
             <e p="Overrides" t="Include">
               <e p="OV_Player.cs" t="Include" />
               <e p="OV_PlayerInput.cs" t="Include" />
+              <e p="OV_PlayerPauseUI.cs" t="Include" />
             </e>
           </e>
           <e p="Framework" t="Include">
@@ -39,6 +40,7 @@
               <e p="LocalFileHelper.cs" t="Include" />
             </e>
             <e p="Types" t="Include">
+              <e p="BonePair.cs" t="Include" />
               <e p="Enum" t="Include">
                 <e p="ColorOption.cs" t="Include" />
                 <e p="NvOption.cs" t="Include" />

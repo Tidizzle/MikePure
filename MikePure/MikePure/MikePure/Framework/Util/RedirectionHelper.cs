@@ -22,7 +22,6 @@ namespace MikePure.MikePure.Framework.Util
         {
             var fptr1 = from.MethodHandle.GetFunctionPointer();
             var fptr2 = to.MethodHandle.GetFunctionPointer();
-            Log.l("Patching from " + fptr1 + " to " + fptr2);
             PatchJumpTo(fptr1, fptr2);
         }
 
