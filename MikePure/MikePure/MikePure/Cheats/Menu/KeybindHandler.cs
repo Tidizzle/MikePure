@@ -27,7 +27,7 @@ namespace MikePure.MikePure.Cheats.Menu
             WindowKey = KeyCode.F1;
             AimbotToggle = KeyCode.LeftControl;
             InstaDisconnect = KeyCode.Pause;
-            EspToggle = KeyCode.LeftAlt;
+            EspToggle = KeyCode.Delete;
 
         }
 

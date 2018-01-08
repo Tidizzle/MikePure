@@ -31,7 +31,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         {
             if (HackDirector.bSpying) return;
             
-            EnableFilter = GUI.Toggle(new Rect(240, 20, 140, 20), EnableFilter, "Enable Filter");
+            EnableFilter = GUI.Toggle(new Rect(240, 30, 140, 20), EnableFilter, "Enable Filter");
 
             FilterClothes = GUI.Toggle(new Rect(240, 60, 140, 20), FilterClothes, "Clothes");
             FilterPacks = GUI.Toggle(new Rect(240, 83, 140, 20), FilterPacks, "Packs");

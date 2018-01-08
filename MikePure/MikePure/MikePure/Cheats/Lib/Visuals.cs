@@ -191,6 +191,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             {
                 foreach (var player in Provider.clients)
                 {
+                    if (player.player.life.isDead) return;
                     if (player.player == SDG.Unturned.Player.player) return;
                     var dist = Setting_InfDistance ? 10000 : Setting_Distance;
 
@@ -211,6 +212,8 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             {
                 foreach (var zombie in ZombieList)
                 {
+                    if (zombie.isDead) return;
+
                     var dist = Setting_InfDistance ? 10000 : Setting_Distance;
 
                     if (Vector3.Distance(main.transform.position, zombie.transform.position) <= dist)
@@ -232,6 +235,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             {
                 foreach (var player in Provider.clients)
                 {
+                    if (player.player.life.isDead) return;
                     if (player.player == SDG.Unturned.Player.player) return;
                     var dist = Setting_InfDistance ? 10000 : Setting_Distance;
 
@@ -252,6 +256,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             {
                 foreach (var zombie in ZombieList)
                 {
+                    if (zombie.isDead) return;
                     var dist = Setting_InfDistance ? 10000 : Setting_Distance;
                     
                     if (Vector3.Distance(main.transform.position, zombie.transform.position) <= dist)
@@ -307,6 +312,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             {
                 foreach (var player in Provider.clients)
                 {
+                    if (player.player.life.isDead) return;
                     if (player.player == SDG.Unturned.Player.player) return;
                     var dist = Setting_InfDistance ? 10000 : Setting_Distance;
 
@@ -403,6 +409,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             {
                 foreach (var zombie in ZombieList)
                 {
+                    if (zombie.isDead) return;
                     var dist = Setting_InfDistance ? 10000 : Setting_Distance;
                 
                     if (Vector3.Distance(main.transform.position, zombie.transform.position) <= dist && !zombie.isDead)
@@ -591,6 +598,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 
                 foreach (var player in Provider.clients)
                 {
+                    if (player.player.life.isDead) return;
                     if (player.player == SDG.Unturned.Player.player) return;
 
                     var dist = Vector3.Distance(main.transform.position, player.player.transform.position);
@@ -617,7 +625,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
                         if (Player_ShowDistance && raw.Length > 0)
                             raw += $"\n<color=#ffffff>{Math.Round(dist, 0)}</color>";
-                        else
+                        else if(Player_ShowDistance)
                             raw += $"<color=#ffffff>{Math.Round(dist, 0)}</color>";
 
 
@@ -638,6 +646,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 
                 foreach (var zombie in ZombieList)
                 {
+                    if (zombie.isDead) return;
                     var dist = Vector3.Distance(main.transform.position, zombie.transform.position);
                     if (dist <= maxdist && isVis(zombie.transform))
                     {
@@ -648,7 +657,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
                         if (Zombie_ShowDistance && raw.Length > 0)
                             raw += $"\n<color=#ffffff>{Math.Round(dist,0)}</color>";
-                        else
+                        else if (Zombie_ShowDistance)
                             raw += $"<color=#ffffff>{Math.Round(dist,0)}</color>";
 
 
@@ -692,7 +701,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
                         if (Item_ShowDistance && raw.Length > 0)
                             raw += $"\n<color=#ffffff>{Math.Round(dist,0)}</color>";
-                        else
+                        else if (Item_ShowDistance)
                             raw += $"<color=#ffffff>{Math.Round(dist,0)}</color>";
 
 
@@ -725,6 +734,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
                 foreach (var veh in filteredList)
                 {
+                    if (veh.health == 0) return;
                     var dist = Vector3.Distance(main.transform.position, veh.transform.position);
                     if (dist <= maxdist && isVis(veh.transform))
                     {
@@ -735,17 +745,17 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
                         if (Vehicle_ShowHealth && raw.Length > 0)
                             raw += $"\nHealth: {veh.health}/{veh.asset.healthMax}";
-                        else
+                        else if (Vehicle_ShowHealth)
                             raw += $"Health: {veh.health}/{veh.asset.healthMax}";
 
                         if (Vehicle_ShowGas && raw.Length > 0)
                             raw += $"\nGas: {veh.fuel}/{veh.asset.fuelMax}";
-                        else
+                        else if (Vehicle_ShowGas)
                             raw += $"Gas: {veh.fuel}/{veh.asset.fuelMax}";
                         
                         if (Vehicle_ShowDistance && raw.Length > 0)
                             raw += $"\n<color=#ffffff>{Math.Round(dist,0)}</color>";
-                        else
+                        else if (Vehicle_ShowDistance) 
                             raw += $"<color=#ffffff>{Math.Round(dist,0)}</color>";
 
 
@@ -788,7 +798,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                         
                         if (Storages_ShowDistance && raw.Length > 0)
                             raw += $"\n<color=#ffffff>{Math.Round(dist,0)}</color>";
-                        else
+                        else if (Storages_ShowDistance) 
                             raw += $"<color=#ffffff>{Math.Round(dist,0)}</color>";
 
 
@@ -807,17 +817,18 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 
                 foreach (var animal in AnimalManager.animals)
                 {
+                    if (animal.isDead) return;
                     var dist = Vector3.Distance(main.transform.position, animal.transform.position);
                     if (dist <= maxdist && isVis(animal.transform))
                     {
                         var raw = "";
 
                         if (Animal_ShowName)
-                            raw += animal.name;
+                            raw += animal.asset.animalName;
 
                         if (Animal_ShowDistance && raw.Length > 0)
                             raw += $"\n<color=#ffffff>{Math.Round(dist,0)}</color>";
-                        else
+                        else if (Animal_ShowDistance)
                             raw += $"<color=#ffffff>{Math.Round(dist,0)}</color>";
 
 

@@ -33,6 +33,7 @@ namespace MikePure.MikePure.Cheats.Menu
         {
             if (HackDirector.bSpying) return;
 
+            Visuals.EnableVisuals = !MenuVis;
         }
 
         public void OnGUI()

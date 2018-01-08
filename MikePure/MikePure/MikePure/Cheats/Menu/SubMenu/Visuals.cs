@@ -142,10 +142,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             Player_Name = GUI.Toggle(new Rect(240, 212, 144, 20), Player_Name, "Name");
             Player_ShowWeapon = GUI.Toggle(new Rect(240, 239, 140, 20), Player_ShowWeapon, "Weapon");
             Player_ShowDistance = GUI.Toggle(new Rect(240, 262, 140, 20), Player_ShowDistance, "Distance");
-            if (GUI.Button(new Rect(240, 288, 140, 20), "Get High"))
-            {
-                SDG.Unturned.Player.player.life.askView(30);
-            }
+            
 
         }
 
@@ -200,27 +197,25 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         {
             GUI.Label(new Rect(415, 91, 100, 30), "<size=20>Misc:</size>");
 
-            if (GUI.Button(new Rect(240, 120, 140, 20), "No Rain"))
+            if (GUI.Button(new Rect(240, 120, 140, 30), "<size=13>No Rain</size>"))
             {
                 LevelLighting.rainyness = ELightingRain.NONE;
             }
-            if (GUI.Button(new Rect(240, 143, 140, 20), "No Fog"))
+            if (GUI.Button(new Rect(240, 153, 140, 30), "<size=13>No Fog</size>"))
             {
                 RenderSettings.fog =(!RenderSettings.fog);
             }
-            if (GUI.Button(new Rect(240, 166, 140, 20), "No Water"))
+            if (GUI.Button(new Rect(240, 186, 140, 30), "<size=13>No Water</size>"))
             {
-                if (GUILayout.Button("No Water"))
-                {
-                    if (Altitude == 0f)
-                        Altitude = LevelLighting.seaLevel;
-                
-                    LevelLighting.seaLevel = LevelLighting.seaLevel == 0f ? Altitude : 0f;
-                }
+
+                if (Altitude == 0f)
+                    Altitude = LevelLighting.seaLevel;
+            
+                LevelLighting.seaLevel = LevelLighting.seaLevel == 0f ? Altitude : 0f;
             }
             
-            GUI.Label(new Rect(240, 189, 140, 20), $"Night Vision: {Nv}");
-            if(GUI.Button(new Rect(240, 212, 140, 20), "Military"))
+            GUI.Label(new Rect(240, 219, 140, 35), $"<size=14>Night Vision: {Nv}</size>");
+            if(GUI.Button(new Rect(240, 252, 140, 30), "<size=13>Military</size>"))
             {
                 Nv = NvType.Military;
                 
@@ -229,7 +224,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 LevelLighting.updateLocal();
                 PlayerLifeUI.updateGrayscale();
             }
-            if (GUI.Button(new Rect(240, 235, 140, 20), "Civilian"))
+            if (GUI.Button(new Rect(240, 285, 140, 30), "<size=13>Civilian</size>"))
             {
                 Nv = NvType.Civilian;
                 
@@ -238,7 +233,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 LevelLighting.updateLocal();
                 PlayerLifeUI.updateGrayscale();
             }
-            if (GUI.Button(new Rect(240, 258, 140, 20), "None"))
+            if (GUI.Button(new Rect(240, 318, 140, 30), "<size=13>None</size>"))
             {
                 Nv = NvType.None;
                 
