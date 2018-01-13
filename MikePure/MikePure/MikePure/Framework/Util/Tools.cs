@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using SDG.Unturned;
 using UnityEngine;
 
@@ -6,6 +8,8 @@ namespace MikePure.MikePure.Framework.Util
 {
     internal static class Tools
     {
+        internal static bool Validator(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors) => true;
+        
         public static float GetDistance(Vector3 origin, Vector3 destination)
         {
             var heading = new Vector3

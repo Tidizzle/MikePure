@@ -74,6 +74,7 @@
     <Compile Include="MikePure\Framework\Loader\LocalFileEditor.cs" />
     <Compile Include="MikePure\Framework\Loader\LocalFileHelper.cs" />
     <Compile Include="MikePure\Framework\Types\BonePair.cs" />
+    <Compile Include="MikePure\Framework\Types\Enum\Bones.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\ColorOption.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\NvOption.cs" />
     <Compile Include="MikePure\Framework\Types\Enum\TargetLimb.cs" />

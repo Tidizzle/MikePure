@@ -92,7 +92,7 @@ namespace MikePure.MikePure.Framework.Handler
 
             bHackEnabled = true;
             
-            
+            Log.log("Mikepure Loaded");
         }    
 
         public static void Update()

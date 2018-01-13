@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Server.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Server.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="111" column="14" lean-forward="true" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
+            <state relative-caret-position="1380">
+              <caret line="111" column="14" lean-forward="false" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
               <folding>
                 <marker date="1515384943189" expanded="true" signature="6:224" ph="..." />
                 <marker date="1515384943189" expanded="true" signature="273:3247" ph="{...}" />
@@ -45,6 +45,113 @@
                 <marker date="1515384943189" expanded="true" signature="2149:2314" ph="/* if (player.player == SDG.Unturned.Player.player) return; ... */" />
                 <marker date="1515384943189" expanded="true" signature="2426:2580" ph="{...}" />
                 <marker date="1515384943189" expanded="true" signature="2785:3172" ph="/* Friends list ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuHandler.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1542">
+              <caret line="166" column="9" lean-forward="false" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+              <folding>
+                <marker date="1515454599414" expanded="true" signature="6:180" ph="..." />
+                <marker date="1515454599414" expanded="true" signature="221:5241" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="270:5239" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="782:939" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="969:1082" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="1111:2084" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="1436:2073" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="1674:2059" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="2123:4491" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="2226:3571" ph="menu bar" />
+                <marker date="1515454599414" expanded="true" signature="3720:4377" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="4538:4737" ph="{...}" />
+                <marker date="1515454599414" expanded="true" signature="4772:5224" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HackDirector.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/HackDirector.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="94" column="19" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+              <folding>
+                <marker date="1515466742612" expanded="true" signature="6:467" ph="..." />
+                <marker date="1515466742612" expanded="true" signature="543:6564" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="593:6562" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="608:3448" ph="TODO" />
+                <marker date="1515466742612" expanded="true" signature="630:779" ph="/* TODO: Implement local loading in LFH ... */" />
+                <marker date="1515466742612" expanded="true" signature="801:1004" ph="Aim" />
+                <marker date="1515466742612" expanded="true" signature="836:981" ph="/* TODO: Add FOV Circle ... */" />
+                <marker date="1515466742612" expanded="true" signature="1017:2609" ph="Visuals" />
+                <marker date="1515466742612" expanded="true" signature="1049:2586" ph="/* TODO: Add 2d box                                                                  v ... */" />
+                <marker date="1515466742612" expanded="true" signature="2622:2757" ph="ItemSelection" />
+                <marker date="1515466742612" expanded="true" signature="2770:3420" ph="Player" />
+                <marker date="1515466742612" expanded="true" signature="2801:3396" ph="/* TODO: Flesh menu                                                                  v ... */" />
+                <marker date="1515466742612" expanded="true" signature="4022:4415" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="4049:4285" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="4456:6547" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="4612:6239" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="4964:6204" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="6296:6537" ph="{...}" />
+                <marker date="1515466742612" expanded="true" signature="6351:6523" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+              <folding>
+                <marker date="1515466742905" expanded="true" signature="6:247" ph="..." />
+                <marker date="1515466742905" expanded="true" signature="331:1163" ph="{...}" />
+                <marker date="1515466742905" expanded="true" signature="363:1161" ph="{...}" />
+                <marker date="1515466742905" expanded="true" signature="731:1155" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeybindHandler.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/KeybindHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="88" selection-end-column="43" />
+              <folding>
+                <marker date="1515377632126" expanded="true" signature="6:264" ph="..." />
+                <marker date="1515377632126" expanded="true" signature="305:3558" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="357:3556" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="625:864" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="894:3532" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="961:3521" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="1005:1796" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="1238:1739" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="1817:3507" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="1939:2509" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="2112:2284" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="2313:2487" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="2682:3007" ph="{...}" />
+                <marker date="1515377632126" expanded="true" signature="3220:3443" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bones.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/Enum/Bones.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding>
+                <marker date="1515454733392" expanded="true" signature="48:117" ph="{...}" />
+                <marker date="1515454733392" expanded="true" signature="73:115" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,6 +176,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F863D9-9421-4006-AED0-BD17AB690B95/58/9577264c/Math.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E80CA65C-6DCB-42C8-827C-A1857C70D06B/d1/31fa2d46/Camera.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD1D6ABC-5F85-45B9-8293-9E0A02964946/89/fd27e711/PlayerLook.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/Enum/Bones.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E80CA65C-6DCB-42C8-827C-A1857C70D06B/10/1f100562/Vector3.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Aim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/BonePair.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,7 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/Aim.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/Visuals.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AP.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileEditor.cs" />
@@ -119,7 +226,6 @@
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/ColorOption.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/List.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/IO/FileEditor.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/PlayerManipulation.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/ObjManipulation.cs" />
@@ -138,7 +244,6 @@
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Friends.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/Enum/TargetLimb.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileHelper.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Tools.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/List/Friends.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/GunAsset.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD1D6ABC-5F85-45B9-8293-9E0A02964946/89/fd27e711/PlayerLook.cs" />
@@ -149,16 +254,19 @@
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Overrides/OV_PlayerPauseUI.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/BonePair.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/HackDirector.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Aim.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/ItemSelection.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/KeybindHandler.cs" />
-        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Visuals.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Aim.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Player.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs" />
         <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Server.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Tools.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Types/Enum/Bones.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/HackDirector.cs" />
+        <option value="$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs" />
       </list>
     </option>
   </component>
@@ -188,7 +296,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -239,12 +346,61 @@
               <item name="Menu" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="SubMenu" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Cheats" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Overrides" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Framework" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Framework" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Handler" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Framework" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Types" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Framework" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Types" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Enum" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MikePure (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MikePure" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Framework" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Util" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,11 +473,12 @@
       <workItem from="1515349739046" duration="4078000" />
       <workItem from="1515356282841" duration="15000" />
       <workItem from="1515357451488" duration="13192000" />
+      <workItem from="1515453361265" duration="2281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116693000" />
+    <option name="totallyTimeSpent" value="118974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,7 +493,7 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2408313" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2408313" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871535" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32208923" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -373,13 +530,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/ItemSelection.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Keybinds.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -426,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE296E38-C5E7-437F-BF15-B8D2021237B3/c8/80ede81c/PlayerDashboardInformationUI.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -461,13 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Overrides/OV_Player.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -492,13 +628,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Overrides/OV_refreshMap.cs" />
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileHelper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -531,13 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Tools.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -594,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="207" column="51" lean-forward="false" selection-start-line="207" selection-start-column="51" selection-end-line="207" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,14 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-          <folding>
-            <marker date="1515377632557" expanded="true" signature="6:61" ph="..." />
-            <marker date="1515377632557" expanded="true" signature="110:1649" ph="{...}" />
-            <marker date="1515377632557" expanded="true" signature="161:1647" ph="{...}" />
-            <marker date="1515377632557" expanded="true" signature="576:601" ph="{...}" />
-            <marker date="1515377632557" expanded="true" signature="635:701" ph="{...}" />
-            <marker date="1515377632557" expanded="true" signature="739:1636" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,133 +730,142 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="898">
           <caret line="825" column="44" lean-forward="false" selection-start-line="825" selection-start-column="44" selection-end-line="825" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Aim.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="158" column="84" lean-forward="true" selection-start-line="158" selection-start-column="84" selection-end-line="158" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/BonePair.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="235" column="44" lean-forward="false" selection-start-line="235" selection-start-column="44" selection-end-line="235" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Aim.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="171" column="36" lean-forward="false" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/ObjManipulation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
-            <marker date="1515377632411" expanded="true" signature="49:459" ph="..." />
-            <marker date="1515377632411" expanded="true" signature="508:39103" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="545:39101" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="1076:1824" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="1111:1814" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="1275:1748" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="1416:1627" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="1501:1605" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="1873:2301" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="1908:2291" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="2005:2241" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="2339:2767" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="2374:2757" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="2477:2707" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="2811:4340" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="3417:4329" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="4377:4618" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="4654:5016" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="5049:6472" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="5088:6226" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="5159:6212" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="5463:6067" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="6243:6462" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="6314:6448" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="6514:8247" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="6554:7489" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="6625:7475" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="6968:7457" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="7124:7435" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="7520:8237" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="7585:8223" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="7833:8205" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="7988:8183" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="8281:11693" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="8321:9314" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="8392:9300" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="8735:9282" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="8891:9259" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="9357:10107" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="9422:10093" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="9689:10075" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="9838:10052" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="10136:11683" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="10280:10906" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="10349:10888" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="10927:11008" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="11076:11669" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="11274:11651" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="11477:11629" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="11730:18900" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="11773:16904" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="11844:16890" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="12234:16855" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="12411:16833" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="12501:16807" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="12846:15185" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="12940:15151" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="16938:18890" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="17003:18876" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="17284:18841" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="17454:18819" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="17544:18793" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="18951:19199" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="19253:22063" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="22155:23136" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="23230:24355" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="23977:24149" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="24408:24570" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="24652:25256" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="24842:25219" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="24955:25205" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="25031:25187" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="25291:36525" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="25374:27638" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="25540:27624" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="25878:27606" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="26112:26824" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="26209:26798" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="27695:28931" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="27855:28917" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="28089:28899" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="28984:31048" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="29207:29833" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="29276:29815" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="29854:29935" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="30003:31034" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="30186:31016" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="31148:33454" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="31367:31605" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="31450:31587" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="31626:31722" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="31773:33440" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="32003:33422" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="33515:35196" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="33735:33961" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="33807:33943" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="33982:34066" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="34118:35182" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="34301:35164" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="35253:36515" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="35424:36501" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="35658:36483" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="36573:36729" ph="{...}" />
-            <marker date="1515377632411" expanded="false" signature="36799:39095" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="36836:37223" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="37140:37209" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="37255:37529" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="37446:37515" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="37561:37713" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="37630:37699" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="37745:38078" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="37995:38064" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="38110:38302" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="38219:38288" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="38334:38454" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="38486:38844" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="38761:38830" ph="{...}" />
-            <marker date="1515377632411" expanded="true" signature="38876:38997" ph="{...}" />
+            <marker date="1515175282210" expanded="true" signature="6:311" ph="..." />
+            <marker date="1515175282210" expanded="true" signature="358:815" ph="{...}" />
+            <marker date="1515175282210" expanded="true" signature="405:813" ph="{...}" />
+            <marker date="1515175282210" expanded="true" signature="439:693" ph="{...}" />
+            <marker date="1515175282210" expanded="true" signature="585:683" ph="/* StartCoroutine(UpdateStorageList()); ... */" />
+            <marker date="1515175282210" expanded="true" signature="751:806" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Loader/LocalFileHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <marker date="1514338641285" expanded="true" signature="64:192" ph="{...}" />
+            <marker date="1514338641285" expanded="true" signature="108:190" ph="{...}" />
+            <marker date="1514338641285" expanded="true" signature="151:184" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/Hook.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1514338641282" expanded="true" signature="6:176" ph="..." />
+            <marker date="1514338641282" expanded="true" signature="223:973" ph="{...}" />
+            <marker date="1514338641282" expanded="true" signature="254:971" ph="{...}" />
+            <marker date="1514338641282" expanded="true" signature="349:684" ph="{...}" />
+            <marker date="1514338641282" expanded="true" signature="408:588" ph="{...}" />
+            <marker date="1514338641282" expanded="true" signature="620:674" ph="{...}" />
+            <marker date="1514338641282" expanded="true" signature="726:956" ph="{...}" />
+            <marker date="1514338641282" expanded="true" signature="752:860" ph="{...}" />
+            <marker date="1514338641282" expanded="true" signature="892:946" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Tools.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <marker date="1515453983750" expanded="true" signature="6:132" ph="..." />
+            <marker date="1515453983750" expanded="true" signature="176:1087" ph="{...}" />
+            <marker date="1515453983750" expanded="true" signature="210:1085" ph="{...}" />
+            <marker date="1515453983750" expanded="true" signature="435:786" ph="{...}" />
+            <marker date="1515453983750" expanded="true" signature="496:648" ph="{...}" />
+            <marker date="1515453983750" expanded="true" signature="856:1079" ph="{...}" />
+            <marker date="1515453983750" expanded="true" signature="916:1034" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Server.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="111" column="14" lean-forward="false" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
+          <folding>
+            <marker date="1515384943189" expanded="true" signature="6:224" ph="..." />
+            <marker date="1515384943189" expanded="true" signature="273:3247" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="317:3245" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="638:886" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="916:1554" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="964:1544" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="1018:1255" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="1085:1186" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="1296:1530" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="1363:1461" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="1588:3221" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="1944:2042" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="2059:2630" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="2130:2616" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="2149:2314" ph="/* if (player.player == SDG.Unturned.Player.player) return; ... */" />
+            <marker date="1515384943189" expanded="true" signature="2426:2580" ph="{...}" />
+            <marker date="1515384943189" expanded="true" signature="2785:3172" ph="/* Friends list ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/KeybindHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="390">
+          <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="88" selection-end-column="43" />
           <folding>
             <marker date="1515377632126" expanded="true" signature="6:264" ph="..." />
             <marker date="1515377632126" expanded="true" signature="305:3558" ph="{...}" />
@@ -763,249 +885,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Lib/Aim.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-          <folding>
-            <marker date="1515370453407" expanded="true" signature="49:379" ph="..." />
-            <marker date="1515370453407" expanded="true" signature="428:8104" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="458:8102" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="929:1433" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="1465:1552" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="1579:6905" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="1635:6901" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="1963:2072" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="2099:2150" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="2174:4141" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="2234:4125" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="2281:4117" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="2394:4106" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="2571:4082" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="3175:4050" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="3301:4036" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="4165:6127" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="4223:6118" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="4354:6108" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="4647:6094" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="4753:6082" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="5121:6069" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="5245:6055" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="6165:6893" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="6616:6658" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="6683:6726" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="6992:7421" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="7234:7389" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="7467:7699" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="7733:7754" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="7808:8031" ph="{...}" />
-            <marker date="1515370453407" expanded="true" signature="8063:8096" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="158" column="84" lean-forward="true" selection-start-line="158" selection-start-column="84" selection-end-line="158" selection-end-column="84" />
-          <folding>
-            <marker date="1515379504386" expanded="true" signature="6:259" ph="..." />
-            <marker date="1515379504386" expanded="true" signature="308:6429" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="352:6427" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="1020:1165" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="1202:5033" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="1300:1760" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="1854:2459" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="2049:2445" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="2560:2935" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="3029:3571" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="3234:3557" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="3671:4202" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="4295:5023" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="4499:5009" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="5071:5337" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="5375:6416" ph="{...}" />
-            <marker date="1515379504386" expanded="true" signature="6018:6193" ph="/* GUI.Label(new Rect(240, 165, 140, 20), $&quot;Fov: {int.Parse(Fov.ToString())}&quot;); ... */" />
-            <marker date="1515379504386" expanded="true" signature="6278:6367" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/BonePair.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <marker date="1515207486322" expanded="true" signature="63:422" ph="{...}" />
-            <marker date="1515207486322" expanded="true" signature="92:415" ph="{...}" />
-            <marker date="1515207486322" expanded="true" signature="212:278" ph="{...}" />
-            <marker date="1515207486322" expanded="true" signature="349:410" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/MenuHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="1542">
+          <caret line="166" column="9" lean-forward="false" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
           <folding>
-            <marker date="1515377632472" expanded="true" signature="6:140" ph="..." />
-            <marker date="1515377632472" expanded="true" signature="181:5202" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="230:5200" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="742:899" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="929:1042" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="1071:2044" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="1396:2033" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="1634:2019" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="2083:4452" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="2186:3531" ph="menu bar" />
-            <marker date="1515377632472" expanded="true" signature="3680:4337" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="4499:4698" ph="{...}" />
-            <marker date="1515377632472" expanded="true" signature="4733:5185" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="6:180" ph="..." />
+            <marker date="1515454599414" expanded="true" signature="221:5241" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="270:5239" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="782:939" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="969:1082" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="1111:2084" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="1436:2073" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="1674:2059" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="2123:4491" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="2226:3571" ph="menu bar" />
+            <marker date="1515454599414" expanded="true" signature="3720:4377" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="4538:4737" ph="{...}" />
+            <marker date="1515454599414" expanded="true" signature="4772:5224" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Types/Enum/Bones.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1515454733392" expanded="true" signature="48:117" ph="{...}" />
+            <marker date="1515454733392" expanded="true" signature="73:115" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/Log.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <marker date="1515466742905" expanded="true" signature="6:247" ph="..." />
+            <marker date="1515466742905" expanded="true" signature="331:1163" ph="{...}" />
+            <marker date="1515466742905" expanded="true" signature="363:1161" ph="{...}" />
+            <marker date="1515466742905" expanded="true" signature="731:1155" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/HackDirector.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="72" lean-forward="false" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
+        <state relative-caret-position="552">
+          <caret line="94" column="19" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
           <folding>
-            <marker date="1515362930014" expanded="true" signature="6:467" ph="..." />
-            <marker date="1515362930014" expanded="true" signature="543:6537" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="593:6535" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="608:3448" ph="TODO" />
-            <marker date="1515362930014" expanded="true" signature="630:779" ph="/* TODO: Implement local loading in LFH ... */" />
-            <marker date="1515362930014" expanded="true" signature="801:1004" ph="Aim" />
-            <marker date="1515362930014" expanded="true" signature="836:981" ph="/* TODO: Add FOV Circle ... */" />
-            <marker date="1515362930014" expanded="true" signature="1017:2609" ph="Visuals" />
-            <marker date="1515362930014" expanded="true" signature="1049:2586" ph="/* TODO: Add 2d box                                                                  v ... */" />
-            <marker date="1515362930014" expanded="true" signature="2622:2757" ph="ItemSelection" />
-            <marker date="1515362930014" expanded="true" signature="2770:3420" ph="Player" />
-            <marker date="1515362930014" expanded="true" signature="2801:3396" ph="/* TODO: Flesh menu                                                                  v ... */" />
-            <marker date="1515362930014" expanded="true" signature="4022:4388" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="4049:4285" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="4429:6520" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="4585:6212" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="4937:6177" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="6269:6510" ph="{...}" />
-            <marker date="1515362930014" expanded="true" signature="6324:6496" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Visuals.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="235" column="44" lean-forward="false" selection-start-line="235" selection-start-column="44" selection-end-line="235" selection-end-column="44" />
-          <folding>
-            <marker date="1515379504108" expanded="true" signature="6:127" ph="..." />
-            <marker date="1515379504108" expanded="true" signature="223:9883" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="276:9881" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="1852:2078" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="2112:2145" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="2187:3896" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="3178:3886" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="3923:4711" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="4738:5330" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="5355:5739" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="5767:6390" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="6418:6848" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="6874:7178" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="7203:9200" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="7374:7464" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="7547:7634" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="7719:7939" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="8127:8416" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="8501:8790" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="8871:9152" ph="{...}" />
-            <marker date="1515379504108" expanded="true" signature="9229:9874" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Aim.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="171" column="36" lean-forward="false" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
-          <folding>
-            <marker date="1515379043210" expanded="true" signature="6:150" ph="..." />
-            <marker date="1515379043210" expanded="true" signature="199:8731" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="248:8729" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="1839:2134" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="2168:2276" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="2314:3442" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="3039:3354" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="3473:5962" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="4939:5104" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="5997:7267" ph="{...}" />
-            <marker date="1515379043210" expanded="true" signature="7299:8723" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Util/ObjManipulation.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <marker date="1514338641297" expanded="true" signature="6:87" ph="..." />
-            <marker date="1514338641297" expanded="true" signature="131:2234" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="175:2232" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="260:508" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="327:472" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="581:782" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="642:746" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="849:1061" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="911:1025" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="1137:1361" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="1199:1324" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="1418:1688" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="1542:1652" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="1750:2217" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="1858:2169" ph="{...}" />
-            <marker date="1514338641297" expanded="true" signature="1946:2147" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Framework/Handler/AutoPilot.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding>
-            <marker date="1515175282210" expanded="true" signature="6:311" ph="..." />
-            <marker date="1515175282210" expanded="true" signature="358:815" ph="{...}" />
-            <marker date="1515175282210" expanded="true" signature="405:813" ph="{...}" />
-            <marker date="1515175282210" expanded="true" signature="439:693" ph="{...}" />
-            <marker date="1515175282210" expanded="true" signature="585:683" ph="/* StartCoroutine(UpdateStorageList()); ... */" />
-            <marker date="1515175282210" expanded="true" signature="751:806" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MikePure/MikePure/Cheats/Menu/SubMenu/Server.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="111" column="14" lean-forward="true" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
-          <folding>
-            <marker date="1515384943189" expanded="true" signature="6:224" ph="..." />
-            <marker date="1515384943189" expanded="true" signature="273:3247" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="317:3245" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="638:886" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="916:1554" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="964:1544" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="1018:1255" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="1085:1186" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="1296:1530" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="1363:1461" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="1588:3221" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="1944:2042" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="2059:2630" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="2130:2616" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="2149:2314" ph="/* if (player.player == SDG.Unturned.Player.player) return; ... */" />
-            <marker date="1515384943189" expanded="true" signature="2426:2580" ph="{...}" />
-            <marker date="1515384943189" expanded="true" signature="2785:3172" ph="/* Friends list ... */" />
+            <marker date="1515466742612" expanded="true" signature="6:467" ph="..." />
+            <marker date="1515466742612" expanded="true" signature="543:6564" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="593:6562" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="608:3448" ph="TODO" />
+            <marker date="1515466742612" expanded="true" signature="630:779" ph="/* TODO: Implement local loading in LFH ... */" />
+            <marker date="1515466742612" expanded="true" signature="801:1004" ph="Aim" />
+            <marker date="1515466742612" expanded="true" signature="836:981" ph="/* TODO: Add FOV Circle ... */" />
+            <marker date="1515466742612" expanded="true" signature="1017:2609" ph="Visuals" />
+            <marker date="1515466742612" expanded="true" signature="1049:2586" ph="/* TODO: Add 2d box                                                                  v ... */" />
+            <marker date="1515466742612" expanded="true" signature="2622:2757" ph="ItemSelection" />
+            <marker date="1515466742612" expanded="true" signature="2770:3420" ph="Player" />
+            <marker date="1515466742612" expanded="true" signature="2801:3396" ph="/* TODO: Flesh menu                                                                  v ... */" />
+            <marker date="1515466742612" expanded="true" signature="4022:4415" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="4049:4285" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="4456:6547" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="4612:6239" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="4964:6204" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="6296:6537" ph="{...}" />
+            <marker date="1515466742612" expanded="true" signature="6351:6523" ph="{...}" />
           </folding>
         </state>
       </provider>

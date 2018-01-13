@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MikePure.MikePure.Cheats.Menu.SubMenu;
 using MikePure.MikePure.Framework.Handler;
+using MikePure.MikePure.Framework.Util;
 using UnityEngine;
 
 namespace MikePure.MikePure.Cheats.Menu
@@ -143,7 +144,6 @@ namespace MikePure.MikePure.Cheats.Menu
 
             GUILayout.EndHorizontal();
             
-
         }
         
         public void DestroySubMenus()
