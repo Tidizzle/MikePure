@@ -9,7 +9,7 @@ using Tools = MikePure.MikePure.Framework.Util.Tools;
 
 namespace MikePure.MikePure.Cheats.Overrides
 {
-    public class OV_PlayerInput
+    internal class OV_PlayerInput
     {
         private PlayerInputPacket GetLatestPacket()
         {

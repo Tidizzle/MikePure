@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using MikePure.MikePure.Framework.Handler;
 using MikePure.MikePure.Framework.Types.Enum;
+using MikePure.MikePure.Framework.Util;
+using SDG.Unturned;
 using UnityEngine;
 using GUI = UnityEngine.GUI;
 
@@ -13,27 +16,19 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         public static bool EnableAimbot;
         public static bool EnableTriggerbot;
         public static bool EnableAimLock;
-        
         public static bool AimPlayers;
         public static bool AimZombies;
-
         public static bool AimClosest;
-
         public static int AimSpeed;
-        public static bool AimIgnoreWalls;
-        
+        public static bool AimIgnoreWalls;        
         public static int AimDistance;
         public static bool AimInfDistance;
         public static bool AimUseGunDistance;
-        
-        public static bool AimSilent;
-        
+        public static bool AimSilent;        
         public static bool AimWhitelistFriends; 
         public static bool AimWhitelistAdmins; 
-        
         public static int AimFov;
         public static bool Aim360;
- 
         public static bool AimFovCircle;
         public static TargetLimb AimTargetLimb;
         public static int Limb;
@@ -42,21 +37,16 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         
         public bool TriggerPlayers;
         public bool TriggerZombies;
-        public bool TriggerAnimals;
-        public bool TriggerVehicles;
         public bool TriggerWhiteListFriends;
         public bool TriggerWhiteListAdmins;
         public int TriggerDistance;
-        public bool TriggerGunRange;
+        public bool TriggerInfDistance;
         
         internal bool LockPlayers;
         internal bool LockZombies;
-        internal bool LockAnimals;
-        internal bool LockVehicles;
-        
         internal int LockSensitivity;  
-        internal int LockDistance; 
-        internal bool LockGunRange;   
+        internal int LockDistance;
+        internal bool LockInfDistance;
         internal bool LockWhiteListFriends;
         internal bool LockWhitelistAdmins;
         
@@ -71,6 +61,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             AimFov = (int)Camera.main.fieldOfView;
 
             TriggerDistance = 200;
+
+            LockSensitivity = 8;
+            LockDistance = 200;
             
             DerivedStart();
         }
@@ -91,8 +84,8 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
             if (GUILayout.Button("<size=15>Aimbot</size>", GUILayout.Width(100), GUILayout.Height(40)))
                 page = 1;
-            if (GUILayout.Button("<size=15>Triggerbot</size>", GUILayout.Width(100), GUILayout.Height(40)))
-                page = 2;
+//            if (GUILayout.Button("<size=15>Triggerbot</size>", GUILayout.Width(100), GUILayout.Height(40)))
+//                page = 2;
             if (GUILayout.Button("<size=15>Aimlock</size>", GUILayout.Width(100), GUILayout.Height(40)))
                 page = 3;
             GUILayout.EndHorizontal();
@@ -117,7 +110,6 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             
             GUILayout.EndHorizontal();
             
-            
         }
 
         public void AimPage()
@@ -134,12 +126,11 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             GUILayout.Space(3f);
             AimInfDistance = GUILayout.Toggle(AimInfDistance, "Infinite Distance", GUILayout.Width(200));
             AimUseGunDistance = GUILayout.Toggle(AimUseGunDistance, "Use Gun Range", GUILayout.Width(200));
-            AimClosest = GUILayout.Toggle(AimClosest, "Aim Closest to Xhair", GUILayout.Width(200));
             GUILayout.Space(3f);
             AimSilent = GUILayout.Toggle(AimSilent, "Silent Aim", GUILayout.Width(200));
             GUILayout.Space(3f);
             Aim360 = GUILayout.Toggle(Aim360, "360 FOV", GUILayout.Width(200));
-            AimFovCircle = GUILayout.Toggle(AimFovCircle, "Show FOV Circle", GUILayout.Width(200));
+//            AimFovCircle = GUILayout.Toggle(AimFovCircle, "Show FOV Circle", GUILayout.Width(200));
             
             GUILayout.EndVertical();
             
@@ -169,9 +160,13 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
            
             AimWhitelistFriends = GUILayout.Toggle(AimWhitelistFriends, "Ignore Friends", GUILayout.Width(200));
             AimWhitelistAdmins = GUILayout.Toggle(AimWhitelistAdmins, "Ignore Admins", GUILayout.Width(200));
+            
             GUILayout.EndVertical();
             
+            
+            
             GUILayout.Space(20f);
+            
             
         }
 
@@ -185,7 +180,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             TriggerPlayers = GUILayout.Toggle(TriggerPlayers, "Trigger Players", GUILayout.Width(200));
             TriggerZombies = GUILayout.Toggle(TriggerZombies, "Trigger Zombies", GUILayout.Width(200));
             GUILayout.Space(3f);
-            TriggerGunRange = GUILayout.Toggle(TriggerGunRange, "Use Gun Range", GUILayout.Width(200));
+            TriggerInfDistance = GUILayout.Toggle(TriggerInfDistance, "Infinite Distance", GUILayout.Width(200));
             GUILayout.Space(3f);
             TriggerWhiteListFriends = GUILayout.Toggle(TriggerWhiteListFriends, "Ignore Friends", GUILayout.Width(200));
             TriggerWhiteListAdmins = GUILayout.Toggle(TriggerWhiteListAdmins, "Ignore Admins", GUILayout.Width(200));
@@ -199,7 +194,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             
             GUILayout.Label($"Trigger Distance: {(int)TriggerDistance}");
             TriggerDistance = (int)GUILayout.HorizontalSlider(TriggerDistance, 50, 1000);
+            GUILayout.Space(3f);
 
+            
             GUILayout.EndVertical();
             
             GUILayout.Space(20f);
@@ -214,10 +211,8 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             GUILayout.Space(5f);
             LockPlayers = GUILayout.Toggle(LockPlayers, "Lock Players", GUILayout.Width(200));
             LockZombies = GUILayout.Toggle(LockZombies, "Lock Zombies", GUILayout.Width(200));
-            LockVehicles = GUILayout.Toggle(LockVehicles, "Lock Vehicles", GUILayout.Width(200));
-            LockAnimals = GUILayout.Toggle(LockAnimals, "Lock Animals", GUILayout.Width(200));
             GUILayout.Space(3f);
-            LockGunRange = GUILayout.Toggle(LockGunRange, "Use Gun Range", GUILayout.Width(200));
+            LockInfDistance = GUILayout.Toggle(LockInfDistance, "Infinite Distance", GUILayout.Width(200));
             GUILayout.Space(3f);
             LockWhiteListFriends = GUILayout.Toggle(LockWhiteListFriends, "Ignore Friends", GUILayout.Width(200));
             LockWhitelistAdmins = GUILayout.Toggle(LockWhitelistAdmins, "Ignore Admins", GUILayout.Width(200));       
@@ -230,7 +225,11 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             
             GUILayout.Label($"Lock Sensitivity: {(int)LockSensitivity}");
             LockSensitivity = (int)GUILayout.HorizontalSlider(LockSensitivity, 2, 10);
-                        
+            GUILayout.Space(3f);
+            
+            GUILayout.Label($"Distance: {LockDistance}");
+            LockDistance = (int) GUILayout.HorizontalSlider(LockDistance, 50, 500);
+            
             GUILayout.EndVertical();
             
             GUILayout.Space(20f);

@@ -23,23 +23,27 @@ namespace MikePure.MikePure.Cheats.Menu
         public int height = 364;
         public Rect CursorRect = new Rect(0, 0, 20, 20);
 
+        public static Rect RadarRect = new Rect(Screen.width - 400, 150, 240, 250);
+
 
         public void Start()
         {
             AddSubMenus();
             MenuRect = new Rect(Screen.width / 2 - width / 2, Screen.height / 2 - height / 2, width, height);
+            ContentId = 1;
         }
 
         public void Update()
         {
             if (HackDirector.bSpying) return;
-
-            Visuals.EnableVisuals = !MenuVis;
+            
         }
 
         public void OnGUI()
         {
             if (HackDirector.bSpying) return;
+
+            ShowWaterMark();
             
             if (HackDirector.tCursor == null && MenuVis)
                 HackDirector.tCursor = Resources.Load("UI/Cursor") as Texture;
@@ -63,9 +67,21 @@ namespace MikePure.MikePure.Cheats.Menu
 
                 }
             }
+            
+//            RadarRect = GUI.Window(1, RadarRect, RadarFunct, "Radar");
+
 
         }
 
+        public void ShowWaterMark()
+        {
+            GUI.depth = 0;
+            var loctex = HackDirector.tWatermark;
+            var posrect = new Rect(Screen.width - 290, -15, 285, 100);
+            
+            GUI.DrawTexture(posrect, loctex);
+        }
+        
         public void MenuFunct(int id)
         {
             
@@ -166,5 +182,11 @@ namespace MikePure.MikePure.Cheats.Menu
             mServer = HackDirector.goMasterObj.AddComponent<Server>();
         }
         
+        public static void RadarFunct(int id)
+        {
+            GUI.DragWindow();
+
+
+        }
     }
 }

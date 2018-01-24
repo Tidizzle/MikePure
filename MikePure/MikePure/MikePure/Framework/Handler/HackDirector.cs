@@ -50,7 +50,7 @@ namespace MikePure.MikePure.Framework.Handler
                 //TODO: Add Color Interfacing                                                       v
             #endregion
             #region ItemSelection
-                //TODO: Find way to get actual item id list for item selection            
+                //TODO: Find way to get actual item id list for item selection                    
             #endregion
             #region Player
                 //TODO: Flesh menu                                                                  v
@@ -73,11 +73,11 @@ namespace MikePure.MikePure.Framework.Handler
         public static MenuHandler     mhHandler;
         public static KeybindHandler  khHandler;
         
-        public static Friends         fFriendsList;
-
         public static AssetBundle     abAssets;
+        public static AssetBundle     abSkinBundle;
         public static GUISkin         sSkin;
         public static Texture         tCursor;
+        public static Texture         tWatermark;
 
         
         
@@ -88,6 +88,7 @@ namespace MikePure.MikePure.Framework.Handler
                 abAssets = AssetBundle.LoadFromFile($@"{Application.dataPath}\resourcemanager.assetbundle", 0U);
                 if(abAssets != null)
                     sSkin = abAssets.LoadAllAssets<GUISkin>().First();
+                    tWatermark = abAssets.LoadAsset("MikePure") as Texture;
             } catch(Exception e) { Log.e(e); }
 
             bHackEnabled = true;

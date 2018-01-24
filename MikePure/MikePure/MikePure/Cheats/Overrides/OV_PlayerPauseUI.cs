@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MikePure.MikePure.Cheats.Overrides
 {
-    public class OV_PlayerPauseUI
+    internal class OV_PlayerPauseUI
     {
         private static void onClickedExitButton(SleekButton button)
         {

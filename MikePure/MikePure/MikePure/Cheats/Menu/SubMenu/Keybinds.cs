@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MikePure.MikePure.Cheats.Menu.SubMenu
 {
-    public class Keybinds : MonoBehaviour
+    internal class Keybinds : MonoBehaviour
     {
 
         public void Start()
@@ -20,6 +20,8 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         {
             if (HackDirector.bSpying) return;
 
+
+            
             if (GUI.Button(new Rect(300, 20, 260, 40), $"<size=15>Menu Toggle: {HackDirector.khHandler.WindowKey}</size>"))
             {
                 HackDirector.khHandler.Changing = true;

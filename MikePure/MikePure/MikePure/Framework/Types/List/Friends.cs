@@ -2,7 +2,7 @@
 
 namespace MikePure.MikePure.Framework.Types.List
 {
-    public class Friends
+    internal class Friends
     {
         public static List<Friend> FriendsList;
         

@@ -62,54 +62,45 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
         public void ContentGUI()
         {
-            
             GUILayout.BeginHorizontal();
-            //Player list
-            GUILayout.BeginVertical();
-
-            GUILayout.Label("<size=15>Players</size>", GUILayout.Width(100));
             
-            GUILayout.BeginScrollView(PlayerScroll, false, true, GUILayout.Height(250));
+            GUILayout.BeginVertical();
+            
+            GUILayout.Label("<size=15>Players:</size>", GUILayout.Width(150));
+            
+            PlayerScroll = GUILayout.BeginScrollView(PlayerScroll, false, true, GUILayout.Width(150), GUILayout.Height(290));
 
-            if (Provider.clients.Count == 1)
+            foreach (var client in Provider.clients)
             {
-                GUILayout.Button("No Players", GUILayout.Width(150));
-            }
-            else
-            {
-                foreach (var player in Provider.clients)
+                if (!Friends.IsFriend(client.playerID.steamID.m_SteamID) && client.player != SDG.Unturned.Player.player)
                 {
-//                    if (player.player == SDG.Unturned.Player.player) return;
-//                    if (Friends.IsFriend(player.playerID.steamID.m_SteamID)) return;
-
-                    if (GUILayout.Button($"<size=13>{player.playerID.nickName}</size>", GUILayout.Width(150)))
+                    if (GUILayout.Button($"<size=13>{client.playerID.nickName}</size>", GUILayout.Width(125)))
                     {
-                        Addlist.Add(new Friend(player.playerID.nickName, player.playerID.steamID.m_SteamID));
-                    }
-                 
+                        Addlist.Add(new Friend(client.playerID.nickName, client.playerID.steamID.m_SteamID));
+                    } 
                 }
             }
             
             GUILayout.EndScrollView();
-            
-            
             GUILayout.EndVertical();
+
+            GUILayout.BeginVertical();
             
+            GUILayout.Label("<size=15>Friends:</size>");
             
+            FriendScroll = GUILayout.BeginScrollView(FriendScroll, false, true, GUILayout.Width(150), GUILayout.Height(290));
             
-//            Friends list
-//            GUILayout.BeginVertical();
-//
-//            GUILayout.Label("<size=15>Friends</size>", GUILayout.Width(100));
-//            
-//            GUILayout.BeginScrollView(FriendScroll, false, true);
-//
-//            
-//            GUILayout.EndScrollView();
-//                       
-//            
-//            GUILayout.EndVertical();
-//            
+            foreach (var client in Friends.FriendsList)
+            {
+                if (GUILayout.Button($"<size=13>{client.sName}</size>", GUILayout.Width(130)))
+                {
+                    Remlist.Add(client);
+                } 
+            }
+            
+            GUILayout.EndScrollView();
+            GUILayout.EndVertical();
+
             GUILayout.EndHorizontal();
         }
         

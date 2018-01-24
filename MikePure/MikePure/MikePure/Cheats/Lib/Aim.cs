@@ -7,6 +7,7 @@ using System.Reflection;
 using MikePure.MikePure.Framework.Handler;
 using MikePure.MikePure.Framework.Types.Enum;
 using MikePure.MikePure.Framework.Types.List;
+using MikePure.MikePure.Framework.Util;
 using SDG.Unturned;
 using UnityEngine;
 using Player = SDG.Unturned.Player;
@@ -28,21 +29,16 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 		public FieldInfo Pitch;
 
 		public List<Zombie> Zombies;
-		public int ZombieUpdate;
 		public List<SteamPlayer> Players;
-		public int PlayerUpdate;
 
-		public bool ZombieFlag;
-		public bool PlayerFlag;
 
 		public static Transform target;
 		public static int closest = int.MaxValue;
 
 		private void DerivedStart()
 		{
-			ZombieUpdate = 0;
-			PlayerUpdate = 1;
-
+			Id = 0;
+			
 			Players = new List<SteamPlayer>();
 			Zombies = new List<Zombie>();
 
@@ -53,6 +49,8 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 			Prim = typeof(PlayerEquipment).GetField("prim", BindingFlags.Instance | BindingFlags.NonPublic);
 			Yaw = typeof(PlayerLook).GetField("_yaw", BindingFlags.Instance | BindingFlags.NonPublic);
 			Pitch = typeof(PlayerLook).GetField("_pitch", BindingFlags.Instance | BindingFlags.NonPublic);
+			
+			
 		}
 
 		private void DerivedUpdate()
@@ -83,7 +81,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 			    }
 			    if (AimInfDistance)
 			    {
-				    distance = int.MaxValue;
+				    distance = 10000;
 			    }
 
 			    if (AimZombies)
@@ -240,20 +238,98 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
         public void UpdateLock()
         {
+	        if (EnableAimLock && Provider.isConnected)
+	        {
+		        var dist = LockInfDistance ? 10000 : LockDistance;
 
-        }
-        
-        public void ChangeSense(bool enable)
-        {
-            if (enable)
-                SDG.Unturned.Player.player.look.sensitivity = Defsense / LockSensitivity;
-            else
-                SDG.Unturned.Player.player.look.sensitivity = Defsense;
+		        RaycastHit hit;
+		        Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, dist,
+			        RayMasks.DAMAGE_CLIENT);
+
+		        if (hit.transform != null)
+		        {	        
+			        Log.l("5");
+
+			        if (LockPlayers && hit.transform.CompareTag("Enemy"))
+			        {	        
+				        if (!LockWhiteListFriends && !IsPlayerFriend(hit))
+				        {	        
+						        SDG.Unturned.Player.player.look.sensitivity = Defsense / LockSensitivity;
+				        }
+			        }
+			        else if (LockZombies && hit.transform.CompareTag("Zombie"))
+				        SDG.Unturned.Player.player.look.sensitivity = Defsense / LockSensitivity;
+			        else
+				        SDG.Unturned.Player.player.look.sensitivity = Defsense;
+		        }
+		        else
+			        SDG.Unturned.Player.player.look.sensitivity = Defsense;
+	        }
         }
 
+		public static bool IsPlayerFriend(RaycastHit rch)
+		{
+			if (rch.transform != null && rch.transform.CompareTag("Enemy"))
+			{
+				SteamPlayer ply = null;
+				foreach (var client in Provider.clients)
+				{
+					if (client.player.gameObject == rch.transform.gameObject)
+						ply = client;
+					else
+						ply = null;
+				}
+				
+				if (ply != null)
+				{
+					if (Friends.IsFriend(ply.playerID.steamID.m_SteamID))
+						return true;
+					return false;
+				}
+			}
+			
+			return false;
+		}
+
+		
         public void UpdateTB()
         {
-            
+//	        if (EnableTriggerbot && Provider.isConnected)
+             //	        {
+             //		        var range = TriggerInfDistance ? 10000 : TriggerDistance;
+             //
+             //		        RaycastHit hit;
+             //		        Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, range, RayMasks.DAMAGE_CLIENT);
+             //
+             //		        bool fire = false;
+             //
+             //		        if (hit.transform != null)
+             //		        {
+             //			        if (TriggerPlayers && hit.transform.CompareTag("Enemy"))
+             //			        {
+             //				        //if we are not whitelisting and player isnt friend
+             //				        if (!(TriggerWhiteListFriends && IsPlayerFriend(hit)))
+             //					        fire = true;
+             //			        }
+             //
+             //			        if (TriggerZombies && hit.transform.CompareTag("Zombie"))
+             //			        {
+             //				        fire = true;
+             //			        }
+             //
+             //			        if (fire)
+             //			        {
+             //				        Prim.SetValue(SDG.Unturned.Player.player.equipment, Id <= 3);
+             //				        Id++;
+             //				        if (Id > 6)
+             //					        Id = 0;
+             //			        }
+             //
+             //
+             //		        }
+             //	        }
+
+		        
+	        }
         }
     }
-}

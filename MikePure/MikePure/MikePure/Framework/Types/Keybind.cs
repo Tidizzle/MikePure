@@ -2,7 +2,7 @@
 
 namespace MikePure.MikePure.Framework.Types
 {
-    public class Keybind
+    internal class Keybind
     {
         public KeyCode Key;
         public string bindName;

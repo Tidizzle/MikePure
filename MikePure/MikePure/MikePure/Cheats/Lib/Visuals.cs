@@ -23,33 +23,31 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         public static List<Zombie> ZombieList = new List<Zombie>();
         public static List<InteractableStorage> StorageList = new List<InteractableStorage>();
         public static List<InteractableItem> ItemList = new List<InteractableItem>();
+        public static List<SteamPlayer> PlayerList = new List<SteamPlayer>();
 
         public static Dictionary<int, string> StorageIds;
 
         public static Camera main;
         public Material DrawingMaterial;
 
+        public static List<Vector2> RadarList;
+
        
         IEnumerator UpdateZombieList()
         {
             while (true)
             {
-                if ((EnableVisuals && (Zombie_Box2d || Zombie_Box3d || Zombie_Skeleton || Zombie_ShowName || Zombie_ShowDistance)) || Aim.AimZombies)
+                var updatelist = new List<Zombie>();
+                foreach (var region in ZombieManager.regions)
                 {
-                    var updatelist = new List<Zombie>();
-                    foreach (var region in ZombieManager.regions)
+                    foreach (var zombie in region.zombies)
                     {
-                        foreach (var zombie in region.zombies)
-                        {
-                            updatelist.Add(zombie);
-                        }
+                        updatelist.Add(zombie);
                     }
 
                     ZombieList = updatelist;
                     yield return new WaitForSeconds(5f);
                 }
-                
-                yield return null;
             }
         }
         
@@ -57,15 +55,10 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         {
             while (true)
             {
-                if (EnableVisuals && (Storages_ShowName || Storages_ShowDistance))
-                {
-                    var temp = FindObjectsOfType<InteractableStorage>().ToList();
-                    StorageList = temp;
-                    
-                    yield return new WaitForSeconds(5f);
-                }
-
-                yield return null;
+                var temp = FindObjectsOfType<InteractableStorage>().ToList();
+                StorageList = temp;
+                
+                yield return new WaitForSeconds(5f);
             }
         }
 
@@ -73,15 +66,11 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         {
             while (true)
             {
-                if (EnableVisuals && (Item_Box3d || Item_ShowName || Item_ShowDistance))
-                {
-                    var temp = FindObjectsOfType<InteractableItem>().ToList();
-                    ItemList = temp;
-                    
-                    yield return new WaitForSeconds(5f);
-                }
-
-                yield return null;
+                var temp = FindObjectsOfType<InteractableItem>().ToList();
+                ItemList = temp;
+                
+                yield return new WaitForSeconds(5f);
+                
             }
         }
         
@@ -124,6 +113,8 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 {1283, "Cooler"},
                 {1249, "Fridge"}
             };
+            
+//            RadarStart();
         }
 
         public void DerivedUpdate()
@@ -134,6 +125,8 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             
             main = Camera.main;
             CheckGlow();
+            
+//            RadarUpdate();
         }
 
         public void DerivedOnGUI()
@@ -147,8 +140,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             Check2dBox();
             Check3dBox();
             CheckSkeleton();
-            CheckGlow();
             CheckLabels();
+            
+//            RadarOnGUI();
         }
 
         public void CheckGlow()
@@ -458,6 +452,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             Vector3[] pts = new Vector3[8];
             pts[0] = main.WorldToScreenPoint (new Vector3 (b.center.x + b.extents.x, b.center.y + b.extents.y, b.center.z + b.extents.z)); //Top right (back)
             pts[1] = main.WorldToScreenPoint (new Vector3 (b.center.x + b.extents.x, b.center.y + b.extents.y, b.center.z - b.extents.z)); //Top right (front)
+
             pts[2] = main.WorldToScreenPoint (new Vector3 (b.center.x + b.extents.x, b.center.y - b.extents.y, b.center.z + b.extents.z)); //Bottom right (back)
             pts[3] = main.WorldToScreenPoint (new Vector3 (b.center.x + b.extents.x, b.center.y - b.extents.y, b.center.z - b.extents.z)); //bottom right (front)
             pts[4] = main.WorldToScreenPoint (new Vector3 (b.center.x - b.extents.x, b.center.y + b.extents.y, b.center.z + b.extents.z)); // Top left (back)
@@ -466,6 +461,12 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             pts[7] = main.WorldToScreenPoint (new Vector3 (b.center.x - b.extents.x, b.center.y - b.extents.y, b.center.z - b.extents.z)); // Bottom left (front)
             
             for (int i=0;i<pts.Length;i++) pts[i].y = Screen.height-pts[i].y;
+            
+            GL.PushMatrix();
+            GL.Begin(1);
+            DrawingMaterial.SetPass(0);    
+            GL.End();
+            GL.PopMatrix();
             
             GL.PushMatrix();
             GL.Begin(1);
@@ -511,7 +512,13 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             var hlfDist = dist / 2f;
             var xVal = position.x - hlfDist / 2f;
             var yVal = position.y - dist;
-
+            
+            GL.PushMatrix();
+            GL.Begin(1);
+            DrawingMaterial.SetPass(0);
+            GL.End();
+            GL.PopMatrix();
+            
             GL.PushMatrix();
             GL.Begin(1);
             DrawingMaterial.SetPass(0);
@@ -544,7 +551,14 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
             var skullpos = main.WorldToScreenPoint(skull.transform.position);
             skullpos.y = Screen.height - skullpos.y;
-                
+            
+            GL.PushMatrix();
+            GL.Begin(1);
+            DrawingMaterial.SetPass(0);
+            
+            GL.End();
+            GL.PopMatrix();
+            
             GL.PushMatrix();
             GL.Begin(1);
             DrawingMaterial.SetPass(0);
@@ -592,6 +606,17 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
         public void CheckLabels()
         {
+            CheckZombieLabels();
+            CheckItemLabels();
+            CheckVehicleLabels();
+            CheckStorageLabels();
+            CheckAnimalLabels();
+            CheckPlayerLabels();
+
+        }
+
+        public void CheckPlayerLabels()
+        {
             if (Player_Name || Player_ShowDistance || Player_ShowWeapon)
             {
                 var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
@@ -621,6 +646,14 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                                     player.player.equipment.asset.type == EItemType.MELEE)
                                     raw += player.player.equipment.asset.name.Replace("_", " ");
                             }
+                            else
+                            {
+                                raw += "\nUnarmed";
+                            }
+                        }
+                        else if (Player_ShowWeapon)
+                        {
+                            raw += "Unarmed";
                         }
 
                         if (Player_ShowDistance && raw.Length > 0)
@@ -639,7 +672,10 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                     }
                 }
             }
-
+        }
+        
+        public void CheckZombieLabels()
+        {
             if (Zombie_ShowName || Zombie_ShowDistance)
             {
                 var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
@@ -669,7 +705,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                     }
                 }
             }
-
+        }
+        public void CheckItemLabels()
+        {
             if (Item_ShowName || Item_ShowDistance)
             {
                 var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
@@ -714,6 +752,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 }
             }
 
+        }
+        public void CheckVehicleLabels()
+        {
             if (Vehicle_ShowName || Vehicle_ShowGas || Vehicle_ShowHealth || Vehicle_ShowDistance)
             {
                 var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
@@ -768,6 +809,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 }
             }
 
+        }
+        public void CheckStorageLabels()
+        {
             if (Storages_ShowName || Storages_ShowDistance)
             {
                 var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
@@ -811,6 +855,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                 }
             }
 
+        }
+        public void CheckAnimalLabels()
+        {
             if (Animal_ShowName || Animal_ShowDistance)
             {
                 var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
@@ -840,9 +887,9 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                     }
                 }
             }
+
         }
-
-
+        
         public string ColorToHex(Color input)
         {
             Color32 color32 = input;
@@ -912,5 +959,141 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
             return false;
         }
+        
+        public void RadarStart()
+        {
+            RadarList = new List<Vector2>();
+        }
+
+        public void RadarUpdate()
+        {
+            
+
+        }
+
+        public void RadarOnGUI()
+        {
+            
+            RadarList.Clear();
+            var RadarRect = MenuHandler.RadarRect;
+
+            var top = new Vector2(RadarRect.center.x, (RadarRect.center.y + RadarRect.height / 2) - 10);
+            var right = new Vector2((RadarRect.center.x + RadarRect.width / 2) - 10, RadarRect.center.y);
+
+            var radarcenter = new Vector2(top.x, right.y);
+            
+            var range = 20;
+            var halfwidth = Math.Abs(RadarRect.center.x - right.x);
+            var ppm = halfwidth / range;
+            var cam = Camera.main.transform.position;
+
+            var list = new List<Zombie>();
+            foreach (var region in ZombieManager.regions)
+            {
+                foreach(var zombie in region.zombies)
+                    list.Add(zombie);
+            }
+            
+            
+            foreach (var zombie in list)
+            {
+                var relativepos = new Vector2(zombie.transform.position.x - cam.x, zombie.transform.position.z - cam.z);
+
+                var horizontalDifference = (float)Math.Round(relativepos.x * ppm, 0);
+                var verticalDifference = (float)Math.Round(relativepos.y * ppm, 0);
+//                verticalDifference = -verticalDifference;
+                horizontalDifference = -horizontalDifference;
+
+               
+                var radarpos = new Vector2(radarcenter.x + horizontalDifference, radarcenter.y + verticalDifference);
+                
+                Log.l(radarcenter.ToString());
+                Log.l(radarpos.ToString());
+                
+                RadarList.Add(radarpos);
+            }
+            
+            GUI.skin = HackDirector.sSkin;
+            GUI.depth = 999;
+
+            RadarRect = MenuHandler.RadarRect;
+            
+            var bottom = new Vector2(RadarRect.center.x, (RadarRect.center.y - RadarRect.height / 2) + 20);
+            var left = new Vector2((RadarRect.center.x - RadarRect.width / 2) + 10, RadarRect.center.y);
+
+            var tl = new Vector2(left.x, top.y);
+            var tr = new Vector2(right.x, top.y);
+            var bl = new Vector2(left.x, bottom.y);
+            var br = new Vector2(right.x, bottom.y);
+            
+            GL.PushMatrix();
+            GL.Begin(1);
+            DrawingMaterial.SetPass(0);
+            
+            GL.End();
+            GL.PopMatrix();
+            
+            
+            GL.PushMatrix();
+            GL.Begin(1);
+            DrawingMaterial.SetPass(0);
+            
+            //cross
+            GL.Color(Color.white);
+
+            GL.Vertex3(top.x, top.y, 0f);
+            GL.Vertex3(bottom.x, bottom.y, 0f);
+            
+            GL.Vertex3(left.x, left.y, 0f);
+            GL.Vertex3(right.x, right.y, 0f);
+            
+            //Box
+            GL.Color(Color.black);
+            GL.Vertex3(tl.x, tl.y, 0f);
+            GL.Vertex3(tr.x, tr.y, 0f);
+            
+            GL.Vertex3(tr.x, tr.y, 0f);
+            GL.Vertex3(br.x, br.y, 0f);
+            
+            GL.Vertex3(br.x, br.y, 0f);
+            GL.Vertex3(bl.x, bl.y, 0f);
+
+            GL.Vertex3(bl.x, bl.y, 0f);
+            GL.Vertex3(tl.x, tl.y, 0f);
+
+            //Zombies
+
+            GL.Color(Color.green);
+            foreach (var target in RadarList)
+            {
+                DrawSquare(target);
+            }
+                        
+                        
+            GL.End();
+            GL.PopMatrix();
+        }
+
+        public void DrawSquare(Vector2 input)
+        {
+            var tl = new Vector2(input.x - 1, input.y - 1);
+            var tr = new Vector2(input.x + 1, input.y - 1);
+            var bl = new Vector2(input.x - 1, input.y + 1);
+            var br = new Vector2(input.x + 1, input.y + 1);
+            
+            GL.Vertex3(tl.x, tl.y, 0f);
+            GL.Vertex3(tr.x, tr.y, 0f);
+            
+            GL.Vertex3(tr.x, tr.y, 0f);
+            GL.Vertex3(br.x, br.y, 0f);
+            
+            GL.Vertex3(br.x, br.y, 0f);
+            GL.Vertex3(bl.x, bl.y, 0f);
+            
+            GL.Vertex3(bl.x, bl.y, 0f);
+            GL.Vertex3(tl.x, tl.y, 0f);
+        }
+        
+        
     }
 }

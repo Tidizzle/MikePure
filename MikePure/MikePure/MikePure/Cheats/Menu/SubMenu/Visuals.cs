@@ -9,22 +9,28 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
     internal partial class Visuals : MonoBehaviour
     {
         public static bool EnableVisuals;
-        
+
         public static bool Player_Box2d;
         public static bool Player_Box3d;
         public static bool Player_Glow;
+
         public static bool Player_Skeleton;
+
         //public static  bool Tracers;
         public static bool Player_Name;
+
         public static bool Player_ShowWeapon;
         public static bool Player_ShowDistance;
 
 
         public static bool Zombie_Box2d;
         public static bool Zombie_Box3d;
+
         public static bool Zombie_Skeleton;
+
         //public static bool Zombie_Tracers;
         public static bool Zombie_ShowName;
+
         public static bool Zombie_ShowDistance;
 
 
@@ -61,24 +67,27 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         public void Start()
         {
             EnableVisuals = true;
-            
+
             Setting_Distance = 200f;
             Setting_UpdateRate = 20f;
-            
+
             Nv = NvType.None;
-            
+
             DerivedStart();
+
+            page = 1;
         }
-    
+
         public void Update()
         {
-            
-        }    
-    
+
+        }
+
         public void ContentGUI()
         {
             if (HackDirector.bSpying) return;
-            
+
+
             if (GUI.Button(new Rect(240, 25, 90, 30), "<size=13>Player</size>"))
                 page = 1;
             if (GUI.Button(new Rect(340, 25, 90, 30), "<size=13>Zombie</size>"))
@@ -100,7 +109,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
 
             //Content area
-    
+
 
             switch (page)
             {
@@ -129,6 +138,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                     AnimalPage();
                     break;
             }
+
         }
 
         void PlayerPage()
@@ -142,7 +152,6 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             Player_Name = GUI.Toggle(new Rect(240, 212, 144, 20), Player_Name, "Name");
             Player_ShowWeapon = GUI.Toggle(new Rect(240, 239, 140, 20), Player_ShowWeapon, "Weapon");
             Player_ShowDistance = GUI.Toggle(new Rect(240, 262, 140, 20), Player_ShowDistance, "Distance");
-            
 
         }
 
@@ -185,6 +194,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
             Storages_ShowDistance = GUI.Toggle(new Rect(240, 143, 140, 20), Storages_ShowDistance, "Distance");
             Storages_FilterLocked = GUI.Toggle(new Rect(240, 166, 140, 20), Storages_FilterLocked, "Filter Locked");
         }
+
         void AnimalPage()
         {
             GUI.Label(new Rect(400, 91, 100, 30), "<size=20>Animals:</size>");
@@ -197,54 +207,54 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         {
             GUI.Label(new Rect(415, 91, 100, 30), "<size=20>Misc:</size>");
 
-            if (GUI.Button(new Rect(240, 120, 140, 30), "<size=13>No Rain</size>"))
+            if (GUI.Button(new Rect(240, 153, 140, 30), "<size=13>No Rain</size>"))
             {
                 LevelLighting.rainyness = ELightingRain.NONE;
             }
-            if (GUI.Button(new Rect(240, 153, 140, 30), "<size=13>No Fog</size>"))
+            if (GUI.Button(new Rect(240, 186, 140, 30), "<size=13>No Fog</size>"))
             {
-                RenderSettings.fog =(!RenderSettings.fog);
+                RenderSettings.fog = (!RenderSettings.fog);
             }
-            if (GUI.Button(new Rect(240, 186, 140, 30), "<size=13>No Water</size>"))
+            if (GUI.Button(new Rect(240, 219, 140, 30), "<size=13>No Water</size>"))
             {
 
                 if (Altitude == 0f)
                     Altitude = LevelLighting.seaLevel;
-            
+
                 LevelLighting.seaLevel = LevelLighting.seaLevel == 0f ? Altitude : 0f;
             }
-            
-            GUI.Label(new Rect(240, 219, 140, 35), $"<size=14>Night Vision: {Nv}</size>");
-            if(GUI.Button(new Rect(240, 252, 140, 30), "<size=13>Military</size>"))
+
+            GUI.Label(new Rect(383, 120, 140, 35), $"<size=14>Night Vision: {Nv}</size>");
+            if (GUI.Button(new Rect(383, 153, 140, 30), "<size=13>Military</size>"))
             {
                 Nv = NvType.Military;
-                
+
                 LevelLighting.vision = ELightingVision.MILITARY;
                 LevelLighting.updateLighting();
                 LevelLighting.updateLocal();
                 PlayerLifeUI.updateGrayscale();
             }
-            if (GUI.Button(new Rect(240, 285, 140, 30), "<size=13>Civilian</size>"))
+            if (GUI.Button(new Rect(383, 186, 140, 30), "<size=13>Civilian</size>"))
             {
                 Nv = NvType.Civilian;
-                
+
                 LevelLighting.vision = ELightingVision.CIVILIAN;
                 LevelLighting.updateLighting();
                 LevelLighting.updateLocal();
                 PlayerLifeUI.updateGrayscale();
             }
-            if (GUI.Button(new Rect(240, 318, 140, 30), "<size=13>None</size>"))
+            if (GUI.Button(new Rect(383, 219, 140, 30), "<size=13>None</size>"))
             {
                 Nv = NvType.None;
-                
+
                 LevelLighting.vision = ELightingVision.NONE;
                 LevelLighting.updateLighting();
                 LevelLighting.updateLocal();
                 PlayerLifeUI.updateGrayscale();
             }
-            
-            
-           
+
+
+
         }
 
         void SettingsPage()
@@ -255,11 +265,18 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
 
 
             GUI.Label(new Rect(240, 140, 140, 30), $"Distance: {Setting_Distance}");
-            Setting_Distance = GUI.HorizontalSlider(new Rect(240, 160, 140, 20), Setting_Distance, 10, 1000); //Tweak This
+            Setting_Distance =
+                GUI.HorizontalSlider(new Rect(240, 160, 140, 20), Setting_Distance, 10, 1000); //Tweak This
 
             GUI.Label(new Rect(240, 170, 140, 30), $"Refresh Rate: {Setting_UpdateRate}");
-            Setting_UpdateRate = GUI.HorizontalSlider(new Rect(240, 190, 140, 20), Setting_UpdateRate, 10, 100); //Tweak This
+            Setting_UpdateRate =
+                GUI.HorizontalSlider(new Rect(240, 190, 140, 20), Setting_UpdateRate, 10, 100); //Tweak This
         }
 
-    }
+    
+
+   
+
+}
+
 }

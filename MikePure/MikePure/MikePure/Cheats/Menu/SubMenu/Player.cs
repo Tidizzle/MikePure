@@ -5,7 +5,6 @@ using MikePure.MikePure.Framework.Handler;
 using MikePure.MikePure.Framework.Types;
 using MikePure.MikePure.Framework.Types.List;
 using SDG.Unturned;
-using Steamworks;
 using UnityEngine;
 
 namespace MikePure.MikePure.Cheats.Menu.SubMenu
@@ -146,21 +145,21 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         {
             if (HackDirector.bSpying) return;
 
-            
+
             //Player options
             NoRecoil = GUI.Toggle(new Rect(240, 30, 140, 20), NoRecoil, "No Recoil");
             NoShake = GUI.Toggle(new Rect(240, 53, 140, 20), NoShake, "No Shake");
             NoSpread = GUI.Toggle(new Rect(240, 75, 140, 20), NoSpread, "No Spread");
-            NoDrop = GUI.Toggle(new Rect(240, 97, 140, 20), NoDrop, " No Drop");
-            AdvRangeFinder = GUI.Toggle(new Rect(240, 120, 144, 20), AdvRangeFinder, "Adv Finder");
-            CameraFreeFlight = GUI.Toggle(new Rect(240, 143, 140, 20), CameraFreeFlight, "Camera Flight");
+            NoDrop = GUI.Toggle(new Rect(240, 97, 140, 20), NoDrop, "No Drop");
+            
+//            AdvRangeFinder = GUI.Toggle(new Rect(240, 123, 144, 20), AdvRangeFinder, "Adv Finder");
+            CameraFreeFlight = GUI.Toggle(new Rect(240, /*146*/123, 140, 20), CameraFreeFlight, "Camera Flight");
 //            GUI.Label(new Rect(240, 165, 140, 20), $"Fov: {int.Parse(Fov.ToString())}");
 //            Fov = GUI.HorizontalSlider(new Rect(240, 188, 140, 20), Fov, 10, 360);
-            if (GUI.Button(new Rect(240, 168, 140, 30), "<size=13>Get High</size>"))
+            if (GUI.Button(new Rect(240, /*171*/149, 140, 30), "<size=13>Get High</size>"))
             {
                 SDG.Unturned.Player.player.life.askView(30);
             }
-            
             
             
         }

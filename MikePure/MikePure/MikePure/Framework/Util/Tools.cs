@@ -32,5 +32,16 @@ namespace MikePure.MikePure.Framework.Util
 
             return Player.player;
         }
+
+        public static SteamPlayer GetSteamPlayerFromTransform(Transform input)
+        {
+            foreach (var ply in Provider.clients)
+            {
+                if (ply.player.transform == input)
+                    return ply;
+            }
+
+            return null;
+        }
     }
 }
