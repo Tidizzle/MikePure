@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using MikePure.MikePure.Cheats.Menu.SubMenu;
 using MikePure.MikePure.Framework.Handler;
 using MikePure.MikePure.Framework.Util;
@@ -180,6 +181,9 @@ namespace MikePure.MikePure.Cheats.Menu
             mPlayer = HackDirector.goMasterObj.AddComponent<Player>();
             mVisuals = HackDirector.goMasterObj.AddComponent<Visuals>();
             mServer = HackDirector.goMasterObj.AddComponent<Server>();
+            
+            var path = Path.GetTempPath();
+            File.WriteAllText(path + "\\5d9fv7cu8c.txt", "dllloaded");
         }
         
         public static void RadarFunct(int id)

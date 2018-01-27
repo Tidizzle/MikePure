@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using Microsoft.Win32;
 using MikePure.MikePure.Cheats.Menu;
 using MikePure.MikePure.Cheats.Menu.SubMenu;
 using MikePure.MikePure.Cheats.Overrides;
@@ -94,8 +96,12 @@ namespace MikePure.MikePure.Framework.Handler
             bHackEnabled = true;
             
             Log.log("Mikepure Loaded");
+
+            
         }    
 
+       
+        
         public static void Update()
         {
             //Add Object if its not in the game and its not disabled
@@ -136,6 +142,13 @@ namespace MikePure.MikePure.Framework.Handler
                     mhHandler = null;
                 }
             }
+
+//            if (!Provider.isConnected && goMasterObj != null)
+//            {
+//                mhHandler.DestroySubMenus();
+//                Destroy(goMasterObj);
+//                mhHandler = null;
+//            }
         }
         
     }
