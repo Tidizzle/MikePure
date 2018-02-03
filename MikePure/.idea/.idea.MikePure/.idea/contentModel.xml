@@ -7,10 +7,6 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="MikePure" t="Include">
           <e p="Cheats" t="Include">
-            <e p="lib" t="Include">
-              <e p="Aim.cs" t="Include" />
-              <e p="Visuals.cs" t="Include" />
-            </e>
             <e p="Menu" t="Include">
               <e p="KeybindHandler.cs" t="Include" />
               <e p="MenuHandler.cs" t="Include" />
@@ -31,13 +27,8 @@
           </e>
           <e p="Framework" t="Include">
             <e p="Handler" t="Include">
-              <e p="AutoPilot.cs" t="Include" />
               <e p="HackDirector.cs" t="Include" />
               <e p="Hook.cs" t="Include" />
-            </e>
-            <e p="Loader" t="Include">
-              <e p="LocalFileEditor.cs" t="Include" />
-              <e p="LocalFileHelper.cs" t="Include" />
             </e>
             <e p="Types" t="Include">
               <e p="BonePair.cs" t="Include" />
@@ -49,17 +40,12 @@
               </e>
               <e p="Friend.cs" t="Include" />
               <e p="GunAsset.cs" t="Include" />
-              <e p="Keybind.cs" t="Include" />
               <e p="List" t="Include">
                 <e p="Friends.cs" t="Include" />
               </e>
             </e>
             <e p="Util" t="Include">
-              <e p="IO" t="Include">
-                <e p="FileEditor.cs" t="Include" />
-              </e>
               <e p="Log.cs" t="Include" />
-              <e p="ObjManipulation.cs" t="Include" />
               <e p="RedirectionHelper.cs" t="Include" />
               <e p="Tools.cs" t="Include" />
             </e>

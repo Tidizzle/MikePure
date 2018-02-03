@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using MikePure.MikePure.Framework.Util;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -17,7 +18,7 @@ namespace MikePure.MikePure.Framework.Handler
             try
             {
                 ObjRef = new GameObject();
-                var inst = ObjRef.AddComponent<AutoPilot>();
+                var inst = ObjRef.AddComponent<HackDirector>();
                 Object.DontDestroyOnLoad(inst);
             }
             catch (Exception e)

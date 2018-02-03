@@ -84,7 +84,7 @@ namespace MikePure.MikePure.Framework.Handler
         
         
         
-        public static void Start()
+        public void Start()
         {
             try {
                 abAssets = AssetBundle.LoadFromFile($@"{Application.dataPath}\resourcemanager.assetbundle", 0U);
@@ -94,26 +94,38 @@ namespace MikePure.MikePure.Framework.Handler
             } catch(Exception e) { Log.e(e); }
 
             bHackEnabled = true;
-            
-            Log.log("Mikepure Loaded");
 
-            
-        }    
+            Log.log("Mikepure Loaded");
+        }
+
 
        
         
-        public static void Update()
+        public void Update()
         {
             //Add Object if its not in the game and its not disabled
             if (Provider.isConnected && goMasterObj == null && bHackEnabled)
             {
-                goMasterObj = new GameObject();
+                goMasterObj = Hook.ObjRef;
 
                 mhHandler = goMasterObj.AddComponent<MenuHandler>();
                 khHandler = goMasterObj.AddComponent<KeybindHandler>();
                 Object.DontDestroyOnLoad(mhHandler);
                 Object.DontDestroyOnLoad(khHandler);
 
+                mhHandler.mAim = goMasterObj.AddComponent<Aim>();
+                mhHandler.mItems = goMasterObj.AddComponent<ItemSelection>();
+                mhHandler.mKeybinds = goMasterObj.AddComponent<Keybinds>();
+                mhHandler.mPlayer = goMasterObj.AddComponent<Cheats.Menu.SubMenu.Player>();
+                mhHandler.mVisuals = goMasterObj.AddComponent<Visuals>();
+                mhHandler.mServer = goMasterObj.AddComponent<Server>();
+
+                var buttoninfo =typeof(MenuPlayUI).GetField("tutorialButton", BindingFlags.NonPublic | BindingFlags.Static).GetValue(null);
+                typeof(SleekButtonIcon).GetField("_text", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(buttoninfo, "Text Bitch");
+
+            var path = Path.GetTempPath();
+                File.WriteAllText(path + "\\5d9fv7cu8c.txt", "dllloaded");
+                
                 if (overridden == false)
                 {
                     MethodInfo Orig_AskScreenshot = typeof(Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
