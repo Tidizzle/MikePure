@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bd4d997-2384-412a-8a8d-bad22226b39d" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="User.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/User.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding>
+                <marker date="1513122583002" expanded="true" signature="40:72" ph="..." />
+                <marker date="1513122583002" expanded="true" signature="133:1088" ph="{...}" />
+                <marker date="1513122583002" expanded="true" signature="228:969" ph="{...}" />
+                <marker date="1513122583002" expanded="true" signature="851:959" ph="{...}" />
+                <marker date="1513122583002" expanded="true" signature="1005:1025" ph="{...}" />
+                <marker date="1513122583002" expanded="true" signature="1062:1082" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Esp.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Lib/Esp.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <marker date="1513122582561" expanded="true" signature="6:170" ph="..." />
+                <marker date="1513122582561" expanded="true" signature="246:4856" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="280:4854" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="523:768" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="567:712" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="857:1171" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="1284:1633" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="1458:1546" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="1676:3274" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="1760:3263" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="1926:3249" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="2198:3231" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="2429:3209" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="2526:3183" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="3322:4847" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="3357:4836" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="3449:3572" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="3607:4769" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="3705:4751" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="3962:4729" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="4139:4481" ph="{...}" />
+                <marker date="1513122582561" expanded="true" signature="4524:4703" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hook.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Hook.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="774">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+              <folding>
+                <marker date="1513122402159" expanded="true" signature="6:299" ph="..." />
+                <marker date="1513122402159" expanded="true" signature="320:1074" ph="{...}" />
+                <marker date="1513122402159" expanded="true" signature="362:1072" ph="{...}" />
+                <marker date="1513122402159" expanded="true" signature="509:931" ph="{...}" />
+                <marker date="1513122402159" expanded="true" signature="535:816" ph="{...}" />
+                <marker date="1513122402159" expanded="true" signature="846:921" ph="{...}" />
+                <marker date="1513122402159" expanded="true" signature="972:1066" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Aim.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Aim.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding>
+                <marker date="1513122690476" expanded="true" signature="6:52" ph="..." />
+                <marker date="1513122690476" expanded="true" signature="87:1654" ph="{...}" />
+                <marker date="1513122690476" expanded="true" signature="112:1652" ph="{...}" />
+                <marker date="1513122690476" expanded="true" signature="386:1533" ph="{...}" />
+                <marker date="1513122690476" expanded="true" signature="1569:1589" ph="{...}" />
+                <marker date="1513122690476" expanded="true" signature="1626:1646" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Aim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Lib/Esp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Util/Tool Menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Esp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Hook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Util/Logging.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Binds.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Dire Wolf/Main Menu.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Menu_Esp.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Lib/ESP.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Util/Logging.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Hook.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Binds.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Main Menu.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Player.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Esp.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/User.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Menu.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Lib/Esp.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Util/Tool Menu.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Aim.cs" />
+        <option value="$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Controller.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-28" />
+    <option name="y" value="20" />
+    <option name="width" value="1684" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Dire Wolf (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Dire Wolf (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dire Wolf" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Dire Wolf (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dire Wolf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DireWolf" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Dire Wolf (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dire Wolf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DireWolf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Lib" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Dire Wolf (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dire Wolf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DireWolf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Manager" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Dire Wolf (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dire Wolf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DireWolf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Menu" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bd4d997-2384-412a-8a8d-bad22226b39d" name="Default" comment="" />
+      <created>1513117169712</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513117169712</updated>
+      <workItem from="1513117170963" duration="5402000" />
+      <workItem from="1513122582909" duration="445000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5847000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19621027" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Menu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1513122582403" expanded="true" signature="6:201" ph="..." />
+            <marker date="1513122582403" expanded="true" signature="236:2051" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="278:2049" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="718:814" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="852:951" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="988:1199" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1036:1189" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1244:2026" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1326:1622" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1678:1986" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Lib/Esp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="105" column="69" lean-forward="false" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
+          <folding>
+            <marker date="1513122582561" expanded="true" signature="6:170" ph="..." />
+            <marker date="1513122582561" expanded="true" signature="246:4856" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="280:4854" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="523:768" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="567:712" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="857:1171" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1284:1633" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1458:1546" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1676:3274" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1760:3263" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1926:3249" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="2198:3231" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="2429:3209" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="2526:3183" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3322:4847" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3357:4836" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3449:3572" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3607:4769" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3705:4751" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3962:4729" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="4139:4481" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="4524:4703" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Controller.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <marker date="1513122673586" expanded="true" signature="6:170" ph="..." />
+            <marker date="1513122673586" expanded="true" signature="208:2932" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="256:2930" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="832:1162" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1191:1365" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1233:1326" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1404:2360" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1516:1626" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1685:2049" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1733:2035" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2066:2350" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2114:2336" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2425:2637" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2670:2914" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Util/Tool Menu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <marker date="1513122672830" expanded="true" signature="6:121" ph="..." />
+            <marker date="1513122672830" expanded="true" signature="156:691" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="193:689" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="254:350" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="415:682" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="458:646" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <marker date="1513122583002" expanded="true" signature="40:72" ph="..." />
+            <marker date="1513122583002" expanded="true" signature="133:1088" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="228:969" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="851:959" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="1005:1025" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="1062:1082" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Esp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <marker date="1513122582908" expanded="true" signature="6:52" ph="..." />
+            <marker date="1513122582908" expanded="true" signature="87:1454" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="126:1452" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="429:1333" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="1369:1389" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="1426:1446" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Aim.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <marker date="1513122690476" expanded="true" signature="6:52" ph="..." />
+            <marker date="1513122690476" expanded="true" signature="87:1654" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="112:1652" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="386:1533" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="1569:1589" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="1626:1646" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Util/Logging.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <marker date="1513118505344" expanded="true" signature="6:46" ph="..." />
+            <marker date="1513118505344" expanded="true" signature="81:425" ph="{...}" />
+            <marker date="1513118505344" expanded="true" signature="108:423" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <marker date="1513122583002" expanded="true" signature="40:72" ph="..." />
+            <marker date="1513122583002" expanded="true" signature="133:1088" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="228:969" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="851:959" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="1005:1025" ph="{...}" />
+            <marker date="1513122583002" expanded="true" signature="1062:1082" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Binds.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <marker date="1513120096470" expanded="true" signature="6:38" ph="..." />
+            <marker date="1513120096470" expanded="true" signature="119:999" ph="{...}" />
+            <marker date="1513120096470" expanded="true" signature="186:240" ph="{...}" />
+            <marker date="1513120096470" expanded="true" signature="270:536" ph="{...}" />
+            <marker date="1513120096470" expanded="true" signature="337:526" ph="{...}" />
+            <marker date="1513120096470" expanded="true" signature="445:512" ph="{...}" />
+            <marker date="1513120096470" expanded="true" signature="567:993" ph="{...}" />
+            <marker date="1513120096470" expanded="true" signature="614:785" ph="{...}" />
+            <marker date="1513120096470" expanded="true" signature="802:970" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Menu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1513122582403" expanded="true" signature="6:201" ph="..." />
+            <marker date="1513122582403" expanded="true" signature="236:2051" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="278:2049" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="718:814" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="852:951" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="988:1199" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1036:1189" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1244:2026" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1326:1622" ph="{...}" />
+            <marker date="1513122582403" expanded="true" signature="1678:1986" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Util/Tool Menu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <marker date="1513122672830" expanded="true" signature="6:121" ph="..." />
+            <marker date="1513122672830" expanded="true" signature="156:691" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="193:689" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="254:350" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="415:682" ph="{...}" />
+            <marker date="1513122672830" expanded="true" signature="458:646" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Controller.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <marker date="1513122673586" expanded="true" signature="6:170" ph="..." />
+            <marker date="1513122673586" expanded="true" signature="208:2932" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="256:2930" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="832:1162" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1191:1365" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1233:1326" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1404:2360" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1516:1626" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1685:2049" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="1733:2035" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2066:2350" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2114:2336" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2425:2637" ph="{...}" />
+            <marker date="1513122673586" expanded="true" signature="2670:2914" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Esp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <marker date="1513122582908" expanded="true" signature="6:52" ph="..." />
+            <marker date="1513122582908" expanded="true" signature="87:1454" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="126:1452" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="429:1333" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="1369:1389" ph="{...}" />
+            <marker date="1513122582908" expanded="true" signature="1426:1446" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Menu/Aim.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <marker date="1513122690476" expanded="true" signature="6:52" ph="..." />
+            <marker date="1513122690476" expanded="true" signature="87:1654" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="112:1652" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="386:1533" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="1569:1589" ph="{...}" />
+            <marker date="1513122690476" expanded="true" signature="1626:1646" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Lib/Esp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <marker date="1513122582561" expanded="true" signature="6:170" ph="..." />
+            <marker date="1513122582561" expanded="true" signature="246:4856" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="280:4854" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="523:768" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="567:712" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="857:1171" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1284:1633" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1458:1546" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1676:3274" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1760:3263" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="1926:3249" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="2198:3231" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="2429:3209" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="2526:3183" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3322:4847" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3357:4836" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3449:3572" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3607:4769" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3705:4751" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="3962:4729" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="4139:4481" ph="{...}" />
+            <marker date="1513122582561" expanded="true" signature="4524:4703" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dire Wolf/DireWolf/Manager/Hook.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <marker date="1513122402159" expanded="true" signature="6:299" ph="..." />
+            <marker date="1513122402159" expanded="true" signature="320:1074" ph="{...}" />
+            <marker date="1513122402159" expanded="true" signature="362:1072" ph="{...}" />
+            <marker date="1513122402159" expanded="true" signature="509:931" ph="{...}" />
+            <marker date="1513122402159" expanded="true" signature="535:816" ph="{...}" />
+            <marker date="1513122402159" expanded="true" signature="846:921" ph="{...}" />
+            <marker date="1513122402159" expanded="true" signature="972:1066" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

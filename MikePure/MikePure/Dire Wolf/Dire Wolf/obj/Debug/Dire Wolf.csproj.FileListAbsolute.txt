@@ -1,0 +1,30 @@
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Dire Wolf.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Dire Wolf.pdb
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Assembly-CSharp.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Boo.Lang.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Mono.Data.Tds.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Mono.Posix.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Mono.Security.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Newtonsoft.Json.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Pathfinding.ClipperLib.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Pathfinding.Ionic.Zip.Reduced.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Pathfinding.JsonFx.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\Pathfinding.Poly2Tri.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\UnityEngine.CrashLog.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\UnityEngine.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\UnityEngine.Networking.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\UnityEngine.UI.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\bin\Debug\UnityScript.Lang.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\obj\Debug\Dire Wolf.csprojResolveAssemblyReference.cache
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\obj\Debug\Dire Wolf.csproj.CoreCompileInputs.cache
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\obj\Debug\Dire Wolf.dll
+C:\Users\maxim\source\repos\Dire Wolf\Dire Wolf\obj\Debug\Dire Wolf.pdb
+C:\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\Dire Wolf.dll
+C:\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\Dire Wolf.pdb
+C:\Users\Zach\Desktop\MikePure\Dire Wolf\Dire Wolf\obj\Debug\Dire Wolf.csprojResolveAssemblyReference.cache
+C:\Users\Zach\Desktop\MikePure\Dire Wolf\Dire Wolf\obj\Debug\Dire Wolf.dll
+C:\Users\Zach\Desktop\MikePure\Dire Wolf\Dire Wolf\obj\Debug\Dire Wolf.pdb

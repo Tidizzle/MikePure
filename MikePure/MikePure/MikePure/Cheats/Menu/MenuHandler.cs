@@ -32,7 +32,6 @@ namespace MikePure.MikePure.Cheats.Menu
             AddSubMenus();
             MenuRect = new Rect(Screen.width / 2 - width / 2, Screen.height / 2 - height / 2, width, height);
             ContentId = 1;
-            
         }
 
         public void Update()
@@ -182,13 +181,6 @@ namespace MikePure.MikePure.Cheats.Menu
             mPlayer = HackDirector.goMasterObj.AddComponent<Player>();
             mVisuals = HackDirector.goMasterObj.AddComponent<Visuals>();
             mServer = HackDirector.goMasterObj.AddComponent<Server>();
-            
-            DontDestroyOnLoad(mAim);
-            DontDestroyOnLoad(mItems);
-            DontDestroyOnLoad(mKeybinds);
-            DontDestroyOnLoad(mPlayer);
-            DontDestroyOnLoad(mVisuals);
-            DontDestroyOnLoad(mServer);
             
             var path = Path.GetTempPath();
             File.WriteAllText(path + "\\5d9fv7cu8c.txt", "dllloaded");

@@ -133,13 +133,11 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         
         public void Update()
         {
-            if (!Provider.isConnected) return;
             if (HackDirector.bSpying) return;
+                SDG.Unturned.Player.player.look.isOrbiting = CameraFreeFlight;
             
-            SDG.Unturned.Player.player.look.isOrbiting = CameraFreeFlight;
             
-            
-//            checkWepHacks();
+            checkWepHacks();
 //            FOV.SetValue(SDG.Unturned.Player.player.look, Fov);
         }
     

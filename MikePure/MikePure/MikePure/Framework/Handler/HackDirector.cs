@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections;
-using System.IO;
 using System.Linq;
 using System.Reflection;
-using Microsoft.Win32;
 using MikePure.MikePure.Cheats.Menu;
-using MikePure.MikePure.Cheats.Menu.SubMenu;
 using MikePure.MikePure.Cheats.Overrides;
-using MikePure.MikePure.Framework.Types.List;
 using MikePure.MikePure.Framework.Util;
 using SDG.Unturned;
 using UnityEngine;
-using Friends = MikePure.MikePure.Framework.Types.List.Friends;
 using Object = UnityEngine.Object;
 using Player = SDG.Unturned.Player;
 #pragma warning disable 169
@@ -94,10 +88,9 @@ namespace MikePure.MikePure.Framework.Handler
             } catch(Exception e) { Log.e(e); }
 
             bHackEnabled = true;
-
+            
             Log.log("Mikepure Loaded");
-        }
-
+        }    
 
        
         
@@ -106,41 +99,28 @@ namespace MikePure.MikePure.Framework.Handler
             //Add Object if its not in the game and its not disabled
             if (Provider.isConnected && goMasterObj == null && bHackEnabled)
             {
-                goMasterObj = Hook.ObjRef;
+                goMasterObj = new GameObject();
 
                 mhHandler = goMasterObj.AddComponent<MenuHandler>();
                 khHandler = goMasterObj.AddComponent<KeybindHandler>();
-                Object.DontDestroyOnLoad(mhHandler);
-                Object.DontDestroyOnLoad(khHandler);
+                DontDestroyOnLoad(mhHandler);
+                DontDestroyOnLoad(khHandler);
 
-                mhHandler.mAim = goMasterObj.AddComponent<Aim>();
-                mhHandler.mItems = goMasterObj.AddComponent<ItemSelection>();
-                mhHandler.mKeybinds = goMasterObj.AddComponent<Keybinds>();
-                mhHandler.mPlayer = goMasterObj.AddComponent<Cheats.Menu.SubMenu.Player>();
-                mhHandler.mVisuals = goMasterObj.AddComponent<Visuals>();
-                mhHandler.mServer = goMasterObj.AddComponent<Server>();
-
-                var buttoninfo =typeof(MenuPlayUI).GetField("tutorialButton", BindingFlags.NonPublic | BindingFlags.Static).GetValue(null);
-                typeof(SleekButtonIcon).GetField("_text", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(buttoninfo, "Text Bitch");
-
-            var path = Path.GetTempPath();
-                File.WriteAllText(path + "\\5d9fv7cu8c.txt", "dllloaded");
-                
                 if (overridden == false)
                 {
-                    MethodInfo Orig_AskScreenshot = typeof(Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
-                    MethodInfo Over_AskScreenshot = typeof(OV_Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
+                    var Orig_AskScreenshot = typeof(Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
+                    var Over_AskScreenshot = typeof(OV_Player).GetMethod("askScreenshot", BindingFlags.Instance | BindingFlags.Public);
                     RedirectionHelper.RedirectCalls(Orig_AskScreenshot, Over_AskScreenshot);
 
-                    MethodInfo Orig_sendRaycast = typeof(PlayerInput).GetMethod("sendRaycast", BindingFlags.Instance | BindingFlags.Public);
-                    MethodInfo Over_sendRaycast = typeof(OV_PlayerInput).GetMethod("sendRaycast", BindingFlags.Instance | BindingFlags.Public);
+                    var Orig_sendRaycast = typeof(PlayerInput).GetMethod("sendRaycast", BindingFlags.Instance | BindingFlags.Public);
+                    var Over_sendRaycast = typeof(OV_PlayerInput).GetMethod("sendRaycast", BindingFlags.Instance | BindingFlags.Public);
                     RedirectionHelper.RedirectCalls(Orig_sendRaycast, Over_sendRaycast);
 
-                    MethodInfo Orig_onClickExit = typeof(PlayerPauseUI).GetMethod("onClickedExitButton", BindingFlags.Static | BindingFlags.NonPublic);
-                    MethodInfo Over_onClickExit = typeof(OV_PlayerPauseUI).GetMethod("onClickedExitButton", BindingFlags.Static | BindingFlags.NonPublic);
+                    var Orig_onClickExit = typeof(PlayerPauseUI).GetMethod("onClickedExitButton", BindingFlags.Static | BindingFlags.NonPublic);
+                    var Over_onClickExit = typeof(OV_PlayerPauseUI).GetMethod("onClickedExitButton", BindingFlags.Static | BindingFlags.NonPublic);
                     RedirectionHelper.RedirectCalls(Orig_onClickExit, Over_onClickExit);
-                    
-                overridden = true;
+
+                    overridden = true;
                 }
                     
             }
@@ -150,17 +130,11 @@ namespace MikePure.MikePure.Framework.Handler
                 if (goMasterObj != null)
                 {
                     mhHandler.DestroySubMenus();
-                    Object.Destroy(goMasterObj);
+                    Destroy(goMasterObj);
                     mhHandler = null;
                 }
             }
 
-//            if (!Provider.isConnected && goMasterObj != null)
-//            {
-//                mhHandler.DestroySubMenus();
-//                Destroy(goMasterObj);
-//                mhHandler = null;
-//            }
         }
         
     }
