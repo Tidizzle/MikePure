@@ -236,7 +236,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                     if (Vector3.Distance(main.transform.position, player.player.transform.position) <= dist)
                     {
                         var pos = main.WorldToScreenPoint(player.player.transform.position);
-                        if (pos.z >= 0f)
+                        if (!(pos.x < 0 || pos.x > 1 || pos.y < 0 || pos.y > 1 || pos.z < 0))
                         {
                             pos.y = Screen.height - pos.y;
                             Draw3DBox(new Bounds(player.player.transform.position + new Vector3(0, 1.1f, 0), player.player.transform.localScale + new Vector3(0, .95f, 0)), Friends.IsFriend(player.playerID.steamID.m_SteamID) ? Color.magenta : Color.yellow);
@@ -256,7 +256,7 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
                     if (Vector3.Distance(main.transform.position, zombie.transform.position) <= dist)
                     {
                         var pos = main.WorldToScreenPoint(zombie.transform.position);
-                        if (pos.z >= 0f)
+                        if (!(pos.x < 0 || pos.x > 1 || pos.y < 0 || pos.y > 1 || pos.z < 0))
                         {
                             pos.y = Screen.height - pos.y;
                             Draw3DBox(zombie.gameObject.GetComponent<Collider>().bounds, Color.green);
@@ -708,50 +708,61 @@ namespace MikePure.MikePure.Cheats.Menu.SubMenu
         }
         public void CheckItemLabels()
         {
-            if (Item_ShowName || Item_ShowDistance)
+            try
             {
-                var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
-
-                var filteredList = new List<InteractableItem>();
-                
-                if (ItemSelection.EnableFilter)
+                if (Item_ShowName || Item_ShowDistance)
                 {
-                    foreach (var item in ItemList)
+                    var maxdist = Setting_InfDistance ? 10000 : Setting_Distance;
+
+                    var filteredList = new List<InteractableItem>();
+
+                    if (ItemSelection.EnableFilter)
                     {
-                        if( (ItemSelection.FilterClothes && isOfType(1, item)) || (ItemSelection.FilterAmmo && isOfType(2, item)) || (ItemSelection.FilterGuns && isOfType(3, item)) || (ItemSelection.FilterAttach && isOfType(4, item)) || (ItemSelection.FilterFood && isOfType(5, item)) || (ItemSelection.FilterMed && isOfType(6, item)) || (ItemSelection.FilterWeapons && isOfType(7, item)) ||  (ItemSelection.FilterPacks && isOfType(9, item)))
-                            filteredList.Add(item);
+                        foreach (var item in ItemList)
+                        {
+                            if ((ItemSelection.FilterClothes && isOfType(1, item)) ||
+                                (ItemSelection.FilterAmmo && isOfType(2, item)) ||
+                                (ItemSelection.FilterGuns && isOfType(3, item)) ||
+                                (ItemSelection.FilterAttach && isOfType(4, item)) ||
+                                (ItemSelection.FilterFood && isOfType(5, item)) ||
+                                (ItemSelection.FilterMed && isOfType(6, item)) ||
+                                (ItemSelection.FilterWeapons && isOfType(7, item)) ||
+                                (ItemSelection.FilterPacks && isOfType(9, item)))
+                                filteredList.Add(item);
+                        }
                     }
-                }
-                else
-                {
-                    filteredList = ItemList;
-                }
-                
-                foreach (var item in filteredList)
-                {
-                    var dist = Vector3.Distance(main.transform.position, item.transform.position);
-                    if (dist <= maxdist && isVis(item.transform))
+                    else
                     {
-                        var raw = "";
+                        filteredList = ItemList;
+                    }
 
-                        if (Item_ShowName)
-                            raw += item.asset.itemName.Replace("_", " ");
+                    foreach (var item in filteredList)
+                    {
+                        var dist = Vector3.Distance(main.transform.position, item.transform.position);
+                        if (dist <= maxdist && isVis(item.transform))
+                        {
+                            var raw = "";
 
-                        if (Item_ShowDistance && raw.Length > 0)
-                            raw += $"\n<color=#ffffff>{Math.Round(dist,0)}</color>";
-                        else if (Item_ShowDistance)
-                            raw += $"<color=#ffffff>{Math.Round(dist,0)}</color>";
+                            if (Item_ShowName)
+                                raw += item.asset.itemName.Replace("_", " ");
+
+                            if (Item_ShowDistance && raw.Length > 0)
+                                raw += $"\n<color=#ffffff>{Math.Round(dist, 0)}</color>";
+                            else if (Item_ShowDistance)
+                                raw += $"<color=#ffffff>{Math.Round(dist, 0)}</color>";
 
 
-                        var scrnpt = main.WorldToScreenPoint(item.transform.position);
-                        scrnpt.y = Screen.height - scrnpt.y;
-                        
-                        GUI.Label(new Rect(scrnpt + new Vector3(0, 6f, 0), new Vector2(170, 70)), $"<color=#{ColorToHex(Color.cyan)}><size={11}>{raw}</size></color>");
+                            var scrnpt = main.WorldToScreenPoint(item.transform.position);
+                            scrnpt.y = Screen.height - scrnpt.y;
 
+                            GUI.Label(new Rect(scrnpt + new Vector3(0, 6f, 0), new Vector2(170, 70)),
+                                $"<color=#{ColorToHex(Color.cyan)}><size={11}>{raw}</size></color>");
+
+                        }
                     }
                 }
             }
-
+            catch{}
         }
         public void CheckVehicleLabels()
         {

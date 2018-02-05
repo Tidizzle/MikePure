@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 
 namespace MikePure.MikePure.Framework.Util
 {
-    internal class RedirectionHelper
+    public class RedirectionHelper
     {
 
         [DllImport("mono.dll", CallingConvention = CallingConvention.FastCall, EntryPoint = "mono_domain_get")]

@@ -11,14 +11,14 @@ using MikePure.MikePure.Cheats.Overrides;
 
 namespace MikePure.MikePure.Framework.Handler
 {
-    internal static class Engine
+    public static class Engine
     {
         internal static void Start()
         {
             try
             {
                 MethodInfo PlayerPauseUI = typeof(PlayerPauseUI).GetMethod("onClickedDisplayButton", BindingFlags.Static | BindingFlags.NonPublic);
-                MethodInfo OV_PlayerPauseUI = typeof(OV_PlayerPauseUI).GetMethod("onClickedDisplayButton", BindingFlags.Static | BindingFlags.NonPublic);
+                MethodInfo OV_PlayerPauseUI = typeof(OV_PlayerPauseUI).GetMethod("onClickedDisplayButton", BindingFlags.Static | BindingFlags.Public);
                 RedirectionHelper.RedirectCalls(PlayerPauseUI, OV_PlayerPauseUI);
             }
             catch (Exception e)
